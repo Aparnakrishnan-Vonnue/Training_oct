@@ -38,7 +38,7 @@ html, body{
     top: -40%;
     left: 0;
     animation: drive 8s infinite linear,
-    jump 0.5s alternate  ease-in-out;
+               jump .5s alternate  ease-in-out;
   }
 .luigi{
     position: absolute;
@@ -93,7 +93,5 @@ html, body{
     50%{top: -100px}
     100%{top: -40px}
 }
-@keyframes jump{
-    
-}
+
  
