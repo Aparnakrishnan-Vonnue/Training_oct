@@ -1,0 +1,130 @@
+body {
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serifS;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+header nav ul {
+    float: right;
+    font-size: 10.88px;
+    width: 100px;
+    margin: 0px 0px;
+    position:relative;
+    padding: 0;
+    right: 50px;
+    bottom: 50px;
+}
+header nav ul li{
+    list-style-type: none;
+    margin: 0 8px;
+    display: inline;
+    cursor: pointer;
+    padding: 0;
+    /* position: relative;
+    bottom: 70px; */
+}
+#banner .logos{
+    display: grid;
+    grid-template-columns: repeat(8,100px);
+    padding: 100px 20px;
+    margin: 100px 200px;
+    max-width: 10px 10px;
+    justify-content:center;
+    gap: 0px;
+    position: relative;
+}
+#banner .logos a{
+    padding: 10px;
+}
+#banner .logos a h4{
+    color: black;
+}
+
+#Search {
+    position: relative;
+    right: 210px;
+    bottom: 180px;
+    display: flex;
+    padding: 0;
+    margin:0 500px 0 500px;
+    width: 900px;
+    border: #fc0 2px solid;
+    border-radius: 10px;
+    
+}
+
+#Search input{
+    padding: 10px;
+    width: 55%;
+    border: none;
+    /* border: 2px solid #fc0; */
+     border-radius: 10px; 
+    position: relative;
+}
+#Search img{
+    position: relative;
+    right: 60px;
+    top:5px;
+    left:600px;
+    padding: 0;
+    width: 30px;
+    height: 15px;
+    border: none;
+}
+#Search .button{
+    position: relative;
+    left:615px;
+    background: #fc0;
+    padding: 10px;
+    border: 2px solid #fc0;
+    border: #fc0;
+    
+}
+#banner .logos a{
+    margin:50px 0 0;
+    padding:0 22px;
+    border: 0 transparent;
+    text-decoration: none;
+}
+
+
+footer ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 50px;
+    align-self: center;
+}
+footer ul li{
+    margin: 0 20px;
+    list-style-type: none;
+    text-decoration: none;
+}
+footer ul li  a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 100px;
+}
+
+#location p, .Countries h4{
+    font-weight: normal;
+    display: inline;
+    position: relative;
+}
+#location .Countries{
+    position: relative;
+    left: 500px;
+    font-size: small;
+    margin: 0 10px;
+}
+#location p{
+    position: relative;
+    left: 400px;
+    top: 18px;
+    font-weight: bold;
+    font-size: small;
+}
+    
+   
