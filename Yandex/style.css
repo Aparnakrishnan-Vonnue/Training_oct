@@ -1,130 +1,136 @@
 body {
-    max-width: 100%;
     font-family: Arial, Helvetica, sans-serifS;
     font-weight: normal;
     box-sizing: border-box;
+    font-size: 0.8em;
 }
-header nav ul {
-    float: right;
-    font-size: 10.88px;
-    width: 100px;
-    margin: 0px 0px;
-    position:relative;
-    padding: 0;
-    right: 50px;
-    bottom: 50px;
-}
-header nav ul li{
-    list-style-type: none;
-    margin: 0 8px;
-    display: inline;
-    cursor: pointer;
-    padding: 0;
-    /* position: relative;
-    bottom: 70px; */
-}
-#banner .logos{
-    display: grid;
-    grid-template-columns: repeat(8,100px);
-    padding: 100px 20px;
-    margin: 100px 200px;
-    max-width: 10px 10px;
-    justify-content:center;
-    gap: 0px;
-    position: relative;
-}
-#banner .logos a{
-    padding: 10px;
-}
-#banner .logos a h4{
-    color: black;
-}
-
-#Search {
-    position: relative;
-    right: 210px;
-    bottom: 180px;
+header{
     display: flex;
-    padding: 0;
-    margin:0 500px 0 500px;
-    width: 900px;
-    border: #fc0 2px solid;
-    border-radius: 10px;
-    
+    justify-content: flex-end;
+    align-items:flex-end;
+    font-size: 12.8px;
+    margin:20px 0 80px 0;
+    padding: 1px;
 }
-
-#Search input{
-    padding: 10px;
-    width: 55%;
-    border: none;
-    /* border: 2px solid #fc0; */
-     border-radius: 10px; 
-    position: relative;
-}
-#Search img{
-    position: relative;
-    right: 60px;
-    top:5px;
-    left:600px;
-    padding: 0;
-    width: 30px;
-    height: 15px;
-    border: none;
-}
-#Search .button{
-    position: relative;
-    left:615px;
-    background: #fc0;
-    padding: 10px;
-    border: 2px solid #fc0;
-    border: #fc0;
-    
-}
-#banner .logos a{
-    margin:50px 0 0;
-    padding:0 22px;
-    border: 0 transparent;
-    text-decoration: none;
-}
-
-
-footer ul{
-    display: flex;
-    text-decoration: none;
-    list-style-type: none;
-    margin-left: 50px;
-    align-self: center;
-}
-footer ul li{
-    margin: 0 20px;
-    list-style-type: none;
-    text-decoration: none;
-}
-footer ul li  a{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    position: relative;
-    top: 100px;
-}
-
-#location p, .Countries h4{
-    font-weight: normal;
-    display: inline;
-    position: relative;
-}
-#location .Countries{
-    position: relative;
-    left: 500px;
-    font-size: small;
+header span{
     margin: 0 10px;
 }
-#location p{
-    position: relative;
-    left: 400px;
-    top: 18px;
-    font-weight: bold;
-    font-size: small;
+header span:hover{
+    cursor: pointer;
+    color: red;
 }
+header img{
+    margin: 0 0 0 20px;
+}
+.logos ul{
+    display: flex;
+    list-style-type: none;
+    column-gap: 42px;
+    position: relative;
+    top: 4vw;
+    left: 2vw;
+    /* margin: 0 0 10px 10px; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 30px;
+    text-align: center;
+}
+.logos ul li:hover{
+  color: red;
+  cursor: pointer;
+}
+.logos ul li:hover img{
+    transform: translateY(-4px);
+    color: red;
+    cursor: pointer;
+  } 
+
+logos ul span:hover{
+    transform: translateY(-4px);
+}
+#search{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 3vw;
+    column-gap: 20px;
+}
+#search .search-logo{
+    position: relative;
+    left: 3vw; 
+    top: 1.5vw;
+}
+#search .search-bar input{
+    position: relative;
+    border: 2px solid #fc0;
+    width: 60em;
+    top: 2vw;
+    left: 3vw;
+    padding: 10px;
+    border-radius: 10px;
+}
+#search .search-bar img{
+    position: relative;
+    top: 2vw;
+    right: 4vw;
+    opacity: 0.5;
+    padding: 1px;
+}
+#search .search-bar img:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+#search .search-bar button{
+    position: relative;
+    top: 2vw;
+    right: 3vw;
+    background-color: #fc0;
+    border:2px #fc0 solid;
+    border-start-end-radius: 10px;
+    border-end-end-radius: 10px;
+    padding: 10px;
+    width: 90px;
+    font-stretch: expanded;
+}
+#location ul{
+    display: flex;
+    position: relative;
+    list-style-type: none;
+    top: 28vw;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+#location ul span:hover{
+    cursor: pointer;
+    color: red;
+}
+footer ul{
+    list-style-type: none;
+    text-decoration: none;
+    position: relative;
+    top: 30vw;
+    display: flex;
+    justify-content: center;
+    column-gap: 35px;
+    color: slategray;
+}
+footer ul li:hover{
+    cursor: pointer;
+    color: red;
+}
+@media screen and (max-width:960px){
+    #search{
+        overflow: hidden;
+    }
+    #location{
+        position: relative;
+        top: 20vw;
+    }
+    footer{
+        position: relative;
+        top: 20vw;
+    }
     
-   
+}
