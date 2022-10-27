@@ -1,0 +1,155 @@
+body{
+    box-sizing: border-box;
+    background-color: #b0adad;
+    /* max-width: 100%; */
+    background-image: url(/body-2.jpeg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-left: 0;
+    margin-right: 0;
+    overflow-x: hidden;
+    font-style: italic;
+    
+}
+body ul,li,p{
+    text-decoration: none;
+    list-style-type: none;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: flex-end;
+    padding: 0;
+}
+header nav ul li a:hover{
+    cursor: pointer;
+    color: #362121;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #dddd;
+    font-weight: bold;
+    
+}
+.welcome img{
+    position:relative;
+    height:700px;
+    width: 100%;
+}
+.welcome h1{
+    position: relative;
+    color: #ffff;
+    font-size: 80px;
+    justify-content: center;
+    bottom: 26vw;
+    left: 25vw;
+}
+.welcome p{
+    position: relative;
+    color: #ffff;
+    font-size: 30px;
+    bottom: 28vw;
+    left: 39vw;
+}
+#form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+    bottom: 10vw;
+    left: 80px;
+    margin: 0 450px;
+    justify-content: center;
+    column-gap: 50px;
+    padding: 20px 20px;
+    
+}
+#form .info{
+    border: 2px solid #eeee;
+    padding: 50px;
+    background-color: slategray;
+}
+#form .info h3{
+    margin: 0 100px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+#form .Performance h3{
+    margin: 0 70px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+#form .Performance{
+    grid-column: 2/3;
+    border: 2px solid #eeee;
+    padding: 50px;
+    background-color: slategray;
+}
+#form .info input{
+    margin: 0 0 20px 0;
+}
+#form .Performance input{
+    margin: 0 0 20px 0;
+}
+#form #button{
+    position: relative;
+    justify-content: center;
+    top: 2vw;
+    left: 22vw;
+    padding: 0px;
+}
+#form #button button{
+    border-start-start-radius: 10px;
+    border-end-end-radius: 10px;
+    padding: 10px 20px;
+    border-style: double;
+    border-color: #eeee;
+    color: white;
+    background-color: slategray;
+    font-size: 20px;
+}
+footer{
+    border:2px transparent #b0adad;
+    background-color: #b0adad;
+    display: flex;
+    justify-content: center;
+    column-gap: 500px;
+    margin-bottom: 0;
+    padding: 0;
+    height:200px;
+}
+footer #Contact img{
+    padding: 0;
+    height:30px;
+}
+footer #Contact{
+    display: inline-block;
+    margin: 0 0 190px 0;
+}
+footer #Contact span{
+    position: relative;
+    bottom: 10px;
+}
+footer #Contact ul{
+    position: relative;
+    left: 230px;
+    bottom: 100px;
+}
+footer #Contact ul span{
+    padding: 10px;
+}
+footer #About h4{
+    position: relative;
+    left: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+}
+footer #Contact h4{
+    position: relative;
+    left: 250px;
+    margin-bottom: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+}
