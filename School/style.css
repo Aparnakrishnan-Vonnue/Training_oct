@@ -1,19 +1,23 @@
-/* *{
+*{
     box-sizing: border-box;  
-} */
-body{
+}
+/* body{ */
     
-    background-color: #423f3f;
+    /* background-color: #423f3f; */
     /* max-width: 100%; */
-    background-image: url(/body-2.jpeg) ;
-    background-repeat: no-repeat;
-    background-size:cover;
+    /* 
     margin-left: 0;
     margin-right: 0;
     overflow-x: hidden;
     overflow-y: auto;
     font-style: italic;
     
+} */
+body{
+    background-image: url(/body-2.jpeg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow-x: hidden;
 }
 body ul,li,p{
     text-decoration: none;
@@ -22,51 +26,78 @@ body ul,li,p{
 header nav ul{
     display: flex;
     flex-direction: row;
-    column-gap: 10px;
+    column-gap: 30px;
     justify-content: flex-end;
-    padding: 0;
-}
-header nav ul li a:hover{
-    cursor: pointer;
-    color: #362121;
+    /* padding: 0; */
 }
 header nav ul li a{
     text-decoration: none;
     color: #dddd;
     font-weight: bold;
-    
+}    
+/* 
+
 }
+header nav ul li a:hover{
+    cursor: pointer;
+    color: #362121;
+}
+
 .welcome img{
     position:relative;
     height:700px;
     width: 100%;
 }
-.welcome h1{
-    position: relative;
+ */
+.headings h1{
+    /* position: relative; */
     color: #ffff;
     font-size: 80px;
     justify-content: center;
-    bottom: 26vw;
-    left: 25vw;
+    /* bottom: 26vw; */
+    /* left: 25vw; */
 }
-.welcome p{
-    position: relative;
+.headings p{
+    /* position: relative; */
     color: #ffff;
     font-size: 30px;
-    bottom: 28vw;
-    left: 39vw;
+    /* bottom: 28vw;
+    left: 39vw; */
 }
-/* form */
-#form{
+#Progress_report{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    position: relative;
-    bottom: 10vw;
-    left: 80px;
+    /* grid-template-columns: repeat(2,1fr); */
+    /* position: relative; */
+    /* bottom: 10vw;
+    left: 80px; */
     margin: 0  400px;
     justify-content: center;
     column-gap: 50px;
     padding: 20px auto;
+}
+#Progress_Report .info{
+    border: 2px solid #eeee;
+    padding: 50px;
+    background-color: slategray;
+    position: relative;
+}
+#Progress_Report .Performance{
+    border: 2px solid #eeee;
+    padding: 50px;
+    background-color: slategray;
+    position: relative;
+}
+
+footer #Contact img{
+    padding: 0px;
+    height:50px;
+    /* position: relative;
+    top: 140px;
+    right: 550px; */
+}
+
+/* form */
+/* 
     
 }
 #form .info{
@@ -139,13 +170,13 @@ header nav ul li a{
     cursor: pointer;
     color: black;
 
-}
+} */
 /* footer */
-footer{
+/* footer{
     border:2px transparent #b0adad;
-    background-color: #b0adad;
+    background-color: #b0adad; */
     /* display: flex; */
-    justify-content: center;
+    /* justify-content: center;
     column-gap: 10px;
     margin-bottom: 0;
     padding: 0 100px;
@@ -157,13 +188,7 @@ footer p{
     bottom: 20px;
     left: 200px;
 }
-footer #Contact img{
-    padding: 0;
-    height:30px;
-    position: relative;
-    top: 140px;
-    right: 550px;
-}
+
 footer #Contact img:hover{
     cursor: pointer;
     transform: translateY(-4px);
@@ -174,13 +199,7 @@ footer #Contact{
     position: relative;
     column-gap: 10px;
 }
-footer #Contact span{
-    position: relative;
-    bottom: 10px;
-    position: relative;
-    top: 130px;
-    right: 535px;
-}
+
 footer #Contact ul{
     position: relative;
     left: 230px;
@@ -211,12 +230,12 @@ footer #Contact h4:hover{
 footer #About h4:hover{
     cursor: pointer;
     color: slategray; 
-}
+} */
 /* Media Queries */
-@media screen and (min-width:400px){
+/* @media screen and (max-width:400px){
     .welcome img{
         position: relative;
-        width: 150%;
+        width: 200%;
         height: 50%;
     }
     .welcome h1{
@@ -264,6 +283,158 @@ footer #About h4:hover{
         top: 600px;
         width: 150%;
         height: 100%;
+    } */
+    
+/* } */
+@media screen and (min-width:400px){
+    .headings h1{
+        position: relative;
+        bottom: 55vw;
+        left: 30vw;
+        letter-spacing: 0.7px;
+        text-align: center;
+    }
+    .headings p{
+        position: relative;
+        bottom: 58vw;
+        left: 55vw;
+        font-size: 14px;
+        font-style: italic;
+    }
+    #Progress_Report{
+        display: grid;
+    }
+    header{
+        padding: 10px;
+    }
+    header nav ul {
+        column-gap: 200px;
+        align-items: flex-end;
+        margin: 0 0 20px 0;
+    }
+    header nav ul li{
+        position: relative;
+        left: 150px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: 2px;
+    }
+    #Progress_Report{
+        position: relative;
+        bottom: 30vw;
+        left: 15vw;
+        padding: 80px;
+        border:2px double #ffff
+    }
+    #Progress_Report .Performance{
+        position: relative;
+        top: 15px;
+    }
+    #Progress_Report .Performance h3{
+        text-align: center;
+    }
+    #Progress_Report .info h3{
+        text-align: center;
+    }
+    #Progress_Report #button button{
+        position: relative;
+        top: 40px;
+        left: 310px;
+        padding: 20px;
+        width: 150px;
+        border: 2px solid #ffff;
+        background-color: slategray;
+    }
+    #Progress_Report #button button span{
+        font-size: 20px
+    }
+    #Progress_Report .info input{
+        width: 100%;
+        border: 2px double black;
+        padding: 10px;
+    }
+    #Progress_Report .info select{
+        width: 100%;
+        border: 2px double black;
+        padding: 10px;
+    }
+    #Progress_Report .info label{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    #Progress_Report .info select {
+        font-weight: bold;
+        font-size: 30px;
     }
     
+    #Progress_Report .Performance input{
+        width: 100%;
+        border: 2px double black;
+        padding: 10px;
+    }
+    #Progress_Report .Performance select{
+        width: 100%;
+        border: 2px double black;
+        padding: 10px;
+    }
+    #Progress_Report .Performance label{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    footer{
+    /* padding:0 300px; */
+    background-color: slategrey;
+    background-position-x: center;
+    /* background-size: 600px; */
+    /* max-width:300%; */
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+    /* margin-right: 50px; */
+    width:132%;
+    padding: 60px;
+}
+footer #About{
+    border-bottom: 5px solid #0000;
+}
+footer #About h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+footer #About li{
+    display: flex;
+    font-size: 30px;
+    font-weight: normal;
+    
+}
+footer #Contact span{
+    position: relative;
+    right: 200px;top: 50px;
+}
+footer #Contact h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+footer #Contact li p{
+    display: flex;
+    flex-wrap:nowrap;
+}
+footer #Contact li{
+    font-size: 30px;
+}
+@media screen and (min-width:768px){
+    header nav ul{
+        position: relative;
+        left: 30vw;
+    }
+}
+.welcome h1{
+
+}
+#Progress_Report{
+    border: none;
+}
+#Progress_Report .Performance{
+    
+}
 }
