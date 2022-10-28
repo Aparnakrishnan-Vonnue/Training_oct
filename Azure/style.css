@@ -1,0 +1,21 @@
+header img{
+padding: 0px 0px 12px 0px;
+width: 48px;
+height: 49px;
+box-sizing: border-box;
+}
+header li{
+    list-style-type: none;
+    font-family:'Segoe UI', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    width: 47.03px;
+    height: 24px;
+    color: #1A1A1F;
+    font-size: 18px;
+    margin-left: 12px;
+}
+.mic_azure{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
