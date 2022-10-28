@@ -1,6 +1,9 @@
+/* *{
+    box-sizing: border-box;  
+} */
 body{
-    box-sizing: border-box;
-    background-color: #b0adad;
+    
+    background-color: #423f3f;
     /* max-width: 100%; */
     background-image: url(/body-2.jpeg) ;
     background-repeat: no-repeat;
@@ -8,6 +11,7 @@ body{
     margin-left: 0;
     margin-right: 0;
     overflow-x: hidden;
+    overflow-y: auto;
     font-style: italic;
     
 }
@@ -52,22 +56,27 @@ header nav ul li a{
     bottom: 28vw;
     left: 39vw;
 }
+/* form */
 #form{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     position: relative;
     bottom: 10vw;
     left: 80px;
-    margin: 0 450px;
+    margin: 0  400px;
     justify-content: center;
     column-gap: 50px;
-    padding: 20px 20px;
+    padding: 20px auto;
     
 }
 #form .info{
     border: 2px solid #eeee;
     padding: 50px;
     background-color: slategray;
+    position: relative;
+}
+#form .info:hover{
+    transform: translateY(-3px);
 }
 #form .info h3{
     margin: 0 100px;
@@ -85,11 +94,29 @@ header nav ul li a{
     padding: 50px;
     background-color: slategray;
 }
+#form .Performance:hover{
+    transform: translateY(-3px);
+}
 #form .info input{
     margin: 0 0 20px 0;
+    padding: 10px;
+    border: 3px double slategray;
+    border-start-start-radius: 10px;
+    border-end-end-radius: 10px;
+    
 }
 #form .Performance input{
     margin: 0 0 20px 0;
+    padding: 10px;
+    border: 3px double slategray;
+    border-start-start-radius: 10px;
+    border-end-end-radius: 10px;
+}
+#form .info select{
+    padding: 10px;
+    border: 3px double slategray;
+    border-start-start-radius: 10px;
+    border-end-end-radius: 10px;
 }
 #form #button{
     position: relative;
@@ -99,8 +126,8 @@ header nav ul li a{
     padding: 0px;
 }
 #form #button button{
-    border-start-start-radius: 10px;
-    border-end-end-radius: 10px;
+    border-start-start-radius: 60px;
+    border-end-end-radius: 60px;
     padding: 10px 20px;
     border-style: double;
     border-color: #eeee;
@@ -108,27 +135,51 @@ header nav ul li a{
     background-color: slategray;
     font-size: 20px;
 }
+#form #button button:hover{
+    cursor: pointer;
+    color: black;
+
+}
+/* footer */
 footer{
     border:2px transparent #b0adad;
     background-color: #b0adad;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
-    column-gap: 500px;
+    column-gap: 10px;
     margin-bottom: 0;
-    padding: 0;
+    padding: 0 100px;
     height:200px;
+    column-count: 2;
+}
+footer p{
+    position: relative;
+    bottom: 20px;
+    left: 200px;
 }
 footer #Contact img{
     padding: 0;
     height:30px;
+    position: relative;
+    top: 140px;
+    right: 550px;
+}
+footer #Contact img:hover{
+    cursor: pointer;
+    transform: translateY(-4px);
 }
 footer #Contact{
-    display: inline-block;
+    
     margin: 0 0 190px 0;
+    position: relative;
+    column-gap: 10px;
 }
 footer #Contact span{
     position: relative;
     bottom: 10px;
+    position: relative;
+    top: 130px;
+    right: 535px;
 }
 footer #Contact ul{
     position: relative;
@@ -152,4 +203,67 @@ footer #Contact h4{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     text-decoration: underline;
+}
+footer #Contact h4:hover{
+    cursor: pointer;
+    color: slategray;
+}
+footer #About h4:hover{
+    cursor: pointer;
+    color: slategray; 
+}
+/* Media Queries */
+@media screen and (min-width:400px){
+    .welcome img{
+        position: relative;
+        width: 150%;
+        height: 50%;
+    }
+    .welcome h1{
+        position: relative;
+        bottom: 40vw;
+        left: 35vw;
+        font-size: 60px;
+    }
+
+    .welcome p{
+        position: relative;
+        bottom: 45vw;
+        font-size: 45px;
+    }
+    #form{
+        display: grid;
+        align-content: space-between;
+    }
+    #form .Performance{
+        grid-column: -3/-2;
+        align-content: space-between;
+        position: relative;
+        top: 10vw;
+        right: 6vw;
+        margin: 0 50px;
+        padding: 50px;
+        border: none;
+        width: 150%;
+    }
+    #form .info{
+        margin: 0 50px; 
+        padding: 50px; 
+        border: none;
+        width: 150%;
+        position: relative;
+        right: 6vw;
+    }
+    #form #button button{
+        position: relative;
+        top: 100vw;
+        right: 80vw; 
+    }
+    footer{
+        position: relative;
+        top: 600px;
+        width: 150%;
+        height: 100%;
+    }
+    
 }
