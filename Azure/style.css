@@ -1,3 +1,11 @@
+@font-face{
+    font-family: SeogeUI;
+    src: url(/Font/SegoeUI-Roman-VF_web.woff2);
+}
+body{
+    font-family: SeogeUI;
+    color: #1A1A1F;
+}
 header img{
 padding: 0px 0px 12px 0px;
 width: 48px;
@@ -9,10 +17,11 @@ header li{
     font-family:'Segoe UI', Arial, Helvetica, sans-serif;
     font-weight: 600;
     width: 47.03px;
-    height: 24px;
+    height: 25px;
     color: #1A1A1F;
     font-size: 18px;
     margin-left: 12px;
+
 }
 .mic_azure{
     display: flex;
