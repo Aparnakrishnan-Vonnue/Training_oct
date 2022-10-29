@@ -110,6 +110,7 @@ header .azure{
 }
 #tablet .container_tablet {
     display: flex;
+    column-gap: 30px;
 }
 #tablet .container_tablet li{
 list-style-type: none;
