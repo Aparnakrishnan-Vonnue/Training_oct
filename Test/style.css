@@ -4,6 +4,8 @@
     --secondary:#2b2b2b;
     --teritiary: #b5b5b5;
     --quarternary: #ffe8dc;
+    font-family: GTZirkon;
+    src: url(/font/GTZirkon.ttf);
 }
 /* body{
     font-family: 'GTZirkon';
