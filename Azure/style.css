@@ -11,8 +11,12 @@ body{
     color: #1A1A1F;
     width: 100%;
     margin: 0;
+    font-family: myfont;
     
 }
+
+
+
 
 /* mobile response */
 
@@ -29,6 +33,15 @@ header{
     display: none;
 }
 #content{
+    display: none;
+}
+.tab-main-banner{
+    display: none;
+}
+.lap-main-banner{
+    display: none;
+}
+.lt-main-banner{
     display: none;
 }
 .container{
@@ -149,28 +162,47 @@ header .azure{
     margin: 0 0 9px;
     position: relative;
     text-align: center;
-    padding: 0px 0px 0px 9px;
+    padding: 35px 20px 3px 20px;
 }
 .row .text-heading{
     color: #f4f5f6;
     margin-bottom: 0;
-    font-size: 54px;
+    font-size: 55px;
     font-weight: 600;
     line-height: 1.1;
     margin-top: 0, 0, 12px;
     text-align: center;
     box-sizing: border-box;
-    padding: 0 16px 0 16px;
-    text-align: center;
+    padding: 0px 16px 0 16px;
 }
 .text  p{
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.3;
     text-align: center;
     color: #f8f9fa;
+    box-sizing: border-box;
+    padding:0px 10px 0px 10px ;
 }
-.livebutton .button-primary{
+
+.livebutton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+    list-style-type: none;
+    text-align: center;
+    margin-left: -204px;
+}
+.livebutton button{
+    width:46%;
+    margin-left: 215px;
+    margin-top: 12px;
+}
+
+.livebutton button.start{
+    color: #f8f9fa;
     background-color: #0078d4;
     border: 1px solid #0078d4;
     border-radius: 4px;
@@ -180,11 +212,9 @@ header .azure{
     font-weight: 600;
     padding: 10px 16px;
 }
-.livebutton .button-secondary{
+.livebutton button.free{
     border-color: #50e6ff;
     color: #50e6ff;
-}
-.livebutton a.button-secondary{
     background-color: transparent;
     border: 1px solid #50e6ff;
     border-radius: 4px;
@@ -192,23 +222,35 @@ header .azure{
     font-weight: 600;
     padding: 10px 16px;
 }
-.livebutton{
+button#live-engage-btn{
+    
+    background-color: #0078d4;
+    border: 1px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    position: fixed;
+    z-index: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
+    color: #ffff;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    min-height: 40px;
+    padding: 10px 18px;
+    width: auto;
+    box-shadow: 0-5px 10px rgb(0 0 0 / 14%);
+    vertical-align: baseline;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    width: 153px;
+    top: 767px;
+    left: 159px;
 }
-.livebutton ul li{
-margin-bottom: 12px;
-list-style-type: none;
-}
-.livebutton ul li a{
-    text-decoration: none;
-    color: #f8f9fa;
-}
-.livebutton .list-links a{
-    width: 100%;
-}
+
+
+
 
 /* Tablet view */
 @media screen and (min-width:760px){
@@ -228,6 +270,9 @@ list-style-type: none;
     display: none;
 }
 .lap-container{
+    display: none;
+}
+.lt-main-banner{
     display: none;
 }
 #tablet{
@@ -263,8 +308,7 @@ column-gap:0px
 .menu{
     display: flex;
     justify-content: center;
-    padding: 10px 10px;
-    margin-left: 35px;
+    padding: 10px 31px;
     margin-top: 4px;
 }
 .container_tablet .menu .login a{
@@ -327,6 +371,9 @@ column-gap:0px
     display: flex;
     flex-direction: column;
 }
+.lt-main-banner{
+    display: none;
+}
 .tab-main-banner {
     display: flex;
     justify-content: space-around;
@@ -336,8 +383,10 @@ column-gap:0px
     position: relative;
     background-image: url("https://azurecomcdn.azureedge.net/cvt-768e237bab242087553fa91a9830063c57d81646135250be8b85580b30406df7/images/page/home/ignite-hero-mobile.webp") ;
     background-position: 50% 50%;
+    background-repeat: no-repeat;
     object-fit: cover;
-    height: 517px;
+    height: 440px;
+    background-size: cover;
 }
 .row .preheading{
     color: #50e6ff;
@@ -347,7 +396,6 @@ column-gap:0px
     margin: 0 0 9px;
     position: relative;
     text-align: center;
-    padding: 0px 0px 0px 9px;
 }
 .row .text-heading{
     color: #f4f5f6;
@@ -358,17 +406,35 @@ column-gap:0px
     margin-top: 0, 0, 12px;
     text-align: center;
     box-sizing: border-box;
-    padding: 0 16px 0 16px;
+    padding: 0 0px 0 9px;
     text-align: center;
 }
 .text  p{
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.3;
     text-align: center;
     color: #f8f9fa;
 }
-.tab-livebutton .button-primary{
+
+.tab-livebutton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 47px;
+    list-style-type: none;
+    text-align: center;
+    margin-left: -204px;
+}
+.tab-livebutton button{
+    width:64%;
+    margin-left: 190px;
+    margin-top: 12px;
+}
+
+.tab-livebutton button.start{
+    color: #f8f9fa;
     background-color: #0078d4;
     border: 1px solid #0078d4;
     border-radius: 4px;
@@ -376,38 +442,23 @@ column-gap:0px
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
-    padding: 10px 16px;
+    padding: 12px 16px;
 }
-.tab-livebutton .button-secondary{
+.tab-livebutton button.free{
     border-color: #50e6ff;
     color: #50e6ff;
-}
-.tab-livebutton a.button-secondary{
     background-color: transparent;
     border: 1px solid #50e6ff;
     border-radius: 4px;
     font-size: 14px;
     font-weight: 600;
-    padding: 10px 16px;
+    padding: 12px 16px;
 }
-.tab-livebutton{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* margin-bottom: 315px; */
 }
-.tab-livebutton ul li{
-margin-bottom: 12px;
-list-style-type: none;
-}
-.tab-livebutton ul li a{
-    text-decoration: none;
-    color: #f8f9fa;
-}
-.tab-livebutton .list-links a{
-    width: 100%;
-}
+
+
+
+
 
 
 /* Laptop view */
@@ -421,15 +472,121 @@ list-style-type: none;
 .livebutton{
     display: none;
 }
+.lt-main-banner{
+    display: flex;
+    flex-direction: column;
+}
+.lap-main-banner {
+    display: none;
+}
+.tab-main-banner{
+    display: none;
+}
+.menu button{
+    background: transparent;
+    background-color: #89c402;
+    border: none;
+    padding: 8px 7px;
+    border-radius: 4px;
+    margin-top: -5px;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 500px;
+}
+.row .text-heading{
+    text-align: left;
+}
+.row .preheading{
+    text-align: justify;
+}
+.lt-main-banner {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+    background-image: url("https://azurecomcdn.azureedge.net/cvt-538a3c7c40b7a7048c0b870e4226710e7dec61836528eab8613e75988fb0e9b0/images/page/home/ignite-hero-desktop.webp") ;
+    background-position: 50%;
+    object-fit: cover;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+.lt-main-banner .text p{
+    text-align: left;
+    max-width: 500px;
+}
+.lt-livebutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 47px;
+    list-style-type: none;
+    text-align: center;
+}
+
+
+.lt-livebutton button.start{
+    color: #f8f9fa;
+    background-color: #0078d4;
+    border: 1px solid #0078d4;
+    border-radius: 4px;
+    color: #ffff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 16px;
+    width: 41%;
+}
+.lt-livebutton button.free{
+    border-color: #50e6ff;
+    color: #50e6ff;
+    background-color: transparent;
+    border: 1px solid #50e6ff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 11px 12px;
+    margin: 12px 0 11px 18px;
+    width: 50%;
+    white-space: nowrap;
+}   
+
+
+
+
+
+/* }
+@media screen and (min-width:1091){
+    .menu button{
+        background: transparent;
+        background-color: #89c402;
+        border: none;
+        padding: 8px 7px;
+        border-radius: 4px;
+        margin-top: -5px;
+    }   */
+}
 /* Laptop L view */
-@media screen and (min-width:1081px){
+@media screen and (min-width:1080px){
     .tab-container{
         display: none;
     } 
     .lap-container{
         display: flex;
+        position: relative;
+        background-color: #ffff;
+        box-sizing: inherit;
+        justify-content: space-around;
     }
     .link{
         display: none;
@@ -438,6 +595,12 @@ list-style-type: none;
         display: none;
     }
     .livebutton{
+        display: none;
+    }
+    .tab-main-banner{
+        display: none;
+    }
+    .lt-main-banner{
         display: none;
     }
     #laptop .container_lap {
@@ -470,7 +633,7 @@ list-style-type: none;
         .search-bar input{
             border:none;
             background-color: #f8f9fa;
-            width: 103px;
+            width: 79px;
             height: 27px;
             padding: 0px 0px 0px 0px;
             margin-left: 9px;
@@ -497,7 +660,11 @@ list-style-type: none;
         }
         .microsoft_icon{
             column-gap: 0px;
-            margin-top: 7px;
+            margin-top: 21px;
+            margin-right: 18px;
+        }
+        .microsoft_icon #microsoft-logo{
+            padding: 0px;
         }
         .menu{
             margin-top: 9px;
@@ -509,16 +676,16 @@ list-style-type: none;
         .access{
             display: flex;
             column-gap: 15px;
-            margin-left: 215px;
+            margin-left: 102px;
             padding: 0 9px;
             align-items: center;
         }
     
-        span.green{
+        /* span.green{
             padding: 9px 4px 7px 0px;
             background: #89c402;
             height: 14px;
-            margin-top: -6px;
+            margin-top: -3px;
             border: 1px solid #6f9e02;
             border-radius: 4px;
             color: #1A1A1F;
@@ -526,10 +693,15 @@ list-style-type: none;
             font-weight: 600;
             text-align: center;
             width: 81px;
-        }
+        } */
+    
       
         #content{
             display: flex;
+        }
+        .text p{
+            max-width: 500px;
+            text-align: left;
         }
         #content  .lap_link{
             background-color: #0078d4;
@@ -551,7 +723,75 @@ list-style-type: none;
             letter-spacing: 0.5px;
             font-weight: 600;
         }
+        .lap-main-banner {
+            display: flex;
+            /* justify-content: space-around; */
+            flex-direction: column;
+            align-items: flex-start;
+            object-fit: cover;
+            width: 100%;
+            position: relative;
+            background-image: url("https://azurecomcdn.azureedge.net/cvt-538a3c7c40b7a7048c0b870e4226710e7dec61836528eab8613e75988fb0e9b0/images/page/home/ignite-hero-desktop.webp") ;
+            background-position: 50% 50%;
+            object-fit: cover;
+            height:681px;
+            background-size: cover;
+            row-gap: 36px;
+            padding: 40px 40px;
+        }
+        .lap-livebutton button.start{
+            color: #f8f9fa;
+            background-color: #0078d4;
+            border: 1px solid #0078d4;
+            border-radius: 4px;
+            color: #ffff;
+            /* display: inline-block; */
+            font-size: 14px;
+            font-weight: 600;
+            /* padding: 12px 16px; */
+            width: 273px;
+            height: 64px;
+            margin-left: 18px;
+            margin-right: -54px;
+        }
+        .lap-livebutton{
+            display: flex;
+            width: 280px;
+        }
+        .lap-livebutton button.free{
+            border-color: #50e6ff;
+            color: #50e6ff;
+            background-color: transparent;
+            border: 1px solid #50e6ff;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 11px 12px;
+            margin: 12px 0 11px 18px;
+            width: 279px;
+            white-space: nowrap;
+            height: 61px;
+            margin-left: 13px;
+            position: relative;
+            left: 60px;
+            top: -12px;
+        }
+        .text p{
+            max-width: 672px;
+            text-align: left;
+        }
+
+
+
+
+
         @media screen and (min-width:2500px){
+            .main-banner{
+                display: none;
+            }
+            .livebutton{
+                display: none;
+            }
             .lap-container{
                 display: flex;
                 justify-content: space-evenly;
@@ -559,6 +799,10 @@ list-style-type: none;
             .link{
                 display: none;
             }
+            .lap-main-banner{
+                padding: 38px 583px;
+                row-gap: 31px;
+
+            }
         }
-}
 }
