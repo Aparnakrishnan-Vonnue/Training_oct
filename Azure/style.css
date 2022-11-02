@@ -1,18 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: myfont;
-    src: url(/Font/myfont.woff2);
-  }
-body{
+    src: url('/Font/myfont.woff2') format('woff2');
+}
+
+body {
     color: #1A1A1F;
     width: 100%;
     margin: 0;
     font-family: myfont;
-    
 }
 
 
@@ -20,102 +21,120 @@ body{
 
 /* mobile response */
 
-header{
+header {
     padding: 0px 0px;
 }
-.container_tablet{
+
+.container_tablet {
     display: none;
 }
-.lap-container{
+
+.lap-container {
     display: none;
 }
-.tab-container{
+
+.tab-container {
     display: none;
 }
-#content{
+
+#content {
     display: none;
 }
-.tab-main-banner{
+
+.tab-main-banner {
     display: none;
 }
-.lap-main-banner{
+
+.lap-main-banner {
     display: none;
 }
-.lt-main-banner{
+
+.lt-main-banner {
     display: none;
 }
-.container{
+
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #ffff;
     border: 2px solid #ffff;
     height: 80px;
-    padding: 9px;
+    padding: 15px;
 }
-header .azure{
+
+header .azure {
     display: flex;
     align-items: center;
     column-gap: 7px;
     margin-right: 23px;
 }
-.container .signin{
+
+.container .signin {
     display: flex;
-    width:80px;
+    width: 80px;
     justify-content: flex-end;
-    white-space: nowrap;  
+    white-space: nowrap;
 }
-.container .azure button{
+
+.container .azure button {
     background-color: transparent;
     border: none;
     margin-left: 5px;
     margin-top: 2px;
     width: 19px;
 }
-.container .azure button #hamburger{
+
+.container .azure button #hamburger {
     width: 20px;
     height: 20px;
 }
-.container .azure li{
-   list-style-type: none; 
-   font-size: 18px;
-   font-weight: bold;
-   width: 47.03px;
-   height: 24px;
-   line-height: 22px;
-   margin: 0px 0px 0px 12px;
+
+.container .azure li {
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 600;
+    width: 47.03px;
+    height: 24px;
+    line-height: 22px;
+    margin: 0px 0px 0px 12px;
 }
-.container .signin a{
+
+.container .signin a {
     font-size: 14px;
     font-weight: normal;
     list-style-type: none;
     text-decoration: none;
     color: #1A1A1F;
-    padding:0;
+    padding: 0;
     margin-right: 13px;
     margin-top: -2px;
 }
-.container .signin img{
+
+.container .signin img {
     background: transparent;
     border: none;
     width: 18px;
     margin-right: 40px;
-   
+    line-height: 1;
+
 }
-.microsoft_icon{
+
+.microsoft_icon {
     display: flex;
     padding: 5px;
     margin-top: 4px;
 }
 
-.microsoft_icon #microsoft-logo{
+.microsoft_icon #microsoft-logo {
     width: 32px;
     height: 32.05px;
-    padding: 2px;
+    padding: 0px;
     margin-right: 32px;
     margin-bottom: 6px;
 }
-  .link {
+
+.link {
     background-color: #0078d4;
     background-position: 50% 50%;
     background-size: cover;
@@ -128,20 +147,24 @@ header .azure{
     overflow: hidden;
     max-width: 100%;
 }
- .link li{
+
+.link li {
     list-style-type: none;
     text-decoration: none;
     color: #ffff;
-    text-align:center;
-    font-size:14px;
+    text-align: center;
+    font-size: 14px;
     letter-spacing: 0.5px;
-    font-weight: 400;
-    padding: 17px;
+    font-weight: 600;
+    padding: 12px;
     line-height: 19px;
+    padding-right: 1em;
 }
+
 .link {
     padding: 12px, 0;
 }
+
 .main-banner {
     display: flex;
     justify-content: space-around;
@@ -149,12 +172,13 @@ header .azure{
     object-fit: cover;
     width: 100%;
     position: relative;
-    background-image: url("https://azurecomcdn.azureedge.net/cvt-768e237bab242087553fa91a9830063c57d81646135250be8b85580b30406df7/images/page/home/ignite-hero-mobile.webp") ;
-    background-position: 50% 50%;
+    background-image: url("https://azurecomcdn.azureedge.net/cvt-768e237bab242087553fa91a9830063c57d81646135250be8b85580b30406df7/images/page/home/ignite-hero-mobile.webp");
+    background-position: 26% 87%;
     object-fit: cover;
     height: 700px;
 }
-.row .preheading{
+
+.row .preheading {
     color: #50e6ff;
     font-size: 20px;
     font-weight: 600;
@@ -164,7 +188,8 @@ header .azure{
     text-align: center;
     padding: 35px 20px 3px 20px;
 }
-.row .text-heading{
+
+.row .text-heading {
     color: #f4f5f6;
     margin-bottom: 0;
     font-size: 55px;
@@ -175,17 +200,17 @@ header .azure{
     box-sizing: border-box;
     padding: 0px 16px 0 16px;
 }
-.text  p{
+
+.text p {
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.3;
     text-align: center;
     color: #f8f9fa;
     box-sizing: border-box;
-    padding:0px 10px 0px 10px ;
+    padding: 0px 12px 0px 12px;
 }
 
-.livebutton{
+.livebutton {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -195,13 +220,14 @@ header .azure{
     text-align: center;
     margin-left: -204px;
 }
-.livebutton button{
-    width:46%;
+
+.livebutton button {
+    width: 46%;
     margin-left: 215px;
     margin-top: 12px;
 }
 
-.livebutton button.start{
+.livebutton button.start {
     color: #f8f9fa;
     background-color: #0078d4;
     border: 1px solid #0078d4;
@@ -212,7 +238,8 @@ header .azure{
     font-weight: 600;
     padding: 10px 16px;
 }
-.livebutton button.free{
+
+.livebutton button.free {
     border-color: #50e6ff;
     color: #50e6ff;
     background-color: transparent;
@@ -222,8 +249,9 @@ header .azure{
     font-weight: 600;
     padding: 10px 16px;
 }
-button#live-engage-btn{
-    
+
+button#live-engage-btn {
+
     background-color: #0078d4;
     border: 1px;
     border-top-right-radius: 4px;
@@ -245,215 +273,283 @@ button#live-engage-btn{
     margin-bottom: 0px;
     margin-right: 0px;
     width: 153px;
-    top: 767px;
+    top: 828px;
     left: 159px;
 }
 
-
-
-
-/* Tablet view */
-@media screen and (min-width:760px){
-    .tab-container{
-        display: flex;
-    }
-.container{
-    display: none;
-}
-.main-banner{
-    display: none;
-}
-.livebutton{
-    display: none;
-}
-#content{
-    display: none;
-}
-.lap-container{
-    display: none;
-}
-.lt-main-banner{
-    display: none;
-}
-#tablet{
+.items {
+    display: block;
+    padding: 60px 0;
     width: 100%;
 }
-.link{
-    display: none;
-}
-#tablet .container_tablet {
-    display: flex;
-    column-gap: 20px;
-}
-#tablet .container_tablet li{
-list-style-type: none;
-margin: 2px 6px 11px -17px;
-font-size: 17px;
-font-weight: 600;
-column-gap:0px
-}
-#tablet .container_tablet .menu .search{
-    background: transparent;
-    border: none;
-    width: 18px;
-   
-}
-#tablet .container_tablet .dropdown{
-    font-size: 13px;
-    white-space: nowrap;
-    margin-left: -24px;
-    margin-top: 9px;
-    padding: 8px;
-}
-.menu{
-    display: flex;
-    justify-content: center;
-    padding: 10px 31px;
-    margin-top: 4px;
-}
-.container_tablet .menu .login a{
-    font-size: 13px;
-    font-weight: normal;
-    list-style-type: none;
-    text-decoration: none;
-    color: #1A1A1F;
-    padding:0;
-    white-space: nowrap;
-}
-#tablet_banner{
-    max-width: 100%;
-}
-#tablet_banner .tablet_link {
-    background-color: #0078d4;
+
+.items h2 {
+    background-color: #ffff;
     background-position: 50% 50%;
-    background-size: cover;
-    padding: 0 14px 0 0;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-size: cover;
+    color: #1a1a1f;
     overflow: hidden;
-    height: 49px;
-    max-width: 100%;
-}
- #tablet_banner .tablet_link a{
-    text-decoration: none;
-    color: #ffff;
-    text-align:center;
-    font-size:13px;
-    letter-spacing: 0.5px;
-    font-weight: 600;
-}
-#tablet_banner {
-    padding: 12px, 0;
-}
-.search img{
-    padding: 2px 1px 4px 2px;
-    margin-top: 2px;
-    margin-left: -1px;
-}
-.microsoft_icon #microsoft-logo{
-    width: 24px;
-    height: 27.05px;
-}
-  .region h2{
+    position: relative;
     font-size: 20px;
     font-weight: 600;
-    text-align: center;
     line-height: 1.2;
     margin: 0 0 12px;
+    text-align: center;
+    padding: 0px 29px;
 }
 
-.region{
-    padding: 20px 0 0 0;
-}
-.tab-main-banner{
-    display: flex;
-    flex-direction: column;
-}
-.lt-main-banner{
-    display: none;
-}
-.tab-main-banner {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    object-fit: cover;
-    width: 100%;
-    position: relative;
-    background-image: url("https://azurecomcdn.azureedge.net/cvt-768e237bab242087553fa91a9830063c57d81646135250be8b85580b30406df7/images/page/home/ignite-hero-mobile.webp") ;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    height: 440px;
-    background-size: cover;
-}
-.row .preheading{
-    color: #50e6ff;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.3;
-    margin: 0 0 9px;
-    position: relative;
-    text-align: center;
-}
-.row .text-heading{
-    color: #f4f5f6;
-    margin-bottom: 0;
-    font-size: 54px;
-    font-weight: 600;
-    line-height: 1.1;
-    margin-top: 0, 0, 12px;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 0 0px 0 9px;
-    text-align: center;
-}
-.text  p{
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.3;
-    text-align: center;
-    color: #f8f9fa;
-}
-
-.tab-livebutton{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.grid  {
+    cursor: pointer;
     align-items: center;
-    margin-bottom: 47px;
-    list-style-type: none;
-    text-align: center;
-    margin-left: -204px;
-}
-.tab-livebutton button{
-    width:64%;
-    margin-left: 190px;
-    margin-top: 12px;
+    display: flex;
+    padding: 24px 24px 24px 80px;
+    position: relative;
+    background-color: #ffff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 14%);
+    grid-template-columns: repeat(3,1fr);
 }
 
-.tab-livebutton button.start{
-    color: #f8f9fa;
-    background-color: #0078d4;
-    border: 1px solid #0078d4;
-    border-radius: 4px;
-    color: #ffff;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 12px 16px;
+.grid .card-1{
+    grid-column: 1/2;
 }
-.tab-livebutton button.free{
-    border-color: #50e6ff;
-    color: #50e6ff;
-    background-color: transparent;
-    border: 1px solid #50e6ff;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 12px 16px;
+
+.grid .cards .card-content h2 {
+    font-size: 20px;
 }
+
+/* Tablet view */
+@media screen and (min-width:760px) {
+    .tab-container {
+        display: flex;
+    }
+
+    .container {
+        display: none;
+    }
+
+    .main-banner {
+        display: none;
+    }
+
+    .livebutton {
+        display: none;
+    }
+
+    #content {
+        display: none;
+    }
+
+    .lap-container {
+        display: none;
+    }
+
+    .lt-main-banner {
+        display: none;
+    }
+
+    #tablet {
+        width: 100%;
+    }
+
+    .link {
+        display: none;
+    }
+
+    #tablet .container_tablet {
+        display: flex;
+        column-gap: 20px;
+    }
+
+    #tablet .container_tablet li {
+        list-style-type: none;
+        margin: 2px 6px 11px -17px;
+        font-size: 17px;
+        font-weight: 600;
+        column-gap: 0px
+    }
+
+    #tablet .container_tablet .menu .search {
+        background: transparent;
+        border: none;
+        width: 18px;
+
+    }
+
+    #tablet .container_tablet .dropdown {
+        font-size: 13px;
+        white-space: nowrap;
+        margin-left: -24px;
+        margin-top: 9px;
+        padding: 8px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        padding: 10px 31px;
+        margin-top: 4px;
+    }
+
+    .container_tablet .menu .login a {
+        font-size: 13px;
+        font-weight: normal;
+        list-style-type: none;
+        text-decoration: none;
+        color: #1A1A1F;
+        padding: 0;
+        white-space: nowrap;
+    }
+
+    #tablet_banner {
+        max-width: 100%;
+    }
+
+    #tablet_banner .tablet_link {
+        background-color: #0078d4;
+        background-position: 50% 50%;
+        background-size: cover;
+        padding: 0 14px 0 0;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 49px;
+        max-width: 100%;
+    }
+
+    #tablet_banner .tablet_link a {
+        text-decoration: none;
+        color: #ffff;
+        text-align: center;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+    }
+
+    #tablet_banner {
+        padding: 12px, 0;
+    }
+
+    .search img {
+        padding: 2px 1px 4px 2px;
+        margin-top: 2px;
+        margin-left: -1px;
+    }
+
+    .microsoft_icon #microsoft-logo {
+        width: 24px;
+        height: 27.05px;
+    }
+
+    .region h2 {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.2;
+        margin: 0 0 12px;
+    }
+
+    .region {
+        padding: 20px 0 0 0;
+    }
+
+    .tab-main-banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lt-main-banner {
+        display: none;
+    }
+
+    .tab-main-banner {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        object-fit: cover;
+        width: 100%;
+        position: relative;
+        background-image: url("https://azurecomcdn.azureedge.net/cvt-768e237bab242087553fa91a9830063c57d81646135250be8b85580b30406df7/images/page/home/ignite-hero-mobile.webp");
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        height: 440px;
+        background-size: cover;
+    }
+
+    .row .preheading {
+        color: #50e6ff;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.3;
+        margin: 0 0 9px;
+        position: relative;
+        text-align: center;
+    }
+
+    .row .text-heading {
+        color: #f4f5f6;
+        margin-bottom: 0;
+        font-size: 54px;
+        font-weight: 600;
+        line-height: 1.1;
+        margin-top: 0, 0, 12px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0 0px 0 9px;
+        text-align: center;
+    }
+
+    .text p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.3;
+        text-align: center;
+        color: #f8f9fa;
+    }
+
+    .tab-livebutton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 47px;
+        list-style-type: none;
+        text-align: center;
+        margin-left: -204px;
+    }
+
+    .tab-livebutton button {
+        width: 64%;
+        margin-left: 190px;
+        margin-top: 12px;
+    }
+
+    .tab-livebutton button.start {
+        color: #f8f9fa;
+        background-color: #0078d4;
+        border: 1px solid #0078d4;
+        border-radius: 4px;
+        color: #ffff;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 12px 16px;
+    }
+
+    .tab-livebutton button.free {
+        border-color: #50e6ff;
+        color: #50e6ff;
+        background-color: transparent;
+        border: 1px solid #50e6ff;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 12px 16px;
+    }
 }
 
 
@@ -462,110 +558,122 @@ column-gap:0px
 
 
 /* Laptop view */
-@media screen and (min-width:1024px){
-   .menu{
-    margin-left: 284px;
-   } 
-   .main-banner{
-    display: none;
-}
-.livebutton{
-    display: none;
-}
-.lt-main-banner{
-    display: flex;
-    flex-direction: column;
-}
-.lap-main-banner {
-    display: none;
-}
-.tab-main-banner{
-    display: none;
-}
-.menu button{
-    background: transparent;
-    background-color: #89c402;
-    border: none;
-    padding: 8px 7px;
-    border-radius: 4px;
-    margin-top: -5px;
-}
-.row{
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 500px;
-}
-.row .text-heading{
-    text-align: left;
-}
-.row .preheading{
-    text-align: justify;
-}
-.lt-main-banner {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: flex-start;
-    object-fit: cover;
-    width: 100%;
-    position: relative;
-    background-image: url("https://azurecomcdn.azureedge.net/cvt-538a3c7c40b7a7048c0b870e4226710e7dec61836528eab8613e75988fb0e9b0/images/page/home/ignite-hero-desktop.webp") ;
-    background-position: 50%;
-    object-fit: cover;
-    height: 500px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+@media screen and (min-width:1024px) {
+    .menu {
+        margin-left: 284px;
+    }
 
-.lt-main-banner .text p{
-    text-align: left;
-    max-width: 500px;
-}
-.lt-livebutton{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 47px;
-    list-style-type: none;
-    text-align: center;
-}
+    .main-banner {
+        display: none;
+    }
 
+    .livebutton {
+        display: none;
+    }
 
-.lt-livebutton button.start{
-    color: #f8f9fa;
-    background-color: #0078d4;
-    border: 1px solid #0078d4;
-    border-radius: 4px;
-    color: #ffff;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 12px 16px;
-    width: 41%;
-}
-.lt-livebutton button.free{
-    border-color: #50e6ff;
-    color: #50e6ff;
-    background-color: transparent;
-    border: 1px solid #50e6ff;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 11px 12px;
-    margin: 12px 0 11px 18px;
-    width: 50%;
-    white-space: nowrap;
-}   
+    .lt-main-banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lap-main-banner {
+        display: none;
+    }
+
+    .tab-main-banner {
+        display: none;
+    }
+
+    .menu button {
+        background: transparent;
+        background-color: #89c402;
+        border: none;
+        padding: 8px 7px;
+        border-radius: 4px;
+        margin-top: -5px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 500px;
+    }
+
+    .row .text-heading {
+        text-align: left;
+    }
+
+    .row .preheading {
+        text-align: justify;
+    }
+
+    .lt-main-banner {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-start;
+        object-fit: cover;
+        width: 100%;
+        position: relative;
+        background-image: url("https://azurecomcdn.azureedge.net/cvt-538a3c7c40b7a7048c0b870e4226710e7dec61836528eab8613e75988fb0e9b0/images/page/home/ignite-hero-desktop.webp");
+        background-position: 50%;
+        object-fit: cover;
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .lt-main-banner .text p {
+        text-align: left;
+        max-width: 500px;
+    }
+
+    .lt-livebutton {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 47px;
+        list-style-type: none;
+        text-align: center;
+    }
 
 
+    .lt-livebutton button.start {
+        color: #f8f9fa;
+        background-color: #0078d4;
+        border: 1px solid #0078d4;
+        border-radius: 4px;
+        color: #ffff;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 12px 16px;
+        width: 41%;
+    }
+
+    .lt-livebutton button.free {
+        border-color: #50e6ff;
+        color: #50e6ff;
+        background-color: transparent;
+        border: 1px solid #50e6ff;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 11px 12px;
+        margin: 12px 0 11px 18px;
+        width: 50%;
+        white-space: nowrap;
+    }
 
 
 
-/* }
+
+
+    /* }
 @media screen and (min-width:1091){
     .menu button{
         background: transparent;
@@ -576,33 +684,41 @@ column-gap:0px
         margin-top: -5px;
     }   */
 }
+
 /* Laptop L view */
-@media screen and (min-width:1080px){
-    .tab-container{
+@media screen and (min-width:1080px) {
+    .tab-container {
         display: none;
-    } 
-    .lap-container{
+    }
+
+    .lap-container {
         display: flex;
         position: relative;
         background-color: #ffff;
         box-sizing: inherit;
         justify-content: space-around;
     }
-    .link{
+
+    .link {
         display: none;
     }
-    .main-banner{
+
+    .main-banner {
         display: none;
     }
-    .livebutton{
+
+    .livebutton {
         display: none;
     }
-    .tab-main-banner{
+
+    .tab-main-banner {
         display: none;
     }
-    .lt-main-banner{
+
+    .lt-main-banner {
         display: none;
     }
+
     #laptop .container_lap {
         display: flex;
         padding: 3px;
@@ -611,77 +727,87 @@ column-gap:0px
         margin-top: -18px;
         align-items: center;
     }
-    #laptop .container_lap li{
+
+    #laptop .container_lap li {
         list-style-type: none;
         margin: 2px 8px 11px 1px;
         font-size: 18px;
         font-weight: 600;
-        column-gap:0px
-        }
-        #laptop .container_lap .dropdown{
-            font-size: 13px;
-            white-space: nowrap;
-            margin-left: -24px;
-            margin-top: 14px;
-            padding: 0px;
-            margin-left: -11px;
-        }
-        .search-bar button img{
-            width: 15px;
-            /* position: absolute; */
-        }
-        .search-bar input{
-            border:none;
-            background-color: #f8f9fa;
-            width: 79px;
-            height: 27px;
-            padding: 0px 0px 0px 0px;
-            margin-left: 9px;
-            margin-top: 0px;
-            color: #4c4c51;
-            font-size: 13px;
-        }
-        .search-bar button{
-            border:none;
-            background-color: #f8f9fa;
-            padding: 0px 0px 0px 0px;
-        }
-        .search-bar{
-            border:1px solid #747479;
-            padding: 0px 19px 0px 0px;
-            background-color: #f8f9fa;
-            border-radius: 4px;
-            width: 111px;
-            height: 35px;
-            margin-top: 12px;
-            margin-left: -10px;
-            display: flex;
-            /* position: relative; */
-        }
-        .microsoft_icon{
-            column-gap: 0px;
-            margin-top: 21px;
-            margin-right: 18px;
-        }
-        .microsoft_icon #microsoft-logo{
-            padding: 0px;
-        }
-        .menu{
-            margin-top: 9px;
-            font-size: 13px;
-            padding: 21px 0px;
-            column-gap: 16px;
-            margin-left: -11px;
-        }
-        .access{
-            display: flex;
-            column-gap: 15px;
-            margin-left: 102px;
-            padding: 0 9px;
-            align-items: center;
-        }
-    
-        /* span.green{
+        column-gap: 0px
+    }
+
+    #laptop .container_lap .dropdown {
+        font-size: 13px;
+        white-space: nowrap;
+        margin-left: -24px;
+        margin-top: 14px;
+        padding: 0px;
+        margin-left: -11px;
+    }
+
+    .search-bar button img {
+        width: 15px;
+        /* position: absolute; */
+    }
+
+    .search-bar input {
+        border: none;
+        background-color: #f8f9fa;
+        width: 79px;
+        height: 27px;
+        padding: 0px 0px 0px 0px;
+        margin-left: 9px;
+        margin-top: 0px;
+        color: #4c4c51;
+        font-size: 13px;
+    }
+
+    .search-bar button {
+        border: none;
+        background-color: #f8f9fa;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .search-bar {
+        border: 1px solid #747479;
+        padding: 0px 19px 0px 0px;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        width: 111px;
+        height: 35px;
+        margin-top: 12px;
+        margin-left: -10px;
+        display: flex;
+        /* position: relative; */
+    }
+
+    .microsoft_icon {
+        column-gap: 0px;
+        margin-top: 21px;
+        margin-right: 18px;
+    }
+
+    .microsoft_icon #microsoft-logo {
+        padding: 0px;
+    }
+
+    .menu {
+        margin-top: 9px;
+        font-size: 13px;
+        padding: 21px 0px;
+        column-gap: 16px;
+        margin-left: -11px;
+    }
+
+    .access {
+        display: flex;
+        column-gap: 15px;
+        margin-left: 102px;
+        padding: 0 9px;
+        align-items: center;
+    }
+
+    /* span.green{
             padding: 9px 4px 7px 0px;
             background: #89c402;
             height: 14px;
@@ -694,115 +820,127 @@ column-gap:0px
             text-align: center;
             width: 81px;
         } */
-    
-      
-        #content{
+
+
+    #content {
+        display: flex;
+    }
+
+    .text p {
+        max-width: 500px;
+        text-align: left;
+    }
+
+    #content .lap_link {
+        background-color: #0078d4;
+        background-position: 50% 50%;
+        background-size: cover;
+        padding: 0 14px 0 0;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 49px;
+        width: 100%;
+    }
+
+    #content .lap_link a {
+        text-decoration: none;
+        color: #ffff;
+        text-align: center;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+    }
+
+    .lap-main-banner {
+        display: flex;
+        /* justify-content: space-around; */
+        flex-direction: column;
+        align-items: flex-start;
+        object-fit: cover;
+        width: 100%;
+        position: relative;
+        background-image: url("https://azurecomcdn.azureedge.net/cvt-538a3c7c40b7a7048c0b870e4226710e7dec61836528eab8613e75988fb0e9b0/images/page/home/ignite-hero-desktop.webp");
+        background-position: 50% 50%;
+        object-fit: cover;
+        height: 681px;
+        background-size: cover;
+        row-gap: 36px;
+        padding: 40px 40px;
+    }
+
+    .lap-livebutton button.start {
+        color: #f8f9fa;
+        background-color: #0078d4;
+        border: 1px solid #0078d4;
+        border-radius: 4px;
+        color: #ffff;
+        /* display: inline-block; */
+        font-size: 14px;
+        font-weight: 600;
+        /* padding: 12px 16px; */
+        width: 273px;
+        height: 64px;
+        margin-left: 18px;
+        margin-right: -54px;
+    }
+
+    .lap-livebutton {
+        display: flex;
+        width: 280px;
+    }
+
+    .lap-livebutton button.free {
+        border-color: #50e6ff;
+        color: #50e6ff;
+        background-color: transparent;
+        border: 1px solid #50e6ff;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 11px 12px;
+        margin: 12px 0 11px 18px;
+        width: 279px;
+        white-space: nowrap;
+        height: 61px;
+        margin-left: 13px;
+        position: relative;
+        left: 60px;
+        top: -12px;
+    }
+
+    .text p {
+        max-width: 672px;
+        text-align: left;
+    }
+
+
+
+
+
+    @media screen and (min-width:2500px) {
+        .main-banner {
+            display: none;
+        }
+
+        .livebutton {
+            display: none;
+        }
+
+        .lap-container {
             display: flex;
+            justify-content: space-evenly;
         }
-        .text p{
-            max-width: 500px;
-            text-align: left;
+
+        .link {
+            display: none;
         }
-        #content  .lap_link{
-            background-color: #0078d4;
-            background-position: 50% 50%;
-            background-size: cover;
-            padding: 0 14px 0 0;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 49px;
-            width: 100%;
-        }
-        #content  .lap_link a{
-            text-decoration: none;
-            color: #ffff;
-            text-align:center;
-            font-size:13px;
-            letter-spacing: 0.5px;
-            font-weight: 600;
-        }
+
         .lap-main-banner {
-            display: flex;
-            /* justify-content: space-around; */
-            flex-direction: column;
-            align-items: flex-start;
-            object-fit: cover;
-            width: 100%;
-            position: relative;
-            background-image: url("https://azurecomcdn.azureedge.net/cvt-538a3c7c40b7a7048c0b870e4226710e7dec61836528eab8613e75988fb0e9b0/images/page/home/ignite-hero-desktop.webp") ;
-            background-position: 50% 50%;
-            object-fit: cover;
-            height:681px;
-            background-size: cover;
-            row-gap: 36px;
-            padding: 40px 40px;
-        }
-        .lap-livebutton button.start{
-            color: #f8f9fa;
-            background-color: #0078d4;
-            border: 1px solid #0078d4;
-            border-radius: 4px;
-            color: #ffff;
-            /* display: inline-block; */
-            font-size: 14px;
-            font-weight: 600;
-            /* padding: 12px 16px; */
-            width: 273px;
-            height: 64px;
-            margin-left: 18px;
-            margin-right: -54px;
-        }
-        .lap-livebutton{
-            display: flex;
-            width: 280px;
-        }
-        .lap-livebutton button.free{
-            border-color: #50e6ff;
-            color: #50e6ff;
-            background-color: transparent;
-            border: 1px solid #50e6ff;
-            border-radius: 4px;
-            font-size: 14px;
-            font-weight: 600;
-            padding: 11px 12px;
-            margin: 12px 0 11px 18px;
-            width: 279px;
-            white-space: nowrap;
-            height: 61px;
-            margin-left: 13px;
-            position: relative;
-            left: 60px;
-            top: -12px;
-        }
-        .text p{
-            max-width: 672px;
-            text-align: left;
-        }
+            padding: 38px 583px;
+            row-gap: 31px;
 
-
-
-
-
-        @media screen and (min-width:2500px){
-            .main-banner{
-                display: none;
-            }
-            .livebutton{
-                display: none;
-            }
-            .lap-container{
-                display: flex;
-                justify-content: space-evenly;
-            }
-            .link{
-                display: none;
-            }
-            .lap-main-banner{
-                padding: 38px 583px;
-                row-gap: 31px;
-
-            }
         }
+    }
 }
