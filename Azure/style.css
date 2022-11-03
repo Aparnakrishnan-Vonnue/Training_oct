@@ -58,6 +58,12 @@ header {
 .tab-items{
     display: none;
 }
+.lt-items{
+    display: none;
+}
+.lt-grid{
+    display: none;
+}
 .container {
     display: flex;
     align-items: center;
@@ -400,17 +406,22 @@ button#live-engage-btn {
     text-decoration: none;
     color: #0062ad;
     font-size: 20px;
+    font-weight: 400;
+
 }
 .grid .card-2 .card-content-2 h2 a{
     text-decoration: none;
     color: #0062ad;
     font-size: 20px;
     text-align: left;
+    font-weight: 400;
 }
 .grid .card-3 .card-content-3 h2 a{
     text-decoration: none;
     color: #0062ad;
     font-size: 20px;
+    font-weight: 400;
+
 }
 .grid .card-2 .logo-2 picture img{
     width: 68px;
@@ -475,6 +486,12 @@ button#live-engage-btn {
         display: none;
     }
     .items{
+        display: none;
+    }
+    .lt-items{
+        display: none;
+    }
+    .lt-grid{
         display: none;
     }
 
@@ -675,21 +692,130 @@ button#live-engage-btn {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2,1fr);
+        column-gap: 30px;
+        row-gap: 24px;
+        margin: 0 auto;
+        padding: 0 26px;
+        float: none;
+        /* margin-top: 36px;
+        justify-content: center;
+        max-width: 876px;
+        width: 100%;
+         */
+        /* position: relative; */
     }
     .tab-grid .tab-card-1  {
         grid-column:1/2 ;
         grid-row: 1/3;
     }
-    .tab-grid .tab-card-1 .logo-1 picture img{
-        width: 444px;
-        height: 200px;
+    .tab-grid .tab-card-1 {
+        width: 351px;
+        height:617px;
+        /* position: absolute; */
+        background-image: url("https://azurecomcdn.azureedge.net/cvt-53098ad6e93ddc08ce92302508a04648631cc869947963df1d487eb21792f208/images/page/home/microsoft-ignite-desktop.jpg");
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        padding: 24px;
     }
+   
     .tab-grid .tab-card-3 {
-        grid-column:2/3 ;
-        
+        grid-column:2/3 ;   
+    }  
     
-}
+    .tab-grid .tab-card-1 .tab-card-content-1{
+        bottom: -40%;
+        width: 29%;
+        position: absolute;
+    }
 
+    .tab-grid .tab-card-1 .tab-card-content-1 h2 a{
+        color: #151469;
+        text-decoration: none;
+    }
+    .tab-grid .tab-card-1 .tab-card-content-1 p{
+        color: #702573;
+        margin: 12px 0;
+    }
+    .tab-grid .tab-card-3 .tab-card-content-3 h2 a{
+        color: #0062ad;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+    .tab-grid .tab-card-2{
+        display: flex;
+        background-color: #ffff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        color: #4c4c51;
+        border: 1px solid transparent;
+        height: 296px;
+    }
+    .tab-grid .tab-card-2 .tab-card-content-2 h2 a{
+        text-decoration: none;
+        color: #0062ad;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+    .tab-grid .tab-card-2 .tab-card-content-2 p{
+        color: #4c4c51;
+        margin: 12px 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    .tab-grid .tab-card-3 .tab-card-content-3 p{
+        color: #4c4c51;
+        margin: 12px 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    .tab-grid .tab-card-2 .tab-card-content-2{
+        padding: 7px 16px 0px 31px;
+    }
+    .tab-grid .tab-card-3 .tab-card-content-3{
+        padding: 8px 0 0 52px;
+    }
+    .tab-grid .tab-card-2 .tab-logo-2 img{
+        object-fit: cover;
+        width: 129px;
+        height: 295px;
+    }
+    .tab-grid .tab-card-3{
+        display: flex;
+        background-color: #ffff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        color:#4c4c51 ;
+        border: 1px solid transparent;
+        height: 296px;
+    }
+    .tab-grid .tab-card-3 .tab-logo-3 img{
+        object-fit: cover;
+        width: 129px;
+        height: 295px;
+    }
+.tab-items{
+    display: flex;
+    justify-content: center;
+}
+.tab-items h2{
+    text-align: center;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height:1.2;
+    margin: 0 0 12px;
+}
 
 
 
@@ -731,7 +857,7 @@ button#live-engage-btn {
     .items{
         display: none;
     }
-
+  
     .menu button {
         background: transparent;
         background-color: #89c402;
@@ -875,6 +1001,12 @@ button#live-engage-btn {
         display: none;
     }
     .tab-grid{
+        display: none;
+    }
+    .lt-items{
+        display: none;
+    }
+    .lt-grid{
         display: none;
     }
 
@@ -1112,5 +1244,11 @@ button#live-engage-btn {
         .tab-grid{
             display: none;
         }
-    }
+        .lt-items{
+            display: none;
+        }
+        .lt-grid{
+            display: none;
+        }
+    
 }
