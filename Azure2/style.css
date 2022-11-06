@@ -1018,7 +1018,7 @@ button#live-engage-btn {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2,1fr);
-        column-gap: 30px;
+        column-gap: 30px;AaaaaaaaaaaaaaaaaaaaaAAAaa
         row-gap: 24px;
         margin: 0 auto;
         padding: 0 26px;
@@ -1214,7 +1214,7 @@ button#live-engage-btn {
     }
 
 
-    #laptop .container_lap {
+     .container_lap {
         display: flex;
         padding: 3px;
         column-gap: 20px;
