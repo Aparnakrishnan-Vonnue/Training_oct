@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 @font-face {
@@ -17,7 +18,7 @@ body {
 }
 
 /* mobile response */
-.tab-container {
+.tab-nav {
     display: none;
 }
 .tab-second-grid{
@@ -46,8 +47,10 @@ body {
 .lt-items {
     display: none;
 }
-
-.lap-container {
+.lap-nav{
+    display: none;
+}
+.lap-nav {
     display: none;
 }
 
@@ -66,11 +69,49 @@ body {
 .lt-center-items {
     display: none;
 }
-.tab-second-grid .product-link{
+.nhs{
     display: none;
 }
-
-.container {
+.lt-container{
+    display: none;
+}
+.lt-tablet{
+    display: none;
+}
+.lt-case-study{
+    display: none;
+}
+.lt-idea{
+    display: none;
+}
+.lap-nav {
+    display: none;
+}
+.lt-nhs{
+    display: none;
+}
+.lt-explore{
+    display: none;
+}
+.lt-news{
+    display: none;
+}
+.lt-video{
+    display: none;
+}
+.lt-bullets{
+    display: none;
+}
+.dashboard p{
+    display: none;
+}
+.casestudy-link a{
+    display: none;
+}
+.casestudy-link img{
+    display: none;
+}
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -87,14 +128,14 @@ header .azure {
     margin-right: 23px;
 }
 
-.container .signin {
+.nav .signin {
     display: flex;
     width: 80px;
     justify-content: flex-end;
     white-space: nowrap;
 }
 
-.container .azure button {
+.nav .azure button {
     background-color: transparent;
     border: none;
     margin-left: 5px;
@@ -102,13 +143,13 @@ header .azure {
     width: 19px;
 }
 
-.container .azure button #hamburger {
+.nav .azure button #hamburger {
     width: 20px;
     height: 20px;
     margin-left: 1px;
 }
 
-.container .azure li {
+.nav .azure li {
     list-style-type: none;
     font-size: 17px;
     font-weight: 600;
@@ -119,7 +160,7 @@ header .azure {
     letter-spacing: 1px;
 }
 
-.container .signin a {
+.nav .signin a {
     font-size: 14px;
     font-weight: normal;
     list-style-type: none;
@@ -130,7 +171,7 @@ header .azure {
     margin-top: -2px;
 }
 
-.container .signin img {
+.nav .signin img {
     background: transparent;
     border: none;
     width: 18px;
@@ -168,17 +209,7 @@ header .azure {
 }
 
 .link span img {
-    content: '';
-    height: 12px;
     width: 12px;
-    display: inline-flex;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-left: 0.2em;
-    transition: all .2s ease-in-out;
-    position: relative;
-    bottom: 2px;
-    left: -86px;
 }
 
 .link li {
@@ -480,7 +511,7 @@ button#live-engage-btn {
     padding: 60px 0;
     width: 100%;
         /* display: flex; */
-    margin-left: 6px;
+        margin-top: 30px;
 }
 
 .second-grid h2 {
@@ -496,6 +527,7 @@ button#live-engage-btn {
 .second-grid p {
     font-size: 14px;
     text-align: left;
+
 }
 
 .second-grid button {
@@ -509,18 +541,20 @@ button#live-engage-btn {
     min-height: 60px;
     width: 96%;
     display: flex;
+    margin-left: 5px;
 }
 
 .second-grid button img {
     width: 20px;
     height: 10px;
-    margin-left: 205px;
 }
 
 .css-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3,1fr);
     gap: 18px;
+    margin-top: 30px;
 }
 
 .card-one {
@@ -791,8 +825,13 @@ button#live-engage-btn {
     min-width: 36px;
     width: 36px;
 }
-.tab-second-grid .buttons{
+/* .second-grid .buttons{
     margin-top: 20px;
+} */
+.second-grid .machine-learning{
+    margin-top: 20px;
+    max-width: 100%;
+    padding: 12px 24px 12px 12px;
 }
 .product-link a {
     color: #0062ad;
@@ -842,7 +881,6 @@ button#live-engage-btn {
     font-weight: 600;
     line-height: 1.2;
     text-align: center;
-    margin-top: 50px;
 }
 .case-study img.nhs-logo{
     margin-left: 88px;
@@ -894,7 +932,6 @@ button#live-engage-btn {
 .explore{
     background-color: #f8f9fa;
     margin-top: 100px;
-    height: 740px;
 }
 .explore img{
     height: auto;
@@ -981,67 +1018,20 @@ button#live-engage-btn {
     color: #4c4c51;
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
-.news-container .fleet{
-    background-color: #fff;
-    border-radius: 6px;
-    border-color: black;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    color: #4c4c51;
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-}
-.news-container .automation{
-    background-color: #fff;
-    border-radius: 6px;
-    border-color: black;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    color: #4c4c51;
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-}
-.news-container .global{
-    background-color: #fff;
-    border-radius: 6px;
-    border-color: black;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    color: #4c4c51;
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-}
-.news-container .savings{
-    background-color: #fff;
-    border-radius: 6px;
-    border-color: black;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    color: #4c4c51;
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-}
-.news-container .confidential{
-    background-color: #fff;
-    border-radius: 6px;
-    border-color: black;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    color: #4c4c51;
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
+
+.video{
+    position: relative;
 }
 .video .video-image img{
     height: auto;
     width: 100%;
-    position: absolute;
 }
 .video .playback img{
     height:auto;
     width: 9%;
-    position: relative;
+    position: absolute;
     top: 110px;
     left: 145px;
     background-color: white;
@@ -1058,7 +1048,6 @@ button#live-engage-btn {
     top: 215px;
 }
 button.story{
-      position: relative;   
       top: 260px; 
       background-color: transparent;
       border: 1px solid #0078d4;
@@ -1084,7 +1073,6 @@ button.story a{
     padding-right: 0.9375rem;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-top: 270px;
 }
 .column-grid .column-card-one .picture-one img{
     height: 36px;
@@ -1126,7 +1114,7 @@ button.story a{
     position: relative;
     background-color: #0062ad;
     border-radius: 6px;
-    height: 100px;
+    height: 120px;
 } 
 .column-card-one .column-para-one p{
     color: #f8f9fa;
@@ -1140,11 +1128,19 @@ button.story a{
 .column-card-three .column-para-three p{
     color: #f8f9fa;
 }
+
+.idea{
+    display: none;
+}
+
 /* Tab response */
 @media screen and (min-width:760px) {
-    .tab-container {
+    .tab-nav{
         display: flex;
         justify-content: space-between;
+    }
+    .mobile-container{
+        display: none;
     }
     .second-grid{
         display: none;
@@ -1152,14 +1148,27 @@ button.story a{
     .css-grid{
         display: none;
     }
-    .container {
+    .nav {
         display: none;
     }
-
-    .lap-container {
+    .lt-container{
         display: none;
     }
-
+    .lt-tablet{
+        display: none;
+    }
+    .lt-case-study{
+        display: none;
+    }
+    .lt-idea{
+        display: none;
+    }
+    .lap-nav {
+        display: none;
+    }
+    .lt-nhs{
+        display: none;
+    }
     .main-banner {
         display: none;
     }
@@ -1250,7 +1259,7 @@ button.story a{
         width: 14px;
     }
 
-    .tab-container .menu .login a {
+    .tab-nav .menu .login a {
         font-size: 12px;
         font-weight: normal;
         list-style-type: none;
@@ -1260,7 +1269,7 @@ button.story a{
         white-space: nowrap;
     }
 
-    .tab-container .container_tablet .microsoft_icon #microsoft-logo {
+    .tab-nav .container_tablet .microsoft_icon #microsoft-logo {
         height: 20.05px;
         margin-top: 4px;
         margin-right: 27px;
@@ -1521,6 +1530,7 @@ button.story a{
         margin-left: auto;
         margin-right: auto;
         column-gap: 90px;
+        margin-bottom: 50px;
     }
 
     .list-link .tab-center-items span {
@@ -1548,7 +1558,16 @@ button.story a{
     /* .tab-second-grid{
         display: grid;
     } */
-
+.idea{
+    display: flex;
+    padding: 0 24px;
+    background-color: #f8f9fa;
+}
+.idea h2{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+}
 .tab-second-grid {
     background-color: #f8f9fa;
     background-position: 50% 50%;
@@ -1557,7 +1576,6 @@ button.story a{
     overflow: hidden;
     position: relative;
     display: block;
-    padding: 60px 0;
     width: 100%;
     margin-left: 6px;
 }
@@ -1579,18 +1597,11 @@ button.story a{
 
 .tab-second-grid button {
     align-items: center;
-    background-color: #ffff;
+    background-color: #f8f9fa;
     border: none;
-    border-bottom: 1px solid transparent;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
     justify-content: space-between;
-    margin: 0 0 12px;
     min-height: 60px;
-    padding: 12px 0px 12px 12px;
-    width: 96%;
-    margin-left: 2px;
-    margin-top: 7px;
+    margin-left: 2px
 }
 
 .tab-second-grid button img {
@@ -1602,9 +1613,10 @@ button.story a{
 .css-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
     gap: 18px;
     margin-top: 20px;
+    margin-left: 16px;
 }
 
 .card-one {
@@ -1618,7 +1630,7 @@ button.story a{
     border-radius: 6px;
     box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
     color: #4c4c51;
-
+    margin-bottom: 10px;
     position: relative;
     border: 1px solid transparent;
     column-gap: 10px;
@@ -1878,24 +1890,28 @@ button.story a{
     display: flex;
     flex-direction: row-reverse;
 }
-.tab-second-grid .sub-grid{
+
+.tab-container .buttons{
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
+    white-space: nowrap;   
 }
-.tab-second-grid .buttons{
-    display: flex;
-    flex-direction: column;
-    
+.tab-container .buttons .popular-button{
+    background-color: transparent;
+    border-left-color: #0062ad;
+    color: #1a1a1f;
+    font-weight: 600;
+    border-left: 4px solid #0062ad;
 }
 
-.product-link a {
+.tab-container  .product-link a {
     color: #0062ad;
     text-align: center;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
     padding-right: 1em;
-    position: relative;
 }
 
 .product-link img {
@@ -1907,26 +1923,148 @@ button.story a{
     text-align: center;
     margin-bottom: 26px;
 }
-.tablet{
-    border-radius: 12px;
-    padding: 3%;
-    box-shadow: 0 10px 20px rgb(0 0 0 / 14%);
-    background-color: #000;
-    
+.tab-case-study{
+    background-color: #f8f9fa;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
 }
-.tablet img{
+.nhs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nhs img{
+    width: 123px;
+}
+.nhs h2{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.tab-case-study img.nhs-logo{
+    margin-left: 88px;
+    margin-top: 20px;
+}
+.tab-case-study img.banner{
     height: auto;
-    max-width: 100%; 
-    margin: 2.797px 24px 0px 0px;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0px;
 }
-/* .tab-second-grid{
-    display: none;  */
+.tab-case-study p{
+    color: #242429;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 20px 30px 9px 28px;
 }
+.tab-casestudy-link a{
+    text-decoration: none;
+    color: #0062ad;
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 1em;
+    position: relative;
+}
+.tab-casestudy-link img{
+    width: 12px;
+}
+.tab-casestudy-link{
+    margin-left: 30px;
+    margin-top: 17px;
+}
+.tab-case-study h1{
+    text-align: center;
+}
+.tab-case-study .bullets{
+    display: flex;
+    justify-content: center;
+}
+.tab-case-study .explore{
+    display: flex;
+    justify-content: flex-end;
+}
+.tab-case-study .explore .explore-sub{
+    display: flex;
+    flex-direction: column;
+}
+.explore img{
+    height: auto;
+    max-width: 100%;
+    margin-top: 75px;
+}
+.explore h1{
+    margin-top: 30px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+
+}
+.explore button.tools{
+    background-color: transparent;
+    border: 1px solid #0078d4;
+    border-radius: 4px;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+.explore button.tools a{
+    color: #0062ad;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 16px;
+    width: 100%;
+    text-decoration: none;
+}
+.tab-case-study .news-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.news-container .fleet{
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    border-radius: 6px;
+}
+.news-container .automation{
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    border-radius: 6px;
+}
+.news-container .compute{
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    border-radius: 6px;
+}
+.news-container .global{
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    border-radius: 6px;
+}
+.news-container .confidential{
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    border-radius: 6px;
+}
+.news .discover h2{
+    text-align: center;
+}
+}
+
+
+
+
 @media screen and (min-width:760px){
     .tab-second-grid{
         display: flex;
     }
 }
+
+
+
     @media screen and (min-width:769px) {
         .row .preheading {
             text-align: left;
@@ -1963,16 +2101,22 @@ button.story a{
     }
 
 
+
+
+
+
 /* laptop-1 */
 @media screen and (min-width:961px) {
-    .container {
+    .nav {
         display: none;
     }
 
     .tab-main-banner {
         display: none;
     }
-
+    .tab-case-study{
+        display: none;
+    }
     /* .tab-items{
         display: none;
     } */
@@ -1989,7 +2133,9 @@ button.story a{
     .lt-items {
         display: flex;
     }
-
+    .center-items{
+        display: none;
+    }
     .grid {
         display: none;
     }
@@ -2010,7 +2156,25 @@ button.story a{
     .lt-center-items {
         display: flex;
     }
-
+    .nhs{
+        display: none;
+    }
+    .tab-nav{
+        display: flex;
+    }
+    .dashboard p{
+        display: flex;
+    }
+    .casestudy-link a{
+        display: flex;
+        color: #ffff;
+    }
+    .casestudy-link img{
+        display: flex;
+    }
+    .casestudy-link{
+        display: flex;
+    }
     .menu button {
         background: transparent;
         background-color: #89c402;
@@ -2116,7 +2280,7 @@ button.story a{
         row-gap: 24px;
     }
 
-    .list-link .lt-center-items {
+    .lt-center-items {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -2128,12 +2292,12 @@ button.story a{
         column-gap: 40px;
     }
 
-    .list-link .lt-center-items span {
+    .lt-center-items span {
         width: 80px;
         max-width: 100%;
     }
 
-    .list-link .lt-center-items button {
+    .lt-center-items button {
         background-color: transparent;
         border: 1px solid #0078d4;
         border-radius: 4px;
@@ -2142,7 +2306,7 @@ button.story a{
         max-width: 100%;
     }
 
-    .list-link .lt-center-items button a {
+     .lt-center-items button a {
         text-decoration: none;
         color: #0062ad;
         display: inline-block;
@@ -2150,11 +2314,423 @@ button.story a{
         font-weight: 600;
         padding: 10px 16px;
     }
+    .lt-center-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 50px 0;
+    }
+    .idea{
+        display: none;
+    }
+    .tab-container{
+        display: none;
+    }
+    .tab-second-grid{
+        display: none;
+    }
+    .lt-css-grid{
+        display: none;
+    }
+    .lt-css-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 18px;
+        margin-top: 20px;
+        margin-left: 16px;
+    }
+    
+    .lt-css-grid .card-one {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        max-height: 100%;
+        justify-content: space-between;
+        text-align: center;
+        background-color: #ffff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        color: #4c4c51;
+        margin-bottom: 10px;
+        position: relative;
+        border: 1px solid transparent;
+        column-gap: 10px;
+    }
+    
+    .lt-css-grid .css-card-one {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .lt-css-grid .css-card-one p {
+        text-align: center;
+        margin: 12px 0;
+        font-size: 14px;
+        color: #4c4c51;
+    
+    }
+    
+    .lt-css-grid .css-card-two p {
+        text-align: center;
+        font-size: 14px;
+        color: #4c4c51;
+        margin-top: 10px;
+    
+    }
+    
+    .lt-css-grid .css-card-three p {
+        text-align: center;
+        font-size: 14px;
+        color: #4c4c51;
+        margin-top: 11px;
+    }
+    
+    .lt-css-grid .css-card-four p {
+        text-align: center;
+        font-size: 14px;
+        color: #4c4c51;
+        margin-top: 20px;
+    
+    }
+    
+    .lt-css-grid .css-card-five p {
+        text-align: center;
+        font-size: 14px;
+        color: #4c4c51;
+        margin-top: 10px;
+    }
+    
+    .lt-css-grid .css-card-six p {
+        text-align: center;
+        font-size: 14px;
+        color: #4c4c51;
+        margin-top: 10px;
+    }
+    
+    .lt-css-grid .card-one h6 {
+        color: #0062ad;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.3;
+        margin: 0 0 9px;
+        margin-top: 29px;
+    }
+    
+    .lt-css-grid .card-two h6 {
+        color: #0062ad;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.3;
+        margin: 0 0 9px;
+        margin-top: 29px;
+    }
+    
+    .lt-css-grid .card-three h6 {
+        color: #0062ad;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.3;
+        margin: 0 0 9px;
+        margin-top: 24px;
+    }
+    
+    .lt-css-grid .card-four h6 {
+        color: #0062ad;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.3;
+        margin: 0 0 9px;
+        margin-top: 50px;
+    }
+    
+    .lt-css-grid .card-five h6 {
+        color: #0062ad;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.3;
+        margin: 0 0 9px;
+        margin-top: 29px;
+    }
+    
+    .lt-css-grid .card-six h6 {
+        color: #0062ad;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.3;
+        margin: 0 0 9px;
+        margin-top: 50px;
+    }
+    
+    .lt-css-grid .card-two {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        max-height: 100%;
+        text-align: center;
+        background-color: #ffff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        color: #4c4c51;
+        padding: 24px;
+        position: relative;
+        border: 1px solid transparent;
+        margin-right: 20px;
+    }
+    
+    .lt-css-grid .css-card-two {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .lt-css-grid .card-three {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        max-height: 100%;
+        text-align: center;
+        background-color: #ffff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        color: #4c4c51;
+        padding: 24px;
+        position: relative;
+        border: 1px solid transparent;
+        margin-left: 10px;
+    }
+    
+    .lt-css-grid .css-card-three {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .lt-css-grid .card-four {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        max-height: 100%;
+        text-align: center;
+        background-color: #ffff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        color: #4c4c51;
+        padding: 24px;
+        position: relative;
+        border: 1px solid transparent;
+        margin-right: 20px;
+    }
+    
+    .lt-css-grid .css-card-four {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .lt-css-grid .card-five {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        max-height: 100%;
+        text-align: center;
+        background-color: #ffff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        color: #4c4c51;
+        padding: 24px;
+        position: relative;
+        border: 1px solid transparent;
+        margin-left: 10px;
+    }
+    
+    .lt-css-grid .css-card-five {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .lt-css-grid .card-six {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        max-height: 100%;
+        text-align: center;
+        background-color: #ffff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        color: #4c4c51;
+        padding: 24px;
+        position: relative;
+        border: 1px solid transparent;
+        margin-right: 20px;
+    }
+    
+    .lt-css-grid .css-card-six {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .lt-css-grid .css-card-one img {
+        align-self: center;
+        height: 36px;
+        min-width: 36px;
+        width: 36px;
+    }
+    
+    .lt-css-grid .css-card-two img {
+        align-self: center;
+        height: 36px;
+        min-width: 36px;
+        width: 36px;
+    }
+    
+    .lt-css-grid .css-card-three img {
+        align-self: center;
+        height: 36px;
+        min-width: 36px;
+        width: 36px;
+    }
+    
+    .lt-css-grid .css-card-four img {
+        align-self: center;
+        height: 36px;
+        min-width: 36px;
+        width: 36px;
+    }
+    
+    .lt-css-grid .css-card-five img {
+        align-self: center;
+        height: 36px;
+        min-width: 36px;
+        width: 36px;
+    }
+    
+    .lt-css-grid .css-card-six img {
+        align-self: center;
+        height: 36px;
+        min-width: 36px;
+        width: 36px;
+    } 
+    .lt-idea{
+        margin-left: 10px;
+        margin-bottom: 25px;
+    }
+    .lt-container .lt-buttons{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        white-space: nowrap; 
+        align-items: flex-start;
+        background-color: #f8f9fa;  
+    }
+   
+    
+    .lt-second-grid button.popular {
+        display: flex;
+        align-items: flex-start;
+        background-color: #f8f9fa;
+        border: none;
+        justify-content: space-around;
+        min-height: 60px;
+        margin-left: 2px
+    }
+    .lt-container{
+        display: flex;
+    }
+    .lt-tablet{
+        display:flex ;
+    }
+    .lt-case-study{
+        display: flex;
+        flex-direction: column;
+    }
+    .lt-idea{
+        display: flex;
+    }
+    .lap-nav {
+        display: flex;
+    }
+    .lt-nhs{
+        display: flex;
+    }
+    .lap-nav{
+        display: none;
+    }
+    .elements{
+        display: flex;
+        overflow: hidden;
+        background-color: #f8f9fa;
+    }
+    .lt-second-grid{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: 20px;
+    }
+    .lt-css-grid{
+        margin-left: 57px;
+        margin-bottom: 40px;
+    }
+    .lt-container  .popular-button{
+        background-color: transparent;
+        border-left-color: #0062ad;
+        color: #1a1a1f;
+        font-weight: 600;
+        border-left: 4px solid #0062ad;
+
+    }
+    .lt-tablet img{
+        border: 4px solid #000;
+        height: 530px;
+        padding: 15px;
+        background-color: #000;
+        border-radius: 6px;
+        margin-left: 100px;
+    }
+    .lt-nhs{
+        display: flex;
+        flex-direction: column;
+    }
+    .lt-nhs h2{
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 19px;
+    }
+    .lt-nhs .logo-section{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    
+    .lt-case-study img{
+        margin-bottom: -459px;
+        width: 108%;
+        transform: translateX(-87px);
+    }
+    .dashboard{
+        position: absolute;
+        background-color: rgba(26,26,31,.94);
+        color: #ffff;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.3;
+        margin: 200px 581px 23px 16px;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        padding: 24px;
+        border: 1px solid transparent;
+    }
+    .lt-case-study .casestudy-link{
+        position: absolute;
+        margin: 356px 581px 23px 42px;
+    }
+     .casestudy-link a{
+        text-decoration: underline;
+    }
+    .lt-explore{
+        display: flex;
+    }
 }
 
 /* laptop view */
 @media screen and (min-width:1440px) {
-    .tab-container {
+    .tab-nav{
         display: none;
     }
 
@@ -2166,7 +2742,7 @@ button.story a{
         display: flex;
     }
 
-    .container {
+    .nav {
         display: none;
     }
 
@@ -2174,7 +2750,7 @@ button.story a{
         display: flex;
     } */
 
-    .lap-container {
+    .lap-nav {
         display: flex;
         position: relative;
         background-color: #ffff;
@@ -2277,7 +2853,7 @@ button.story a{
         align-items: center;
     }
 
-    .lap-container .menu button {
+    .lap-nav .menu button {
         background-color: #89c402;
         border: 1px solid #6f9e02;
         border-radius: 4px;
@@ -2298,19 +2874,43 @@ button.story a{
     .lt-grid .card-1 .content-1 {
         margin-top: 145px;
     }
+    .lt-second-grid{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .lt-container .lt-tablet img{
+        height: 530px;
+        max-width: none;
+        border: 4px solid;
+        background-color: #000;
+        border-radius: 6px;
+    }
+    .lt-case-study{
+        display: flex;
+        flex-direction: column;
+    }
+    /* .lt-nhs{
+        display: flex;
+        flex-direction: column;
+    }
+    img.nhs-logo{
+        width: 8%;
+    } */
 }
+
+
 
 /* Desktop response */
 @media screen and(min-width:2500px) {
-    .container {
+    .nav {
         display: none;
     }
 
-    .tab-container {
+    .tab-nav {
         display: none;
     }
 
-    .lap-container {
+    .lap-nav {
         display: flex;
         justify-content: space-evenly;
     }
