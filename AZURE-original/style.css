@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid red;
     
 }
 
@@ -298,6 +299,7 @@ header .azure {
     padding: 0px 0px 0px 3px;
 }
 
+
 .text p {
     font-size: 18px;
     font-weight: 400;
@@ -315,14 +317,12 @@ header .azure {
     margin-bottom: 100px;
     list-style-type: none;
     text-align: center;
-    margin-left: -204px;
     margin-top: 29px;
 }
 
 .livebutton button {
-    width: 48%;
+    width: 80%;
     height: 45px;
-    margin-left: 215px;
     margin-top: 12px;
 }
 
@@ -531,16 +531,9 @@ button#live-engage-btn {
 
 .second-grid {
     background-color: #f8f9fa;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
     color: #4c4c51;
-    overflow: hidden;
-    position: relative;
-    display: block;
-    padding: 60px 14px;
-    width: 100%;
-        /* display: flex; */
-        margin-top: 30px;
+    margin-top: 30px;
+    padding: 15px 15px;
 }
 
 .second-grid h2 {
@@ -549,8 +542,7 @@ button#live-engage-btn {
     font-size: 20px;
     font-weight: 600;
     line-height: 1.2;
-    margin: 0 0 12px;
-    padding: 0 16px;
+    margin: 0 0 21px;
 }
 
 .second-grid p {
@@ -566,11 +558,11 @@ button#live-engage-btn {
     border-bottom: 1px solid transparent;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    justify-content: space-between;
-    min-height: 60px;
     width: 100%;
     display: flex;
     padding: 0 10px;
+    min-height: 60px;
+    padding: 12px 24px 12px 12px;
 }
 
 .second-grid button img {
@@ -584,7 +576,6 @@ button#live-engage-btn {
     grid-template-rows: repeat(3,1fr);
     gap: 18px;
     margin-top: 30px;
-    justify-content: center;
 }
 
 .card-one {
@@ -858,10 +849,12 @@ button#live-engage-btn {
 /* .second-grid .buttons{
     margin-top: 20px;
 } */
-.second-grid .machine-learning{
+.second-grid button.machine-learning{
     margin-top: 20px;
-    max-width: 100%;
-    padding: 12px 24px 12px 12px;
+    /* padding: 12px 24px 12px 12px; */
+    display: flex;
+    justify-content: space-between;
+    
 }
 .product-link a {
     color: #0062ad;
@@ -1012,6 +1005,7 @@ button#live-engage-btn {
     column-gap: 30px;
     row-gap: 24px;
     overflow: scroll;
+    
 }
 .news-container .card-image .image picture img{
     /* position: absolute; */
@@ -1021,6 +1015,10 @@ button#live-engage-btn {
     height: 100%;
     object-fit: cover;
     border-radius: 4px;
+}
+.news-container .arc{
+    padding: 12px 6px 36px;
+    
 }
 .news-container .card-image{
     display: flex;
@@ -1053,7 +1051,8 @@ button#live-engage-btn {
     /* margin-left: 20px; */
 }
 
-.video{
+.mobile-container .video{
+    /* flex-direction: column; */
     position: relative;
     
 }
@@ -1082,8 +1081,8 @@ button#live-engage-btn {
     font-weight: 400;
     line-height: 1.3;
     margin: 0px 0px 9px;
-    position: relative;
-    top: 215px;
+    background-color: #f8f9fa;
+    padding: 24px;
 }
 button.tab-story{
     display: none;
@@ -1274,11 +1273,8 @@ button.story a{
     line-height: 1.2;
     font-size: 14px;
     padding: 5px;
-    height: 36px;
-    width: 100%;
     border: 1px solid #747479;
     background-color: #fff;
-    width: 60%;
 }
 
 #footer  .footer-final ul.about{
@@ -1544,19 +1540,18 @@ button.story a{
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-        object-fit: cover;
         width: 100%;
         position: relative;
-        background-image: url("https://azurecomcdn.azureedge.net/cvt-768e237bab242087553fa91a9830063c57d81646135250be8b85580b30406df7/images/page/home/ignite-hero-mobile.webp");
+        background-image: url("/Assets/december-hero-mobile.png");
         background-position: 50% 50%;
         background-repeat: no-repeat;
         object-fit: cover;
-        height: 440px;
         background-size: cover;
+        padding: 15px 15px;
     }
 
     .row .preheading {
-        color: #50e6ff;
+        color: #0078d4;
         font-size: 20px;
         font-weight: 600;
         line-height: 1.3;
@@ -1566,10 +1561,10 @@ button.story a{
     }
 
     .row .text-heading {
-        color: #f4f5f6;
+        color: #000;
         margin-bottom: 0;
         font-size: 54px;
-        font-weight: 600;
+        /* font-weight: 600; */
         line-height: 1.1;
         margin-top: 0, 0, 12px;
         text-align: center;
@@ -1577,29 +1572,29 @@ button.story a{
         padding: 0 0px 0 9px;
         text-align: center;
     }
+  
 
     .text p {
         font-size: 18px;
         font-weight: 400;
         line-height: 1.3;
         text-align: center;
-        color: #f8f9fa;
+        color: #4c4c51;
     }
 
     .tab-livebutton {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         margin-bottom: 47px;
         list-style-type: none;
         text-align: center;
-        margin-left: -204px;
+
     }
 
     .tab-livebutton button {
-        width: 64%;
-        margin-left: 190px;
+        width: 80%;
         margin-top: 12px;
     }
 
@@ -1639,83 +1634,65 @@ button.story a{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 30px;
         row-gap: 24px;
-        margin-top: 50px;
+        margin-top: 36px;
+        padding: 15px 15px;
     }
 
     .tab-center-items {
         display: flex;
     }
 
-    .card-1 {
+    .tab-grid .card-1 {
         grid-row: 1/3;
-        background-image: url("https://azurecomcdn.azureedge.net/cvt-53098ad6e93ddc08ce92302508a04648631cc869947963df1d487eb21792f208/images/page/home/microsoft-ignite-desktop.jpg");
+        background: url("/Assets/ez-optimize-desktop.jpg");
         height: 100%;
         background-repeat: no-repeat;
-        background-position: inherit;
         max-height: 100%;
         position: relative;
+        padding: 15px 15px;
+        background-size: cover;
+        background-position: 0% 50%;
     }
 
-    .card-2 {
+    .tab-grid .card-2 {
         background-color: #ffff;
         border-radius: 6px;
         box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
         color: #4c4c51;
-        padding: 24px;
+        padding: 24px 24px 24px 156px;
         border: 1px solid transparent;
+        margin: 0;
+        gap: 20px;
     }
 
-    .card-3 {
-        background-color: #ffff;
-        border-radius: 6px;
-        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-        color: #4c4c51;
-        padding: 24px;
-        border: 1px solid transparent;
-    }
 
     .tab-grid .card-1 .card-content-1 {
         position: absolute;
-        bottom: 30%;
-        width: 65%;
+        bottom: 7%;   
     }
 
-    .tab-grid .card-2 .card-content-2 {
-        padding: 0px 32px 0px 85px;
-    }
-
-    .tab-grid .card-3 .card-content-3 {
-        padding: 0px 62px 0px 80px;
-    }
 
     .tab-grid .card-1 .card-content-1 h2 a {
-        color: #151469;
-        font-size: 20px;
+        color: #0062ad;
+        font-size: 24px;
     }
 
     .tab-grid .card-1 .card-content-1 p {
-        color: #702573;
+        color: #1a1a1f;
         margin: 12px 0;
-        padding: 0 0 0 12px;
-        /* width: 258px; */
 
     }
 
     .tab-grid .card-2 .logo-2 img {
+        object-fit: cover;
+        height: 83%;
+        width: 64%;
+        top: 11%;
+        left:-10%;
         position: absolute;
-        left: -1px;
-        width: 21%;
-        height: 101%;
-        top: 0px;
+        max-width: 100%;
     }
 
-    .tab-grid .card-3 .logo-3 img {
-        position: absolute;
-        left: -1px;
-        width: 21%;
-        height: 101%;
-        top: 0px;
-    }
 
     .tab-grid .card-2 .logo-2 picture img {
         height: 100%;
@@ -1732,7 +1709,7 @@ button.story a{
         margin-left: auto;
         margin-right: auto;
         column-gap: 90px;
-        margin-bottom: 50px;
+        padding: 0 0 60px 0;
     }
 
     .list-link .tab-center-items span {
@@ -1764,6 +1741,7 @@ button.story a{
     display: flex;
     padding: 0 24px;
     background-color: #f8f9fa;
+    padding-top: 60px;
 }
 .idea h2{
     font-size: 24px;
@@ -2197,12 +2175,12 @@ button.story a{
     justify-content: flex-end;
     padding: 36px 36px;
     background-color: #f8f9fa;
-    padding: 60px 0;
 }
 .tab-explore .explore-sub{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 36px;
 }
 .tab-explore .accelerate img{
     height: auto;
@@ -2237,6 +2215,7 @@ button.story a{
 }
 .tab-news{
     padding: 84px 0;
+    gap: 25px;
 }
 .tab-news-container .card-image{
     background-color: #fff;
@@ -2347,10 +2326,10 @@ button.story a{
     height: 100%;
     width: 100%;
 }
-.video {
+/* .video {
     display: none;
-    position: relative;
-}
+    
+} */
 .tab-video{
     display: inline;
 }
@@ -2647,7 +2626,8 @@ button.tab-story a{
 
     .row .text-heading {
         text-align: left;
-        width: 74%;
+        width: 121%;
+        max-width: 200%;
     }
 
     .row .preheading {
@@ -2666,10 +2646,10 @@ button.tab-story a{
         object-fit: cover;
         width: 100%;
         position: relative;
-        background-image: url("https://azurecomcdn.azureedge.net/cvt-538a3c7c40b7a7048c0b870e4226710e7dec61836528eab8613e75988fb0e9b0/images/page/home/ignite-hero-desktop.webp");
+        background-image: url("/Assets/december-hero-desktop.webp");
         background-position: 50%;
         object-fit: cover;
-        height: 500px;
+        height: 765px;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -2705,10 +2685,10 @@ button.tab-story a{
     }
 
     .lt-livebutton button.free {
-        border-color: #50e6ff;
-        color: #50e6ff;
+        border-color: #000;
+        color: #000;
         background-color: transparent;
-        border: 1px solid #50e6ff;
+        border: 1px solid #000;
         border-radius: 4px;
         font-size: 14px;
         font-weight: 600;
@@ -3532,10 +3512,37 @@ button.tab-story a{
     .lt-footer-grid{
         display: grid;
         grid-template-columns: repeat(6,1fr);
+        margin-top: 36px;
+        column-gap: 24px;
+        max-width: 1310px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 18px;
+        padding-right: 18px;
     }
+  
     .lt-footer-grid .azure-details{
         display: flex;
         flex-direction: column;
+    }
+    .lt-footer-grid .azure-details h3{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+    .lt-footer-grid .azure-details .azure-details-sub{
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+    }
+    .lt-footer-grid .azure-details .azure-details-sub span{
+        color: #1a1a1f;
+        display: block;
+        padding: 2px 0;
+        flex-shrink: 0;
+        border: 0;
+        font-size: 12px;
     }
 }
 
