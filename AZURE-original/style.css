@@ -240,7 +240,12 @@ header .azure {
     margin-top: 11px;
     margin-left: 111px;
 }
-
+.tab-link{
+    display: none;
+}
+.lt-link{
+    display: none;
+}
 .link li {
     list-style-type: none;
     text-decoration: none;
@@ -1202,7 +1207,7 @@ button.story a{
     background-color: #eaebec;
     color: #4c4c51;
     padding: 12px;
-    margin-left: 12px;
+    margin-left: 20px;
 }
 
 #footer footer .footer-container .footer-nav-bar .navigation p{
@@ -1281,7 +1286,7 @@ button.story a{
     padding: 5px;
     border: 1px solid #747479;
     background-color: #fff;
-    width: 15%;
+    width: 17%;
 }
 
 #footer  .footer-final ul.about{
@@ -1358,6 +1363,9 @@ button.story a{
     }
     .lt-case-study{
         display: none;
+    }
+    .tab-casestudy-link{
+        display: flex;
     }
     .lt-idea{
         display: none;
@@ -1455,11 +1463,9 @@ button.story a{
 
     .menu {
         display: flex;
-        justify-content: center;
         padding: 13px 22px;
         margin-top: 2px;
         justify-content: space-between;
-        margin-left: 110px;
     }
 
     .menu .search img {
@@ -1480,6 +1486,39 @@ button.story a{
         height: 20.05px;
         margin-top: 4px;
         margin-right: 27px;
+    }
+    .tab-link {
+        background-color: #0078d4;
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 66.66px;
+        overflow: hidden;
+        max-width: 100%;
+    }
+    .link{
+        display: none;
+    }
+    .tab-link  img {
+        width: 12px;
+        height: 12px;
+        display: inline-flex;
+    }
+    
+    .tab-link li {
+        list-style-type: none;
+        text-decoration: none;
+        color: #ffff;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+        padding: 12px 15px;
+        line-height: 19px;
     }
 
     #tablet_banner {
@@ -1570,7 +1609,7 @@ button.story a{
     }
 
     .row .text-heading {
-        color: #000;
+        color: #1a1a1f;
         margin-bottom: 0;
         font-size: 54px;
         /* font-weight: 600; */
@@ -1658,7 +1697,7 @@ button.story a{
         position: relative;
         padding: 15px 15px;
         background-size: cover;
-        background-position: 0% 50%;
+        background-position: 5% 50%;
     }
 
     .tab-grid .card-2 {
@@ -1766,6 +1805,7 @@ button.story a{
     display: block;
     width: 100%;
     margin-left: 6px;
+    padding: 15px 15px;
 }
 
 .tab-second-grid h2 {
@@ -2373,7 +2413,6 @@ button.story a{
     border: 1px solid #0078d4;
     border-radius: 4px;
     align-items: center;
-    margin-left: 30px;
     margin-top: 24px; 
     height: 45px;
 }
@@ -2609,6 +2648,8 @@ button.tab-story a{
     }
     .tab-nav{
         display: flex;
+        align-items: center;
+        padding-inline: 15px;
     }
     .dashboard p{
         display: flex;
@@ -2639,7 +2680,45 @@ button.tab-story a{
         border-radius: 4px;
         margin-top: -5px;
     }
+    .link{
+        display: none;
+    }
+    .tab-link{
+        display: none;
+    }
+    .lt-link {
+        display: flex;
+        background-color: #0078d4;
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 53.66px;
+        overflow: hidden;
+        max-width: 100%;
+    }
+    
+    .lt-link  img {
+        width: 12px;
+        height: 12px;
+        display: inline-flex;
 
+    }
+    
+    .lt-link li {
+        list-style-type: none;
+        text-decoration: none;
+        color: #ffff;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+        padding: 12px 15px;
+        line-height: 19px;
+    }
     .row {
         display: flex;
         flex-direction: column;
@@ -2651,7 +2730,7 @@ button.tab-story a{
 
     .row .text-heading {
         text-align: left;
-        width: 121%;
+        width: 95%;
     }
 
     .row .preheading {
@@ -2666,28 +2745,37 @@ button.tab-story a{
         width: 100%;
         position: relative;
         background-image: url("/Assets/december-hero-desktop.webp");
-        background-position: 50%;
+        background-position: 50% 50%;
         object-fit: cover;
-        height: 765px;
         background-size: cover;
         background-repeat: no-repeat;
         gap: 20px;
+        padding-bottom: 50px;
     }
 
     .lt-main-banner .text p {
         text-align: left;
-        padding: 0 135px 0 15px;
+        padding: 0 15px;
+        width: 500px;
     }
-
+    .lt-main-banner .content{
+        width: 50%;
+        padding: 0px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 0px;
+    }
     .lt-livebutton {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-bottom: 47px;
         list-style-type: none;
         text-align: center;
         margin-left: 10px;
+        padding-top: 36px;
+        width: fit-content;
     }
 
 
@@ -2730,6 +2818,7 @@ button.tab-story a{
     .lt-grid {
         column-gap: 20px;
         row-gap: 24px;
+        padding: 0 44px 0 0;
     }
 
     .lt-center-items {
@@ -2830,12 +2919,21 @@ button.tab-story a{
         margin: 12px 0;
 
     }
-
+    .lt-grid .card-2 .card-content-2 h2 a{
+        padding: 0 25px;
+    }
+    .lt-grid .card-2 .card-content-2 h2 p{
+        padding: 24px;
+        padding-bottom: 24px;
+    }
     .lt-grid .card-2 .logo-2 img {
         object-fit: cover;
         max-width: 100%;
     }
-
+    .lt-grid .card-3 .logo-3{
+        height: 151px;
+        width: 264px;
+    }
 
     .lt-grid .card-2 .logo-2 picture img {
         height: 100%;
@@ -2848,6 +2946,7 @@ button.tab-story a{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2,1fr);
         gap: 18px;
+        padding: 36px;
     }
     
     .lt-css-grid .card-one {
@@ -2864,7 +2963,6 @@ button.tab-story a{
         column-gap: 10px;
         padding: 24px 24px;
     }
-    
     .lt-css-grid .css-card-one {
         display: flex;
         flex-direction: column;
@@ -3118,7 +3216,7 @@ button.tab-story a{
     
     .lt-second-grid button.popular {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         background-color: #f8f9fa;
         border: none;
         justify-content: space-around;
@@ -3175,11 +3273,16 @@ button.tab-story a{
         padding: 15px;
         background-color: #000;
         border-radius: 6px;
-        margin-left: 100px;
+        margin-left: 141px;
+    }
+    .lt-tablet a{
+        width: 25%;
+        margin-left: 125px;
     }
     .lt-nhs{
         display: flex;
         flex-direction: column;
+        background-color: #fff;
     }
     .lt-nhs h2{
         text-align: center;
@@ -3214,6 +3317,9 @@ button.tab-story a{
     .layout .lt-case-study .casestudy-link{
         position: absolute;
         margin: 356px 581px 23px 42px;
+    }
+    .lt-case-study{
+        padding-top: 23px;
     }
      .casestudy-link a{
         text-decoration: underline;
@@ -3255,6 +3361,9 @@ button.tab-story a{
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(2,1fr);
     } */
+    .logo-section{
+        padding: 0 23px 16px 23px;
+    }
     .lt-news{
         display: flex;
         flex-direction: column;
@@ -3419,6 +3528,7 @@ button.tab-story a{
     .lt-video .playback-links .dev-stories span{
         background-color:  transparent;
         text-decoration: underline;  
+        white-space: nowrap;
     }
     .lt-video .playback-links .dev-stories{
         display: flex;
@@ -3536,6 +3646,10 @@ button.tab-story a{
         padding-top: 48px;
         padding-bottom: 36px;
     }
+    #important{
+        padding-top: 36px;
+        padding-bottom: 0px;
+    }
     #footer .footer-nav-bar{
         display: flex;
         flex-wrap: wrap;
@@ -3611,6 +3725,11 @@ button.tab-story a{
     .lt-grid .card-1{
         background-image: url(/Assets/ez-optimize-desktop.jpg);
     }
+    .lt-tablet a{
+        text-decoration: none;
+        color: #0062ad;
+        padding: 24px 24px;
+    }
 
 }
 
@@ -3627,7 +3746,7 @@ button.tab-story a{
     .lt-items {
         display: flex;
     }
-
+     
     .nav {
         display: none;
     }
@@ -3651,14 +3770,16 @@ button.tab-story a{
         background-color: #ffff;
         box-sizing: inherit;
         justify-content: space-around;
-        padding: 0 12px;
+        height: 52px;
     }
-
+     .content{
+        max-width: 1310px;
+        margin-top: auto;
+    }
     .container_lap {
         display: flex;
         padding: 3px;
         column-gap: 20px;
-        margin-left: -13px;
         margin-top: -18px;
         align-items: center;
     }
@@ -3763,7 +3884,7 @@ button.tab-story a{
 
     }
     .lt-grid .card-1{
-        background-image: url(/Assets/ez-optimize-desktop.jpg);
+        background-image: url("/Assets/ez-optimize-desktop.jpg");
     }
     .lt-grid .card-2 .logo-2{
         max-width: 119px;
@@ -3783,6 +3904,7 @@ button.tab-story a{
     .lt-second-grid{
         display: flex;
         flex-direction: row-reverse;
+        padding-bottom: 60px;
     }
     .lt-container .lt-tablet img{
         height: 530px;
@@ -3794,14 +3916,9 @@ button.tab-story a{
     .lt-case-study{
         display: flex;
         flex-direction: column;
+        padding-top: 23px;
     }
-    /* .lt-nhs{
-        display: flex;
-        flex-direction: column;
-    }
-    img.nhs-logo{
-        width: 8%;
-    } */
+   
     .lt-main-banner{
         display: flex;
         justify-content: flex-start;
@@ -3813,25 +3930,16 @@ button.tab-story a{
         background-image: url("/Assets/december-hero-desktop.webp");
         background-position: 50%;
         object-fit: cover;
-        height: 765px;
         background-size: cover;
         background-repeat: no-repeat;
+        padding-bottom: 0px;
     }
 
     .lt-main-banner .text p{
         padding: 15px 15px;
+        width: 50%;
     }
-    /* .row {
-        display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .row .text-heading {
-        text-align: left;
-    } */
+   
 .lt-tablet a{
     text-decoration: none;
     color: #0062ad;
@@ -3839,13 +3947,34 @@ button.tab-story a{
     justify-content: space-evenly;
     padding: 24px 24px;
 }
+.lt-livebutton{
+    padding-bottom: 185px;
+    display: flex;
+    width: fit-content;
+}
+.lt-main-banner .content{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding-left: 50px;
+   padding-top: 50px;
+}
+.lt-main-banner .content .text p{
     
+    width: 607px;
+}
+.lt-main-banner .content .row .text-heading{
+    max-width: 1310px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 502px;
+}
 }
 
 
 
 /* Desktop response */
-@media screen and(min-width:2500px) {
+@media screen and (min-width:2000px) {
     .nav {
         display: none;
     }
@@ -3865,5 +3994,16 @@ button.tab-story a{
         cursor: pointer;
         text-decoration: underline;
         text-decoration-color: black;
+    }
+    .lt-main-banner .content{
+        display: flex;
+        align-items: center;
+        
+    }
+    .content .text p{
+        margin-left: 52px;
+    }
+    .lt-livebutton{
+        margin-right: 237px;
     }
 }
