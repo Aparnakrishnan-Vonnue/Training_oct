@@ -946,7 +946,6 @@ button#live-engage-btn {
     width: 12px;
 }
 .casestudy-link{
-    margin-left: 30px;
     margin-top: 17px;
 }
 .case-study h1{
@@ -1300,7 +1299,6 @@ button.story a{
     list-style-type: none;
 }
 #footer  .footer-final ul li {
-    text-decoration: none;
     color: #1a1a1F;
     display: block;
     padding: 2px 0;
@@ -2756,7 +2754,8 @@ button.tab-story a{
     .lt-main-banner .text p {
         text-align: left;
         padding: 0 15px;
-        width: 500px;
+        max-width: 1310px;
+        width: 100%;
     }
     .lt-main-banner .content{
         width: 50%;
@@ -2810,7 +2809,15 @@ button.tab-story a{
         text-align: center;
         padding: 44px;
     }
-
+    .lt-explore .explore-flex{
+        display: flex;
+    }
+    .lt-explore{
+        background-color: #f8f9fa;
+    }
+    .lt-explore .explore-flex .explore-sub{
+        width: 42%;
+    }
     /* .lt-grid .card-1{
         max-width: 100%;
         width: 83%;
@@ -2920,7 +2927,7 @@ button.tab-story a{
 
     }
     .lt-grid .card-2 .card-content-2 h2 a{
-        padding: 0 25px;
+        padding: 0 25px 0 0;
     }
     .lt-grid .card-2 .card-content-2 h2 p{
         padding: 24px;
@@ -2943,7 +2950,7 @@ button.tab-story a{
 
     .lt-css-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 14vw);
         grid-template-rows: repeat(2,1fr);
         gap: 18px;
         padding: 36px;
@@ -3221,7 +3228,10 @@ button.tab-story a{
         border: none;
         justify-content: space-around;
         min-height: 60px;
-        margin-left: 2px
+        margin-left: 2px;
+    }
+    .lt-second-grid .popular-button button.popular p{
+        font-weight: 600;
     }
     .lt-container{
         display: flex;
@@ -3254,6 +3264,7 @@ button.tab-story a{
         overflow: hidden;
         background-color: #f8f9fa;
     }
+
     .lt-second-grid{
         display: flex;
         flex-direction: row-reverse;
@@ -3270,10 +3281,9 @@ button.tab-story a{
     .lt-tablet img{
         border: 4px solid #000;
         height: 530px;
-        padding: 15px;
+        padding: 22px;
         background-color: #000;
         border-radius: 6px;
-        margin-left: 141px;
     }
     .lt-tablet a{
         width: 25%;
@@ -3318,9 +3328,7 @@ button.tab-story a{
         position: absolute;
         margin: 356px 581px 23px 42px;
     }
-    .lt-case-study{
-        padding-top: 23px;
-    }
+    
      .casestudy-link a{
         text-decoration: underline;
     }
@@ -3349,7 +3357,7 @@ button.tab-story a{
     .lt-explore{
         display: flex;
         flex-direction: row;
-        margin-top: 109px;
+        
     }
     .lt-explore h1{
         margin-top: 80px;
@@ -3367,6 +3375,8 @@ button.tab-story a{
     .lt-news{
         display: flex;
         flex-direction: column;
+        max-width: 1310px;
+        margin: 0 auto;
     }
     .lt-news .discover h2{
         display: flex;
@@ -3480,12 +3490,12 @@ button.tab-story a{
     .lt-video .lt-playback .playback-links .watch  img{
         background-color: #50E6FF;
         border-radius: 100%;
-        border: 2px solid white;
         height: 27px;
         width: 29px;
         padding: 7px;
         margin-left: 4px;
     }
+ 
     .lt-video .lt-playback{
         position: absolute;
         background-color:rgba(26,26,31,.94);
@@ -3495,6 +3505,7 @@ button.tab-story a{
         padding: 24px;
         border: 1px solid transparent;
         margin: 72px 470px 23px 16px;
+        width: 50%;
     }
     .lt-video .playback-links .dev-stories img{
         content: '';
@@ -3540,7 +3551,7 @@ button.tab-story a{
     }
     .lt-column-grid{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3,27vw);
         grid-template-rows: 1fr;
         gap:15px;
         padding-left: 0.9375rem;
@@ -3730,6 +3741,22 @@ button.tab-story a{
         color: #0062ad;
         padding: 24px 24px;
     }
+    #elements .elements-list{
+        display: flex;
+    }
+    .lt-footer-container .footer-nav-bar{
+        padding-left: 0;
+    }
+    #footer .footer-final .language select{
+        box-sizing: border-box;
+        color: #1a1a1f;
+        line-height: 1.2;
+        font-size: 14px;
+        padding: 5px;
+        border: 1px solid #747479;
+        background-color: #fff;
+        width: 100%;
+    }
 
 }
 
@@ -3770,7 +3797,7 @@ button.tab-story a{
         background-color: #ffff;
         box-sizing: inherit;
         justify-content: space-around;
-        height: 52px;
+        height: 54px;
     }
      .content{
         max-width: 1310px;
@@ -3883,8 +3910,36 @@ button.tab-story a{
         text-align: center;
 
     }
+    .lt-idea{
+        max-width: 1310px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .lt-link{
+        height: 48px;
+        column-gap: 5px;
+    }
+    .lt-link li{
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        padding-bottom: 3px;
+        padding-top:0;
+    }
+    .lt-link li:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .lt-link li:hover img{
+       transform: translateX(3px);
+    }
+    .lt-grid{
+        max-width: 1310px;
+        margin: 0 auto;
+    }
     .lt-grid .card-1{
         background-image: url("/Assets/ez-optimize-desktop.jpg");
+        background-position: 0% 0%;
     }
     .lt-grid .card-2 .logo-2{
         max-width: 119px;
@@ -3895,7 +3950,8 @@ button.tab-story a{
         max-width: 100%;
     }
     .lt-items h2 {
-        padding: 44px 186px;
+       max-width: 1310px;
+       margin: 0 auto;
     }
 
     .lt-grid .card-1 .content-1 {
@@ -3916,7 +3972,6 @@ button.tab-story a{
     .lt-case-study{
         display: flex;
         flex-direction: column;
-        padding-top: 23px;
     }
    
     .lt-main-banner{
@@ -3939,6 +3994,19 @@ button.tab-story a{
         padding: 15px 15px;
         width: 50%;
     }
+    .lt-explore{
+        background-color: #f8f9fa;
+    }
+    .lt-explore .explore-flex{
+        display: flex;
+        max-width: 1310px;
+        margin: 0 auto;
+        column-gap: 50px;
+        padding: 60px 0;
+    }
+    .lt-explore .explore-flex .explore-sub{
+        width: 39%;
+    }
    
 .lt-tablet a{
     text-decoration: none;
@@ -3951,6 +4019,24 @@ button.tab-story a{
     padding-bottom: 185px;
     display: flex;
     width: fit-content;
+    padding-top: 0;
+}
+.lt-second-grid button.popular {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: none;
+    justify-content: space-around;
+    min-height: 60px;
+    margin-left: 2px;
+}
+.lt-second-grid button.popular p.popular{
+    font-weight: 600;
+}
+.dashboard{
+    max-width: 1310px;
+    width: 37%;
+    left: 9%;
 }
 .lt-main-banner .content{
    display: flex;
@@ -3960,8 +4046,10 @@ button.tab-story a{
    padding-top: 50px;
 }
 .lt-main-banner .content .text p{
-    
-    width: 607px;
+     width: 652px;
+}
+.lt-case-study .casestudy-link{
+    margin-left: 0;
 }
 .lt-main-banner .content .row .text-heading{
     max-width: 1310px;
@@ -3969,12 +4057,219 @@ button.tab-story a{
     margin-right: auto;
     width: 502px;
 }
+.lt-center-items{
+    max-width: 1310px;
+    margin: 0 auto;
+    padding-top: 67px;
+    padding-bottom: 67px;
+}
+.lt-center-items span{
+    width: 104px;
+}
+.lt-center-items button{
+    width: 142px;
+}
+.elements-list{
+    display: flex;
+    max-width: 1310px;
+    margin: 0 auto;
+}
+.lt-tablet img{
+    margin: 0 0;
+}
+.lt-tablet a{
+    margin-left: 0;
+}
+.lt-css-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 14vw);
+    grid-template-rows: repeat(2,1fr);
+    gap: 18px;
+    padding: 36px;
+}
+.lt-nhs .logo-section{
+    display: flex;
+    justify-content: center;
+    column-gap: 70px;
+}
+.lt-nhs .logo-section :nth-child(1){
+    border-bottom: 4px solid #0078d4;
+    padding-bottom: 15px;
+}
+.lt-nhs .logo-section .nhs-logo:hover{
+    background-color: #e7eaefca;
+}
+.lt-nhs .logo-section .grey-logos:hover{
+    background-color: #e7eaefca;
+    filter: grayscale(0%);  
+}
+
+.lt-playback{
+    position: absolute;
+    bottom: 59%;
+    left: 5%;
+}
+.lt-column-grid{
+    max-width: 1310px;
+    margin: 0 auto;
+    padding-right: 0;
+    padding-left: 56px;
+}
+.grid-container{
+    background-color: #f8f9fa;
+}
+.lt-footer-container  .footer-nav-bar{
+    max-width: 1310px;
+    padding-left: 140px;
+}
+.container_lap .dropdown:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.access .menu span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.access .menu button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.lt-livebutton button.start:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.lt-livebutton button.free:hover{
+    cursor: pointer;
+    background-color: black;
+    color: #ffff;
+    text-decoration: underline;
+}
+.lt-grid .card-1 .card-content-1 h2 a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.lt-grid .card-2 .card-content-2 h2 a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.lt-center-items button:hover{
+    cursor: pointer;
+    background-color: #0078d4;
+    color: #fff;
+    text-decoration: underline;
+}
+.lt-center-items button a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.lt-buttons button.popular:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.lt-buttons .product-link a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #000;
+}
+.lt-buttons .product-link a:hover img{
+    transform: translateX(-4px);
+}
+.lt-css-grid .title-1 h6:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.lt-css-grid .title-2 h6:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.lt-css-grid .title-3 h6:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.lt-css-grid .title-4 h6:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.lt-css-grid .title-5 h6:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.lt-css-grid .title-6 h6:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.lt-tablet:hover{
+    cursor: pointer;
+    transform: translateX(-18px);
+    transition-duration: 0.4s;
+}
+.casestudy-link a:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+ .casestudy-link a:hover img{
+    transform: translateX(4px);
+    transition-duration: 0.5s;
+}
+.lt-explore .explore-flex .explore-sub button:hover{
+    background-color: #0062ad;
+}
+.lt-explore .explore-flex .explore-sub button a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.lt-news-container .server:hover .card-content p.description{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.lt-news-container .scott:hover .card-content p{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.lt-news-container .datacentres:hover .card-content p{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.playback-links button li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.playback-links .dev-stories span:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+.playback-links .dev-stories span:hover img{
+    transform: translateX(5%);
+    transition-duration: 0.5s;
+}
+.grid-container .lt-column-grid .lt-column-card-one:hover .lt-story-text span{
+    text-decoration: underline;
+}
+.grid-container .lt-column-grid .lt-column-card-two:hover .lt-story-text span{
+    text-decoration: underline;
+}
+.grid-container .lt-column-grid .lt-column-card-three:hover .lt-story-text span{
+    text-decoration: underline;
+}
+.lt-footer-container  .navigation:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.lt-footer-grid .azure-details .azure-details-sub span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.about li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 }
 
 
 
 /* Desktop response */
-@media screen and (min-width:2000px) {
+@media screen and (min-width:1510px) {
     .nav {
         display: none;
     }
@@ -4001,9 +4296,22 @@ button.tab-story a{
         
     }
     .content .text p{
-        margin-left: 52px;
+        margin-left: 145px;
     }
     .lt-livebutton{
         margin-right: 237px;
+    }
+    .lt-explore{
+        padding-top: 60px;
+    }
+    #footer .footer-final{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-final ul.about{
+        width: 800px;
+    }
+    .footer-nav-bar{
+        padding-left: 140px;
     }
 }
