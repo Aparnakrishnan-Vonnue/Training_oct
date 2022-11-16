@@ -160,8 +160,392 @@ body{
 .tab-search-address{
     display: none;
 }
+.banner .sign-in .doordash-script{
+    display: none;
+}
+.tab-search-address .search-bar .arrow img.white-arrow{
+    display: none;
+}
+.details{
+    display: flex;
+    justify-content: center;
+}
+.details .instructions{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 0px;
+    max-width: 100%;
+    padding: 8px;
+}
+.get-app-button {
+    display: flex;
+    justify-content: center;
+}
+.get-app-button .app-info{
+    margin: 0px 16px;
+    padding: 24px 0px;
+    display: flex;
+    justify-content: center;
+}
+.get-app-button .app-info .application{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.get-app-button .app-info .application .app-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 6px;
+}
+.get-app-button .app-info .application .app-text .script{
+    width: 160px;
+    margin-right: 16px;
+}
+.get-app-button .app-info .application .app-text .script span{
+    font-size: 16px;
+    font-family: bold-font;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.04ch;
+    text-transform: none;
+    color: rgb(25, 25, 25);
+    margin: 0px;
+    padding: 0px;
+}
+.get-app-button .app-info .application .app-text button{
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: inline-flex;
+    min-height: 40px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1000px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: rgb(235, 23, 0);
+    box-shadow: transparent 0px 0px 0px 1px inset;
+    color: rgb(255, 255, 255);
+    font-family: bold-font;
+    text-align: center;
+}
+.get-app-button .app-info .application .app-text button p{
+    flex-grow: 2;
+    min-width: 0px;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    padding-bottom: 1px;
+}
+.get-app-button .inline-elements{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 8px 0px;
+    width: 100%;
+    gap: 20px;
+}
+.get-app-button .inline-elements .element-one{
+    display: flex;
+}
+.get-app-button .inline-elements .element-one a{
+    white-space: nowrap;
+    color: rgb(25, 25, 25);
+    font-family: bold-font;
+    text-decoration: none;
+    padding: 3px 4px 3px 6px;
+    font-size: 15px;
+}
+.details .instructions .card{
+    display: flex;
+    width:100%;
+    min-width: 360px;
+    flex-flow: row nowrap;
+    max-width: 100%;
+    padding: 16px;
+}
+.details .instructions .card .icon {
+    margin-right: 32px;
+}
+.details .instructions .card .icon img{
+    height: 88px;
+    width: 88px;
+}
+.details .instructions .card .icon-text{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    max-width: 250px;
+}
+.details .instructions .card .icon-text .icon-text-body{
+    max-width: 100%;
+}
+.details .instructions .card .icon-text .icon-text-body h2{
+    font-size: 32px;
+    font-family: bold-font;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.04ch;
+    text-transform: none;
+    color: rgb(25, 25, 25);
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+.details .instructions .card .icon-text .icon-text-body h3{
+    margin-top: 0px;
+    font-size: 18px;
+    font-family: medium-font;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0ch;
+    text-transform: none;
+    color: rgb(25, 25, 25);
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+.details .instructions .card .icon-text button{
+    border: 0px;
+    padding: 0px;
+    margin: 12px 0px 0px;
+    outline: 0px;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.details .instructions .card .icon-text button span{
+    font-size: 14px;
+    font-family: bold-font;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.04ch;
+    text-transform: none;
+    color: rgb(235, 23, 0);
+    margin: 0px;
+    padding: 0px;
+}
+.details .instructions .card .icon-text button img{
+    flex-shrink: 0;
+    overflow: visible;
+    width: 16px;
+    height: 12px;
+    fill: none;
+}
+.content .food-hunt{
+    width: 100%;
+}
+.content .food-hunt .food-hunt-section-one{
+    margin-bottom: -288px;
+    width: 100%;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    display: flex;
+    max-width: 100%;
+    justify-content: flex-start;
+}
+.content .food-hunt .food-hunt-section-one .content-text{
+    max-width: 400px;
+    padding-left: 16px;
+    padding-right: 81.6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 7px;
+}
+.content .food-hunt .food-hunt-section-one .content-text .main-content {
+    max-width: 100%;
+    margin-bottom: 8px;
+}
+.content .food-hunt .food-hunt-section-one .content-text .main-content h3{
+    font-size: 24px;
+    font-family: bold-font;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.04ch;
+    text-transform: none;
+    color: rgb(25, 25, 25);
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    padding-top: 22px;
+}
+.content .food-hunt .food-hunt-section-one .content-text .main-content .description{
+    max-width: 100%;
+    margin-bottom: 16px;
+}
+.content .food-hunt .food-hunt-section-one .content-text  .description p{
+    font-size: 14px;
+    font-family: bold-font;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0ch;
+    text-transform: none;
+    color: rgb(25, 25, 25);
+    margin: 0px;
+    padding: 0px;
+    
+}
+.content .food-hunt .food-hunt-section-one .content-text  button{
+    position: relative;
+    /* max-width: 100%; */
+    margin: 0px;
+    margin-top: 3px;
+    padding: 0px;
+    display: block;
+    display: inline-flex;
+    /* min-height: 32px;
+    width: 45%; */
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 1000px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(235, 23, 0);
+    box-shadow: transparent 0px 0px 0px 1px inset;
+    color: rgb(255, 255, 255);
+    flex-grow: 1;
+    max-width: 100%;
+    opacity: 1;
+    font-family: bold-font;
+    white-space: nowrap;
+    justify-content: center;
+    
+}
 
+.content .food-hunt .food-hunt-section-one  .picture{
+    margin-left: 64px;
+    max-width: 56vw;
+}
+.content .food-hunt .food-hunt-section-one  .picture img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    inset: 0px;
+}
+.content .food-hunt-section-two{
+    padding-top: 336px ;
+    background-color: rgb(255, 240, 237);
+    padding-bottom: 96px;
+}
+.content .food-hunt .food-hunt-section-two  .picture{
+    margin-right: 64px;
+    max-width: 56vw;
+    height: 85%;
+}
+.content .food-hunt .food-hunt-section-two  .picture img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    inset: 0px;
+}
+.content .food-hunt .food-hunt-section-two .content-text{
+    max-width: 400px;
+    padding-left: 16px;
+    padding-right: 105.6px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 7px;
+}
+.content .food-hunt .food-hunt-section-two .content-text .main-content {
+    max-width: 100%;
+    margin-bottom: 8px;
+}
+.content .food-hunt .food-hunt-section-two .content-text .main-content h3{
+    font-size: 24px;
+    font-family: bold-font;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.04ch;
+    text-transform: none;
+    color: rgb(25, 25, 25);
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+.content .food-hunt .food-hunt-section-two .content-text .main-content .description{
+    max-width: 100%;
+    margin-bottom: 16px;
+}
+.content .food-hunt .food-hunt-section-two .content-text  .description p{
+    font-size: 14px;
+    font-family: bold-font;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0ch;
+    text-transform: none;
+    color: rgb(25, 25, 25);
+    margin: 0px;
+    padding: 0px;
+    
+}
+.content .food-hunt .food-hunt-section-two  .content-text button{
+    position: relative;
+    margin: 0px;
+    margin-top: 3px;
+    padding: 0px;
+    display: block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 1000px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(235, 23, 0);
+    box-shadow: transparent 0px 0px 0px 1px inset;
+    color: rgb(255, 255, 255);
+    flex-grow: 1;
+    opacity: 1;
+    font-family: bold-font;
+    white-space: nowrap;
+    padding: 11px 20px;
 
+    
+}
+
+footer{
+    width: 100vw;
+    background-color: rgb(25, 25, 25);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+.footer-container .footer-main {
+    max-width: 1160px;
+    padding: 0px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.footer-container {
+    width: 1184px;
+}
+.footer-container .footer-main .footer-flex{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+.footer-container .footer-main .footer-flex .footer-flex-section{
+
+}
 
 @media screen and (min-width:760px) {
     .search-address{
@@ -221,7 +605,76 @@ body{
         gap: 7px;
         margin-left: -6px;
     }
-   
+    .tab-search-address {
+        display: flex;
+        align-items: center;
+    }
+    .content .food-hunt .food-hunt-section-one{
+        margin-bottom: -20px;
+        width: 100%;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        max-width: 100%;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+    .content .food-hunt .food-hunt-section-one .content-text{
+        flex: 1 1 0%;
+        margin-left: 64px;
+        margin-bottom: 96px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        padding: 0;
+        margin-top: 0px;
+
+    }
+    .content .food-hunt .food-hunt-section-two .content-text{
+        flex: 1 1 0%;
+        margin-right: 64px;
+        margin-bottom: 96px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        padding: 0;
+
+    }
+    .content .food-hunt .food-hunt-section-two{
+        margin-bottom: -20px;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        max-width: 100%;
+        align-items: stretch;
+        justify-content: flex-start;
+        padding: 96px 0px !important;
+        
+    }
+    .content .food-hunt .food-hunt-section-one .picture img{
+        
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .content .food-hunt .food-hunt-section-two .picture img{
+    
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .content .food-hunt .food-hunt-section-two .content-text .main-content h3{
+        padding-top: 0px;
+    }
+    .content .food-hunt .food-hunt-section-one .content-text .main-content h3{
+        padding-top: 0px;
+    }
+    /* .content .food-hunt .food-hunt-section-one .picture{
+        display: none;
+    }
+    .content .food-hunt .food-hunt-section-two .picture{
+        display: none;
+    } */
+  
 }
 
 
@@ -230,12 +683,163 @@ body{
             min-height: 580px;
         }
         .banner .text-headings{
-            padding-top: 212px;
+            padding-top: 136px;
+            padding-bottom: 0;
         }
         .text-headings .logo{
             display: none;
         }
-    
-        
-    
-}
+        .banner .sign-in .doordash-script{
+            display: flex;
+            margin: auto;
+            padding-left: 198px;
+            padding-bottom: 6px;
+        }
+        .banner .sign-in{
+            display: flex;
+            justify-content: flex-end;
+            flex: 1 1 0%;
+        }
+        .banner .doordash-script .logo img{
+            width: 78%;
+        }
+        .banner .text-headings .main-heading h1{
+            max-width: 1500px;
+            font-size: 64px;
+            width: 632px;
+            line-height: 1.2;
+            margin: 0 auto;
+         }
+         .banner .text-headings .main-heading {
+            max-width: 1025px;
+         }
+         .banner .text-headings{
+            gap: 14px;
+         }
+         .tab-search-address {
+            display: flex;
+            align-items: center;
+        }
+        .content .food-hunt .food-hunt-section-one .picture{
+            max-width: 100%;
+            width: 60%;
+        }
+        .content .food-hunt .food-hunt-section-two .picture{
+            max-width: 100%;
+            width: 60%;
+        }
+        .content .food-hunt .food-hunt-section-one .picture img{
+            
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content .food-hunt .food-hunt-section-two .picture img{
+           
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+        .content .food-hunt .food-hunt-section-two .content-text .main-content h3{
+            padding-right: 132px;
+        }
+        .content .food-hunt .food-hunt-section-one .content-text .main-content h3{
+            padding-right: 132px;
+        }
+    }
+         @media screen and (min-width:1080px){
+            .banner .sign-in .doordash-script {
+                margin: auto;
+            }
+            .tab-search-address img.white-arrow{
+                border: none;
+                border-radius: 100%;
+                background-color: #EB1700;
+                padding: 8px;
+            }
+            .tab-search-address {
+                display: flex;
+                align-items: center;
+            }
+            .tab-search-address .search-bar{
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border-top-width: 3px;
+                padding-right: 4px;
+                padding-left: 12px;
+                border-radius: 36px;
+                align-items: center;
+            }
+            .get-app-button .app-info .application .app-text button{
+                width: 36%;
+            }
+            .tab-search-address .search-bar .arrow img.white-arrow{
+                display: flex;
+            }
+            .tab-search-address .search-bar .arrow img.black-arrow{
+                display: none;
+            }
+            .tab-search-address .location{
+                margin-top: 4px;
+            }
+            .details .instructions{
+                display: flex;
+                flex-direction: row;
+                margin: 96px 0;
+                justify-content: center;
+                padding: 12px 12px;
+            }
+            .details .instructions .card{
+                margin: 0 17px;
+                flex-flow: column nowrap;
+                display: flex;
+                width: 100%;
+                min-width: 360px;
+                padding: 16px;
+            }
+            .details .instructions .card .icon{
+                display: flex;
+                justify-content: center;
+                margin-right: 64px;
+            }
+            .details .instructions .card .icon img{
+                height: 154px;
+                width: 154px;
+            }
+            .details .instructions .card .icon-text{
+                min-height: 160px;
+                display: flex;
+                flex-flow: column nowrap;
+                width: 100%;
+                max-width: 250px;
+            }
+            .details .instructions .card .icon-text .icon-text-body{
+                max-width: 100%;
+            }
+            .details .instructions .card .icon-text .icon-text-body h2{
+                font-size: 32px;
+                text-align: center;
+            }
+            .details .instructions .card .icon-text .icon-text-body h3{
+                font-size: 18px;
+                text-align: center;
+            }
+            .details .instructions .card .icon-text button{
+                justify-content: center;
+            }
+            .content .food-hunt .food-hunt-section-one{
+                max-width: 100%;
+                width: 80%;
+                margin: 0 auto;
+            }
+            .content .food-hunt .food-hunt-section-two{
+                max-width: 100%;
+                width: 80%;
+                margin: 0 auto;
+                padding: 100px 0px 96px;
+            }
+            .content .food-hunt .food-container{
+                background-color: rgb(255, 240, 237);
+            }
+         }

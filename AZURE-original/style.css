@@ -9,6 +9,16 @@
     font-family: hello;
     src: url('/Fonts/myfont.woff2') format('woff2');
 }
+@font-face {
+    font-family: hello;
+    src: url('/Fonts/myfont.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: hello;
+    src: url('/Fonts/myfont.woff2') format('woff2');
+    font-weight: 600;
+}
 
 body {
     color: #1A1A1F;
