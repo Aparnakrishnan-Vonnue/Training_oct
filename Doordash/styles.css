@@ -1211,6 +1211,9 @@ footer .footer-container .footer-main .footer-flex .footer-flex-section .city-na
                 gap: 25px;
                 
             }
+            .food-container .footer-apps .footer-apps-flex{
+                position: relative !important;
+            }
             .get-app-button .inline-elements .element-one a{
                 padding: 0px;
             }
@@ -1244,11 +1247,47 @@ footer .footer-container .footer-main .footer-flex .footer-flex-section .city-na
             .details .instructions .card .icon-text button{
                 gap: 3px;
             }
-            .footer-container .footer-flex{
+            .footer-container .footer-main .footer-flex{
                 display: flex;
-                flex-direction: row;
+                flex-direction: row !important;
             }
-            .food-container .footer-apps .footer-apps-flex{
-                position: relative;
+           
+            .search-bar .arrow:hover{
+                cursor: pointer;
+            }
+            .content .food-hunt .food-hunt-section-one .content-text button:hover{
+                cursor: pointer;
+                background-color: rgb(217, 20,0);
+            }
+            .content .food-hunt .food-hunt-section-two .content-text button:hover{
+                cursor: pointer;
+                background-color: rgb(217, 20,0);
+            }
+            footer .footer-container .footer-flex .footer-flex-section .city-names .city-names-section p:hover{
+                cursor: pointer;
+                text-decoration: underline;
+            }  
+            .about-doordash .know-us .know-us-section p:hover{
+                cursor: pointer;
+                text-decoration: underline;
+            }
+            .about-doordash .footer-apps .footer-apps-flex button:hover{
+                opacity: 1.5;
+                cursor: pointer;
+            }
+            .footer-final .terms a:hover{
+                cursor: pointer;
+            }
+            .footer-final .terms p:hover{
+                cursor: pointer;
+                text-decoration: underline;
+            }
+            .footer-final .social-icons a{
+                cursor: pointer;
+                text-decoration: underline;
+            }
+            .footer-final .social-icons a img:hover{
+                cursor: pointer;
+                opacity: 2;
             }
          }
