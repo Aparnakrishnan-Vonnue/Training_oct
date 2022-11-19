@@ -18,7 +18,9 @@ body{
     font-family: medium-font;
     src: url(/assets/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2);
 }
-
+.container{
+    width: 100%;
+}
 .container .nav-bar{
     background: white;
     width: 100%;
@@ -136,6 +138,14 @@ body{
     grid-template-columns: 100%;
     box-shadow:  0 5px 14px rgb(0 0 0 /14%);
 }
+.container{
+    position: fixed;
+    z-index: 1;
+    background-color: #FFFFFF;
+}
+.container .contents{
+    padding-top: 152px;
+}
 .container .sub-container .container-grid::-webkit-scrollbar{
     display: none;
 }
@@ -167,6 +177,9 @@ body{
     text-align: center;
     display: flex;
     flex-direction: row;
+}
+.container .sub-container .container-grid button .new-icon img{
+    margin-right: -1px;
 }
 .container .sub-container .container-grid button .new-icon span{
     display: flex;
@@ -206,6 +219,7 @@ body{
     padding-right: 24px;
     margin-left: 0px;
     margin-right: 0px;
+    padding-top: 146px;
 }
 .main-container .contents .card-section {
     margin: 24PX 0;
@@ -227,18 +241,17 @@ body{
     max-height: 100%;
     width: 100%;
     border-radius: 13px;
-    height: 253px;
+    height: 80vw;
 }
 .image button{
     position: absolute;
-    right: 8px;
+    right: 16px;
     top: 10px;
     border: none;
     background-color: transparent;
     border-radius: 50%;
     margin: 2px 0 0;
     padding: 2px 0 0;
-    z-index: 1;
 }
 .main-container .contents .card-section .card-grid .card-one .card-image .image{
     position: relative;
@@ -274,13 +287,234 @@ body{
     color: #222222;
     margin-top: 6px;
 }
+ .details{
+   background-color: #F7F7F7;
+    
+}
+footer .footer-container{
+    padding: 0 24px;
+    margin-top: 57px;
+}
+.explore-flex{
+    display: flex;
+    justify-content: center;
+}
+.explore{
+    padding: 30px 0px;
+    margin-top: 6px;
+    border-top: 1px solid #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.explore h2{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #222222;
+    font-family: regular-font;
+    white-space: nowrap;
+    font-family: regular-font;
+}
+.explore button{
+    cursor:pointer;
+    font-family: regular-font;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 13px 23px;
+    background-color: #FFFFFF;
+}
+.explore .show{
+    display: flex;
+    justify-content: center;
+} 
+.footer-container .footer-flex{
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.footer-container .footer-flex button{
+    margin-left: -10px;
+    font-family: regular-font;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    color: rgb(34,34,34);
+}
+.footer-container .footer-flex  button.category{
+    border-bottom: 2px solid #222222;
+    border-radius: none;
+}
+.footer-container  h2{
+    font-family: regular-font;
+    font-size: 25px;
+    line-height: 32px;
+    
+}
+.footer-container .activity{
+    display: grid;
+}
+.footer-container .activity .activity-one {
+    padding-top: 24px;
+    max-width: 1120px;
+}
+.footer-container .activity .activity-one span{
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(24, 34, 34);
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: regular-font;
+}
+.footer-container .activity  a{
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(24, 34, 34);
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: regular-font;
+   font-weight: 600;
+}
+.footer-container  .activity-grid{
+    padding-bottom: 32px;
+}
+.footer-container .activity-grid .activity{
+    padding-bottom: 40px;
+}
+.details .support{
+    padding: 32px 24px;
+}
+.details .support .help h4{
+    font-size: 14px;
+    font-family: regular-font;
+    font-weight: 600;
+}
+.details .support .help{
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #DDDDDD;
+    display: grid;
+}
+.details .support .help .help-text p{
+    margin-top: 14px;
+    font-size:14px;
+    line-height: 18px;
+    font-family: regular-font;
+}
+section{
+    padding-inline:24px;
+    margin-bottom: 88px;
+}
+section .language{
+    padding-bottom: 24px;
+   
+}
+section .language .flex{
+    display: flex;
+    gap: 35px;
+}
+section .language .flex .language-globe{
+    display: flex;
+    gap: 10px;
+}
+section .language .flex .language-globe .language-text p{
+    font-weight: 600;
+    font-family: regular-font;
+    font-size: 14px;
+}
+section .language .flex .language-globe .rupee p{
+    font-weight: 600;
+    font-family: regular-font;
+    font-size: 14px;
+}
+section .language {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
+section .language .terms .terms-and-conditions p{
+    font-size: 14px;
+    line-height: 18px;
+    font-family: regular-font;
+}
+section .language .terms span{
+    font-size: 16px;
+    font-family:regular-font;
+    
+}
+section .language .social-icons{
+    display: none;
+}
+section .language .terms .terms-and-conditions{
+    display: flex;
+    gap: 12px;
+}
+.user-icons{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    left: -10px;
+    gap: 10px;
+    background-color: #FFFFFF;
+    width: 115vw;
+    padding: 24px 0;
+    border-top: 1px solid #DDDDDD;
+}
+.explore-flex{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.map-tab{
+    display: none;
+}
+.map {
+    position: fixed;
+    bottom: 37vw;
+    left: 33vw;
+
+}
+.map button{
+    display: inline-flex;
+    border-radius: 24px;
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 11px 19px;
+    color: rgb(34, 34, 34);
+    align-items: center;
+    justify-content: center;
+    background: rgb(34, 34, 34);
+    gap: 8px;
+}
+.map button span{
+    color: #FFFFFF;
+}
 /* Tablet response */
 @media screen and (min-width:760px){
     .container .nav-bar{
         display: none;
     }
+    .sub-container{
+        box-shadow: none;
+        border-top: 1px solid #DDDDDD;
+    }
     .container .tab-nav-bar .navbar-flex .lap-airbnb-icon{
+        display: none;
+    }
+    .user-icons{
         display: none;
     }
     .container .tab-nav-bar{
@@ -456,6 +690,11 @@ body{
         padding-left: 40px;
         gap: 32px;
     }
+    .main-container .contents ,.card-section{
+        padding-inline: 11px;
+        margin-top: 40px;
+        margin-bottom: 24px;
+    }
     .access .access-info .info button .red-dot{
         right: 4px;
         border-radius: 50%;
@@ -511,6 +750,80 @@ body{
         padding: 14px;
         border-radius: 11px;
     }
+    .main-container .contents .card-section .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .main-container .contents .card-section .card-grid .card-one .card-image .image picture img{
+        height: 40vw;
+    }
+    .footer-container .activity-grid .activity{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .details .support .help .help-text{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .details .support .help .help-text p{
+        width: 74%;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+    }
+    .language .flex .social-icons{
+        display: flex;
+        gap: 25px;
+    }
+    .language .flex .terms span{
+        display: flex;
+        justify-content: center;
+    } 
+    .language .flex .terms .terms-and-conditions{
+        justify-content: center;
+        display: flex;
+    }
+    .map{
+        display: none;
+    }
+    .map-tab {
+        position: fixed;
+        bottom: 18vw;
+        left: 42vw;
+        display: flex;
+    
+    }
+    .map-tab button{
+        display: inline-flex;
+        border-radius: 24px;
+        border: 1px solid rgba(0,0,0,0.08);
+        padding: 11px 19px;
+        color: rgb(34, 34, 34);
+        align-items: center;
+        justify-content: center;
+        background: rgb(34, 34, 34);
+        gap: 8px;
+    }
+    .map-tab button span{
+        color: #FFFFFF;
+    }
+}
+@media screen and (min-width:950px){
+    .main-container .contents .card-section .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+    .main-container .contents .card-section .card-grid .card-one .card-image .image picture img{
+        height: 26vw;
+    }
+    .footer-container .activity-grid .activity{
+        display: grid;
+        grid-template-columns: repeat(4,1fr) !important;
+    }
+ 
+
 }
 @media screen and (min-width:1127px){
     .container .tab-nav-bar .navbar-flex .lap-airbnb-icon{
@@ -521,5 +834,50 @@ body{
     }
     .container .tab-nav-bar{
         padding: 18px 80px;
+    }
+    .details .support .help{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-container .contents .card-section .card-grid {
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .main-container .contents .card-section .card-grid .card-one .card-image .image picture img{
+        height: 22vw;
+    }
+    .details .support{
+        display: flex;
+        justify-content: space-between;
+    }
+   .details .support .help .help-text{
+    display: flex;
+    flex-direction: column;
+   }
+   section .language{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    
+   }
+   section .language .terms{
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+    white-space: nowrap;
+   }
+   section .language .flex{
+    white-space: nowrap;
+   }
+}
+@media screen and (min-width:1640px){
+
+    .main-container .contents .card-section .card-grid{
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .main-container .contents .card-section .card-grid .card-one .card-image .image picture img{
+        height: 17vw;
     }
 }
