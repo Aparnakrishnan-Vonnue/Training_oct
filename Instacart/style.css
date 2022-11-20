@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: regular;
+    src: url(assets/fonts/eina-regular-962b94746f466cf38b0dcc93ebf0703e.woff2);
+}
+@font-face {
+    font-family: semibold;
+    src: url(assets/fonts/eina-semibold-3c45702adeba381bbd0bc600c987febd.woff2);
+}
+@font-face {
+    font-family: bold;
+    src: url(assets/fonts/eina-bold-df33d802f345a9037eb82e0c80e76547.woff2);
+}
+body{
+    font-family: regular;
+}
+.nav-bar .nav-bar-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar .log-in button.green{
+    background-color: #0AAD0A;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+}
