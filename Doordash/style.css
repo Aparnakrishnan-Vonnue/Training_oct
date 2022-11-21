@@ -6,20 +6,20 @@
 
 @font-face {
     font-family:bold-font ;
-    src: url(/Fonts/TTNorms-Bold.woff2);
+    src: url(Fonts/TTNorms-Bold.woff2);
 }
 
 @font-face {
     font-family:extra-Bold-font ;
-    src: url(/Fonts/TTNorms-ExtraBold.woff2);
+    src: url(Fonts/TTNorms-ExtraBold.woff2);
 }
 @font-face {
     font-family:medium-font ;
-    src: url(/Fonts/TTNorms-Medium.woff2);
+    src: url(Fonts/TTNorms-Medium.woff2);
 }
 @font-face {
     font-family:regular-font ;
-    src: url(/Fonts/TTNorms-Regular.woff2);
+    src: url(Fonts/TTNorms-Regular.woff2);
 }
 body{
     font-family: regular-font;
@@ -28,7 +28,7 @@ body{
 }
 
 .banner{
-    background-image: url(/Assets/hero_landing_us_mobile.jpg);
+    background-image: url(Assets/hero_landing_us_mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -836,12 +836,6 @@ footer{
     .content .food-hunt .food-hunt-section-one .content-text .main-content h3{
         padding-top: 0px;
     }
-    /* .content .food-hunt .food-hunt-section-one .picture{
-        display: none;
-    }
-    .content .food-hunt .food-hunt-section-two .picture{
-        display: none;
-    } */
     .content .food-hunt .food-hunt-section-one .content-text  button{
         display: inline-flex;
         align-items: center;
