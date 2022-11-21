@@ -2500,7 +2500,7 @@ button.story a {
         border-radius: 6px;
         grid-column: 3/4;
         position: relative;
-        background-image: url(/Assets/scott-g.webp);
+        background-image: url(Assets/scott-g.webp);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -2520,7 +2520,7 @@ button.story a {
         grid-column: 2/3;
         grid-row: 2/3;
         position: relative;
-        background-image: url(/Assets/azure-regions-525w.webp);
+        background-image: url(Assets/azure-regions-525w.webp);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -2999,7 +2999,7 @@ button.tab-story a {
         object-fit: cover;
         width: 100%;
         position: relative;
-        background-image: url("/Assets/december-hero-desktop.webp");
+        background-image: url("Assets/december-hero-desktop.webp");
         background-position: 50% 50%;
         object-fit: cover;
         background-size: cover;
@@ -3157,7 +3157,7 @@ button.tab-story a {
     } */
     .lt-grid .card-1 {
         grid-row: 1/3;
-        background: url("/Assets/ez-optimize-desktop.jpg");
+        background: url("Assets/ez-optimize-desktop.jpg");
         height: 100%;
         background-repeat: no-repeat;
         max-height: 100%;
@@ -4098,7 +4098,7 @@ button.tab-story a {
     }
 
     .lt-grid .card-1 {
-        background-image: url(/Assets/ez-optimize-desktop.jpg);
+        background-image: url(Assets/ez-optimize-desktop.jpg);
     }
 
     .lt-tablet a {
@@ -4319,7 +4319,7 @@ button.tab-story a {
     }
 
     .lt-grid .card-1 {
-        background-image: url("/Assets/ez-optimize-desktop.jpg");
+        background-image: url("Assets/ez-optimize-desktop.jpg");
         background-position: 0% 0%;
     }
 
@@ -4369,7 +4369,7 @@ button.tab-story a {
         object-fit: cover;
         width: 100%;
         position: relative;
-        background-image: url("/Assets/december-hero-desktop.webp");
+        background-image: url("Assets/december-hero-desktop.webp");
         background-position: 50%;
         object-fit: cover;
         background-size: cover;
