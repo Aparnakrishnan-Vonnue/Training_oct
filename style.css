@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0 auto ;
+}
+body ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 100px;
+    padding-left: 300px;
+    
+}
+body ul button{
+    padding: 20px;
+    border-radius: 4px;
+    width: 40vw;
+    background-color: rgb(70, 39, 39);
+}
+body ul button a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+body .list{
+    background-color: #f8f9fa;
+}
