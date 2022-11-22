@@ -477,6 +477,114 @@ body{
     margin-right: 61px;
     font-family: regular;
 }
+.software .about{
+    color: #343538;
+    padding: 0 5%;
+    max-width: 1224px;
+    margin: auto;
+    text-align: left;
+}
+.software .about .about-flex{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid;
+    border-color: #E8E9EB;
+}
+.version{
+    padding: 0 20px 40px;
+    display: flex;
+    flex: 1;
+}
+.version .version-flex{
+    flex: 2 0 0;
+    display: inline-block;
+}
+.version-text{
+    display: flex;
+    flex-direction: column;
+}
+.carrot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.version-text .carrot img{
+    height: 33px;
+    width: 33px;
+}
+.version-text h2{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    padding: 20px 0 13px 6px;
+    margin: 0;
+}
+.version-flex ul{
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+.version-flex ul li{
+    list-style-type: none;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+    padding: 7px 25px 7px 0;
+    display: flex;
+}
+.version-flex ul li .apple{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.version-flex ul li .apple img{
+    height: 15px;
+    width: 15px;
+    margin-right: 13px;
+}
+.version-flex ul li .apple p{
+    color: #343538;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+}
+.dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    justify-content: space-evenly;
+    padding:39px 12px 0 12px;
+    gap: 18px;
+}
+.department .dropdown-menu  .menu{
+    display: flex;
+    justify-content: space-between;
+    border: 0;
+    padding: 0;
+    background: none;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid #E8E9EB;
+}
+.department .dropdown-menu  .menu span{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #343538;
+    padding: 20px 0 13px;
+    text-align: left;
+    margin: 0;
+    font-family: regular;
+}
+.department .dropdown-menu .menu span svg{
+    display: block;
+    margin: 25px 0;
+}
+.dropdown-menu .menu .list-of-items{
+    display: none;
+}
 @media screen and (min-width:767px) {
     .heading-main{
         display: none;
@@ -604,7 +712,14 @@ body{
         border-bottom: 1px solid #E8E9EB;
         padding: 24px 0;
     }
-    
+    .version .version-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .dropdown-menu .menu {
+        gap: 86px;
+    }
+  
 }
 @media screen and (min-width:778px) {
     .grid-section .items-grid{
@@ -641,6 +756,45 @@ body{
     .page-three {
         display: flex;
         justify-content: center;
+    }
+    .dropdown-menu .menu .list-of-items{
+        display: flex;
+    }
+    .dropdown-menu .menu svg{
+        display: none;
+    }
+    .dropdown-menu .menu .list-of-items {
+        display: flex;
+        flex-direction: column;
+    }
+    .dropdown-menu .menu{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        justify-content:unset !important;
+        border-bottom: none !important;
+    }
+    .dropdown-menu {
+        display: flex;
+        flex-direction: row;
+    }
+    .dropdown-menu .menu span{
+        white-space: nowrap;
+    }
+    .dropdown-menu .menu .list-of-items  p{
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: normal;
+        padding: 7px 0;
+        display: block;
+        margin: 0;
+        font-family: regular;
+    }
+    .version-flex{
+        align-items: baseline;
+    }
+    .version{
+        border-bottom: 1px solid #E8E9EB;
     }
 }
 @media screen and (min-width:1280px) {
