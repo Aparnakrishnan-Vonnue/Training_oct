@@ -18,7 +18,7 @@
 body{
     font-family: regular;
 }
-/* .nav-bar{
+.nav-bar{
     padding: 12px;
 }
 .nav-bar .nav-bar-flex{
@@ -109,6 +109,8 @@ body{
     padding: 18px 16px 32px 16px;
     background-color: #DEEDD6;
     height: 170px;
+    min-height: 170px;
+    margin-bottom: 24px;
 }
 .heading-main h1{
     font-size: 31px;
@@ -123,7 +125,359 @@ body{
 .tab-heading-main{
     display: none;
 }
-@media screen and (min-width:760px) {
+.body-container .choose-text h2{
+    margin: 0;
+    padding: 16px 32px;
+    font-size: 23px;
+    line-height: 32px;
+    font-family: regular;
+    font-weight: normal;
+    text-align: center;
+}
+.body-container .choose-text {
+    max-width: 1150px;
+}
+.body-container .choose-text h2 span{
+    color: #0AAD0A;
+}
+.grid-section{
+    display: flex;
+    flex-direction: column;
+}
+.grid-section .items-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0;
+    width: 100%;
+    max-width: 1080px;
+    justify-content: center;
+    padding: 8px 0 0 0;
+}
+.grid-section .items-grid li{
+    list-style-type: none;
+}
+.grid-section .items-grid li button .flex-container .card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.grid-section .items-grid li button .flex-container .card img{
+    border: 1px solid #E8E9EB;
+    border-radius: 39px;
+}
+.grid-section .items-grid li button {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+
+}
+.grid-section .items-grid li button .flex-container{
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.grid-section .items-grid li button .flex-container .card .description{
+    margin-left: 12px;
+    overflow: hidden;
+    flex-grow: 1;
+}
+.grid-section .items-grid li button .flex-container .card .description p{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #343538;
+    margin: 0;
+}
+.grid-section .items-grid li button .flex-container .card .description p span{
+    color: #0AAD0A;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+}
+.grid-section .items-grid li button .flex-container .card .description p span.dot{
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    color: #343538;
+}
+.grid-section .items-grid li button .flex-container .card .description p span.pick{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #343538;
+}
+.grid-section .items-grid li button .flex-container .card .arrow{
+    display: flex;
+    align-items: center;
+}
+.grid-section p{
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #0AAD0A;
+    background: none;
+    cursor: pointer;
+    padding: 1px 6px;
+}
+.grid-section .items-grid li:nth-child(5) button .flex-container .card img{
+    display: block;
+    height: 65px;
+    width: 66px;
+    border-radius: 33px;
+    border: 1px solid #E8E9EB;
+}
+.body-container .show{
+    display: flex;
+    justify-content: center;
+}
+.page-two .scroll-flex{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    margin: 32px 0;
+}
+.page-two{
+    margin: 32px 0;
+}
+.page-two .scroll-flex h2{
+    font-size: 23px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+    padding-bottom: 32px;
+    line-height: 32px;
+    font-weight: normal;
+    color: #343538;
+}
+.page-two .scroll-bar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+    
+}
+.page-two .scroll-bar .scroll-card .scroll-section{
+    padding: 32px;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    color: #343538;
+    flex:1
+}
+.page-two .scroll-bar .scroll-card .scroll-section h3{
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #343538;
+    width: 250px;
+}
+.page-two .scroll-bar .scroll-card .scroll-section p{
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    max-width: 235px;
+    margin: 15px 0;
+}
+.page-two .scroll-bar .scroll-card .banner img{
+    width: 326px;
+    height: 200px;
+}
+.page-two .scroll-bar .scroll-card{
+    min-width: 300px;
+    background-color: #F6F7F8;
+    border-radius: 8px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+    overflow: hidden;
+    height: 420px;
+}
+.page-two .shop-button button.shop{
+    width: 85%;
+    background-color: #0AAD0A;
+    color: #FFFFFF;
+    border-radius: 12px;
+    height: 56px;
+    margin-top: 48px;
+    max-width: 350px;
+    border: none;
+}
+.page-two .shop-button{
+    display: flex;
+    justify-content: center;
+}
+.page-two .shop-button button.shop span{
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    line-height: 26px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.app-info .app-flex img{
+    width: 367px;
+    padding: 30px 60px 40px 60px;
+}
+.app-info .app-flex{
+    display: flex;
+    justify-content: center;
+}
+ .app-info .download-button button.download{
+    width: 85%;
+    background-color: #0AAD0A;
+    color: #FFFFFF;
+    border-radius: 12px;
+    height: 56px;
+    margin-top: 10px;
+    max-width: 350px;
+    border: none;
+}
+.app-info .download-button{
+    display: flex;
+    justify-content: center;
+}
+.app-info .download-button button.download span{
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    line-height: 26px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.app-info{
+    padding: 0px 30px;
+    align-items: center;
+}
+.app-info .shop-text h3{
+    font-size: 23px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #343538;
+    text-align: center;
+}
+.app-info .shop-text p{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #72767E;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 18px 0;
+}
+.page-three{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 32px 32px;
+}
+.page-three h2{
+    font-size: 23px;
+    line-height: 32px;
+    text-align: center;
+    padding-bottom: 32px;
+    font-weight: normal;
+    max-width: 450px;
+    color: #343538;
+}
+.page-three .ad-image{
+    max-width: 100%;
+    margin-bottom: 16px;
+}
+.page-three .ad-image img{
+    width: 100%;
+}
+.page-three .product-flex{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.page-three .product-flex .product-card{
+    margin-bottom: 8px;
+    margin-right: 0;
+    background-color: #F6F7F8;
+    border-radius: 8px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.page-three .product-flex .product-card h3{
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #343538;
+    text-align: left;
+    word-break: break-word;
+    padding: 1px 6px;
+}
+.page-three .tab-ad-image{
+    display: none;
+}
+.page-three .product-flex .product-card p{
+    display: none;
+}
+.questions{
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 32px 32px 60px;
+}
+.questions .question-box h2{
+    font-size: 23px;
+    line-height: 32px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #343538;
+}
+.questions .question-box .tag{
+    border-bottom: 1px solid #E8E9EB;
+    padding: 16px 0;
+}
+.questions .question-box .tag button{
+    align-items: center;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #424242;
+    padding: 0;
+    height: auto;
+}
+.questions .question-box .tag button span{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: normal;
+    white-space: normal;
+    text-align: left;
+    margin-right: 61px;
+    font-family: regular;
+}
+@media screen and (min-width:767px) {
     .heading-main{
         display: none;
     }
@@ -132,237 +486,197 @@ body{
     }
     .tab-heading-main .tab-heading .heading-button{
         display: flex;
+        padding-left: 10px;
+        padding-bottom: 14px;
+        gap: 45px;
     }
-    .tab-heading-main .tab-heading .heading-button select#flag{
-        width: 15%;
-        height: 100%;
-    }
+   
     .tab-heading-main .tab-heading .heading-button svg{
-        width: 10%;
+        width: 23px;
+        height: 23px;
     }
-} */
-.nav-bar{
-    display: flex;
-    flex-direction: column;
-    background-color: #09624B;
-    padding-top: 12px;
-    padding-right: 16px;
-    padding-bottom: 5px;
-    padding-left: 16px;
-    gap: 9px;
-    width: 100%;
-}
-.nav-bar  .nav-bar-flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav-bar .nav-bar-flex span button.menu{
-    background-color: transparent;
-    border-radius: 4px;
-    height: 32px;
-    width: 32px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nav-bar .nav-bar-flex .logo{
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    padding: 12px 0 23px 23px;
-    margin-bottom: 0px;
-    /* border: 2px solid #FFFFFF; */
-    border-radius: 8px;
-    font-size: 15px;
-    /* background-color: #F6F7F8; */
-    text-indent: 13px;
-    color: #343538;
-    height: 40px;
-    text-align: left;
-    line-height: 22px;
-    font-weight: 600;
-    justify-content: center;
-}
-.nav-bar .nav-bar-flex .logo img{
-    border-style: none;
-    line-height: 1.15;
-    width: 57%;
+    .tab-heading-main .tab-heading .heading-button button {
+        display: flex;
+        background-color: #FFFFFF;
+        border-radius: 8px;
+        box-sizing: border-box;
+        padding: 10px 12px;
+        border: solid 1px #C7C8CD;
+        align-items: center;
+        margin-bottom: 71px;
+    }
+    .tab-heading-main .heading-button button .us-flag{
+        width: 16%;
+        height: 52%;
+    }
+    .tab-heading-main{
+        background-image: url(assets/images/homepage_background_full_m3_cropped-8d2d286263821da7decd7c61fb1db1eb0e3dec13e0c356277d6d3cb7484c024a.jpg);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: contain;
+        position: absolute;
+        z-index: -1;
+        background-color: #deedd6;
+        max-height: 220px;
+        height: 100%;
+        width: 100%;
+    }
+    .tab-heading-main .heading-button button  select#flag{
+        background-color: transparent;
+        border: none;
+    }
+    .tab-heading-main .heading-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 220px;
+    }
+    .tab-heading-main .heading-button .tab-title h1{
+        font-size: 41px;
+        line-height: 52px;
+        font-weight: 600;
+        color: #343538;
+        margin: 0;
+        width: 578px;
+    }
+    .tab-heading-main .heading-button .tab-title{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .body-container{
+        margin-inline: auto;
+        padding: 0 32px;
+        max-width: 1152px;
+        margin-top: 250px;
+
+    }
+    .grid-section .items-grid li button {
+        box-shadow: rgb(0 0 0 / 16%) 0px 2px 8px;
+        border-radius: 12px;
+    }
+    .grid-section .items-grid{
+        gap: 24px;
+    }
+    .body-container .choose-text h2{
+        font-size: 22px;
+        line-height: 40px;
+        font-weight: normal;
+        margin-top: 8px;
+        margin-bottom: 24px;
+        color: #343538;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .grid-section .items-grid li button .flex-container .card .arrow{
+        display: none;
+    }
+    .page-three .ad-image{
+        display: none;
+    }
+    .page-three .tab-ad-image{
+        display: block;
+        max-width: 100%;
+      
+    }
+    .page-three .tab-ad-image img{
+        width: 100%;
+        border-radius: 8px;
+    }
+    .page-three  h2 {
+        max-width: 450px;
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .app-info{
+        display: none;
+    }
+    .questions .question-box .tag button span{
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: normal;
+        white-space: normal;
+        text-align: left;
+        margin-right: 132px;
+        font-family: regular;
+    }
+    .questions .question-box .tag{
+        border-bottom: 1px solid #E8E9EB;
+        padding: 24px 0;
+    }
     
 }
-.nav-bar .nav-bar-flex  button.cart{
-    display: flex;
-    justify-content: space-between;
-    background-color:rgb(246, 247, 248);
-    border: none;
-    border-radius: 24px;
-    padding: 4px 8px;
-    color: rgb(199,200,205);
-    height: 32px;
-    min-width: 57px;
-    font-size: 15px;
-    line-height: 22px;
-    font-weight: 600;
-    align-items: flex-start;
-    justify-content: space-evenly;
+@media screen and (min-width:778px) {
+    .grid-section .items-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-section{
+        gap: 30px;
+    }
 }
-.nav-bar .nav-bar-flex  button.cart span{
-    color: black;
+@media screen and (min-width:1024px){
+    .page-two .scroll-bar{
+        justify-content: center;
+    }
+    .page-two .scroll-flex h2{
+        font-size: 31px;
+    }
+    .page-two{
+        padding: 0 32px;
+    }
+    .page-three .product-flex .product-card p{
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #343538;
+        margin: 24px 0 0;
+        text-align: left;
+    }
+    .page-three .product-flex .product-card h3{
+        padding: 1px 0;
+    }
+    .page-three {
+        display: flex;
+        justify-content: center;
+    }
 }
-.nav-bar  .code{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+@media screen and (min-width:1280px) {
+    .page-three .product-flex{
+        display: flex;
+        flex-direction: row;
+    }
+    .page-three .product-flex .product-card{
+        border-radius: 8px;
+        padding: 32px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-right: 8px;
+        justify-content: space-between;
+        flex: 1;
+    }
+    .page-three .tab-ad-image{
+        margin-bottom: 16px;
+    }
+    .page-three .product-flex .product-card h3{
+        font-size: 31px;
+        line-height: 40px;
+        font-weight: 600;
+        color: #343538;
+        max-width: 180px;
+        text-align: left;
+        word-break: break-word;
+    }
 }
-.nav-bar  .code span{
-    font-family: bold-font;
-}
-.nav-bar  .code svg{
-    width: 25px;
-    height: 18px;
-}
-.nav-bar .code button{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    border: none;
-    color: #FFFFFF;
-}
-.nav-bar .search-bar{
-    display: flex;
-    align-items: center;
-    padding: 12px 0;
-    width: 100%;
-    padding: 12px 0;
-    border: 2px solid #FFFFFF;
-    border-radius: 8px;
-    font-size: 15px;
-    background-color: #F6F7F8;
-    color: #343538;
-    height: 40px;
-}
-.nav-bar .search-bar button{
-    display: flex;
-    align-items: center;
-    gap: 35px;
-    background-color: #F6F7F8;
-    border:none;
-    justify-content: space-between;
-} 
-.nav-bar .search-bar button span{
-    padding-left: 10px;
-    white-space: nowrap;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 22px;
-    color: #343538;
-    
-}
-.main-container{
-    padding: 12px;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding-top: 16px;
-}
-.main-container .scroll {
-    display: grid;
-    grid-template-columns: repeat(21, 1fr);
-    gap: 7px;
-    overflow-x: scroll;
-    margin: -6px;
-    padding: 6px;
-    width: 100%;
-}
-.main-container .scroll::-webkit-scrollbar{
-    display: none;
-}
-.main-container .scroll .scroll-item img{
-    display: flex;
-    flex-direction: column;
-    border-radius: 50%;
-    box-shadow: 0 0 0 1px #e8e9eb;
-    width: 21vw;
-    min-height: 62px;
-    min-width:50px;
-}
-.main-container .scroll .scroll-item span{
-    white-space: nowrap;
-    max-width: 100%;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 600;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 4px;
-    text-overflow: ellipsis;
-    font-family: regular;
-    width: 62px;
-    white-space: nowrap;
-    overflow: hidden;
-}
-.main-container .scroll .scroll-item {
-    display: flex;
-    flex-direction: column;
-}
-.main-container  span.time{
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 600;
-    color: rgb(114, 118, 126);
-}
-.products{
-    margin-bottom: 16px;
-    margin-top: 66px;
-}
-.products .product-grid{
-    display: grid;
-    grid-template-columns: 1fr,1fr;
-}
-.products .product-grid .card-one{
-    display: flex;
-    flex-direction: column;
-}
-.products .product-grid .card-one ul{
-    display: flex;
-    
-}
-.products .product-grid .card-one ul li{
-    list-style-type: none;
-}
-.products .product-grid .card-one .heading h3{
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: bold;
-    font-family: bold-font;
-}
-.products .product-grid .card-one .sub-time{
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: bold;
-    color: rgba(28, 125, 28);
-    margin-top: 4px;
-}
-.products .product-grid .card-one .text{
-    font-size: 10px;
-    line-height: 14px;
-    font-weight: 600;
-    color: rgb(114, 118, 126);
-    width: 91px;
-    display: inline-flex;
-    flex-wrap: wrap;
-}
-.products .product-grid .card-one ul li img{
-    max-width: 100%;
-    transform: translate3d(0px, 0px, 0px);
-    background: rgb(255, 255, 255);
-    display: block;
-    border-radius: 50%;
-    box-shadow: ;
+@media screen and (min-width:1144px) {
+    .grid-section .items-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .page-three .product-flex{
+        justify-content: center;
+    }
 }
