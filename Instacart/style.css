@@ -600,6 +600,13 @@ body{
     flex-direction: row;
     align-items: center;
 }
+.accessibility h2{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    flex: 2 0 0;
+    padding: 12px 0;
+}
 .access  .checkbox-icon input{
     display: inline-block;
     position: relative;
@@ -616,11 +623,80 @@ body{
     width: 24px;
     border-radius: 50%;
     background-color: white;
-    top: 4px;
+    top: 0px !important;
+    transform: translateX(4px);
+    z-index: 100;
+    box-shadow: 0px 2px 8px rgb(0 0 0 / 16%);
+} 
+.access  .checkbox-icon input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 58px;
+
+}
+.access .false{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.access .false .checkbox{
+    white-space: nowrap;
+}
+.access .switch{
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    width: 58px;
+    height: 32px;
+}
+.access .switch .cross{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: white;
+    top: -34px;
     transform: translateX(4px);
     z-index: 100;
     box-shadow: 0px 2px 8px rgb(0 0 0 / 16%);
 }
+.access .switch svg{
+    fill: #C7C8CD;
+}
+.legal-text h2{
+    padding: 20px 0 0;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+}
+.terms{
+    flex: 3 0 0;
+    padding: 0 5% 0 0;
+}
+.terms li{
+    white-space: nowrap;
+}
+.description p{
+    padding-left: 6px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #72767E;
+}
+.legal .media ul li{
+    list-style-type: none;
+}
+.legal{
+    display: flex;
+    flex-direction: column;
+}
+
 @media screen and (min-width:767px) {
     .heading-main{
         display: none;
