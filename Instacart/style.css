@@ -735,6 +735,9 @@ body{
     .dropdown-menu .menu {
         gap: 86px;
     }
+    .terms{
+        list-style-type: none;
+    }
   
 }
 @media screen and (min-width:778px) {
