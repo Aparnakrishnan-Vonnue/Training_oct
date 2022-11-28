@@ -791,7 +791,7 @@ list-style-type: none;
     }
     .tab-heading-main .tab-heading .heading-button{
         display: flex;
-        padding-left: 10px;
+        padding-right: 219px;
         padding-bottom: 14px;
         gap: 45px;
     }
@@ -1016,6 +1016,10 @@ list-style-type: none;
         display: block;
         margin: 0;
         font-family: regular;
+    }
+    .dropdown-menu .menu .list-of-items p:hover{
+        cursor: pointer;
+        text-decoration: underline;
     }
     .version-flex{
         align-items: baseline;
