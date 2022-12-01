@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: myfont;
+    src: url(assets/font/roboto-regular.woff2);
+}
+body{
+    font-family: myfont;
+}
+.container .nav-items img{
+    width: 23px;
+    height: 22px;
+}
+.container .nav-container{
+    height: 160px;
+   display: flex;
+   align-items: stretch;
+   border: 0 solid black;
+   flex-direction: column;
+   bottom: 4px;
+}
+.container .nav-items{
+    height: 52px;
+    opacity: 1;
+    transform: translateY(0px);
+    display: flex;
+    background-color: rgb(40, 116, 240);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px 0 12px;
+}
+
+.container .nav-items .log-in{
+    padding-left: 21px;
+}
+.container .nav-items .log-in p{
+    color: #EAEAEA;
+    margin-bottom: 2px;
+}
+.container .nav-items .mi-text p{
+    color: #EAEAEA;
+}
+.container .nav-items svg.cart{
+    margin-right: 4px;
+}
+.sort-bar .flex{
+    display: flex;
+    justify-content: space-around;
+}
+.sort-bar .flex .sort-flex{
+    display: flex;
+    align-items: center;
+}
+.sort-bar .flex .filter-flex{
+    display: flex;
+    align-items: center;
+}
