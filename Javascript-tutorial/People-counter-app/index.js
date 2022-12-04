@@ -3,8 +3,6 @@
 //let count = 5/7
 //console.log(count)
 
-// let myage = 24
-// console.log(myage)
 
 //let firstBatch=5
 //let secondBatch=8
