@@ -393,9 +393,166 @@
     font-size: 14px;
     color: rgba(0,0,0,1.00);
 }
-
+.tab-view{
+    display: none;
+}
 @media screen and (min-width:911px){
     .mobile-view{
         display: none;
     }
+    .tab-view{
+        display: block;
+        padding-bottom: 56px;
+        /* min-width: 978px; */
+
+    }
+    .tab-nav-bar{
+        background-color: #2874f0;
+        height: 51px;
+        width: 100%;
+        color: #f0f0f0;
+        z-index: 10;
+        flex-direction: row;
+    }
+    .nav-bar-flex{
+        display: flex;
+        align-items: center;
+        max-width: 1248px;
+        width: 100%;
+        height: 100%;
+
+    }
+    .nav-bar-flex .empty{
+        min-width: 124px;
+        height: 100%;
+    }
+    .nav-bar-flex .search-bar .search-bar-flex{
+        display: flex;
+    }
+    .nav-bar-flex .logo-flex .logo-img img{
+        width: 66px;
+    }
+    .nav-bar-flex .logo-flex  p{
+        font-size: 11px;
+        font-style: italic;
+        margin-top: -1px;
+        color: white;
+    }
+    .nav-bar-flex  span{
+        color: #ffe500;
+    }
+    .nav-bar-flex p img{
+        width: 10px;
+    }
+    .nav-bar-flex .logo{
+        min-width: 73px;
+        justify-content: flex-end;
+    }
+    .nav-bar-flex .logo-flex{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .search-bar{
+        display: flex;
+        height: 100%;
+        min-width: 304px;
+        align-items: center;
+    }
+    .search-panel{
+        display: inline-block;
+        box-shadow: 0 2px 4px 0 rgb(0 0 0/ 23%);
+        width: 96%;
+        height: 36px;
+        max-width: 338px;
+    }
+    .search-bar-flex{
+        display: flex;
+        border-radius: 2px;
+        background-color: #fff;
+        width: 100%;
+        position: relative;
+    }
+    .search-text input{
+        padding: 0 16px;
+        border-radius: 2px 0 0 2px;
+        font-size: 13px;
+        height: 35px;
+        width: 100%;
+        border: none;
+    }
+    .search-bar-flex button{
+        justify-content: flex-end;
+        border: 1px solid #fff;
+        background-color: #fff;
+        height: 34px;
+        width: 44px;
+        border-radius: 2px;
+        cursor: pointer;
+        padding: 4px 12px 0 8px;
+        position: absolute;
+        right: 0;
+    }
+    .search-bar-flex  button svg{
+        width: 20px;
+        height: 20px;
+    }
+    .seller p{
+        white-space: nowrap;
+    }
+    .more .more-arrow{
+        display: flex;
+    }
+    .login{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        height: 100%;
+        line-height: 20px;
+        font-size: 16px;
+        letter-spacing: 0.1px;
+        font-weight: 500;
+        color: #fff;
+    }
+    .login .login-btn{
+        color: #2874f0;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 2px;
+        height: 30px;
+        padding: 5px 36px;
+        border: 1px solid #dbdbdb;
+        background-color: #fff;
+    }
+    .login .login-btn p{
+        font-size: 16px;
+        line-height: 20px;
+        font-family: myfont;
+    }
+    .seller{
+        margin: 0 20px;
+        max-width: 150px;
+        align-content: center;
+        justify-content: flex-end;
+    }
+    .seller p{
+        line-height: 20px;
+        font-size: 16px;
+        letter-spacing: 0.1px;
+        font-weight: 500;
+        color: #fff;
+        font-family: myfont;
 }
+.more .more-arrow{
+    display: flex;
+    align-items: center;
+}
+.more .more-arrow p{
+    line-height: 20px;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    font-weight: 500;
+    color: #fff;
+    font-family: myfont;
+}
+    }
