@@ -38,3 +38,16 @@ button#increment-btn{
     font-family: 'Times New Roman', Times, serif;
     box-shadow: 0 5px 0 5px;
 }
+button#save-btn{
+    font-size: 55px;
+    position: relative;
+    top: 50px;
+    border-radius: 100%;
+    padding: 24px;
+    background-color:  rgba(47, 44, 44, 0.626);
+    color: white;
+}
+button#save-btn:hover{
+    cursor: pointer;
+    transform: translateY(10px);
+}

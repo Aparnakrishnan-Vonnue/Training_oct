@@ -32,3 +32,21 @@ function increment() {
     console.log("The button was clicked")  
 }
 
+
+// let countEl = document.getElementById("count-el")
+// console.log(countEl)
+
+// let count=0
+// function increment(){
+//     count=count+1
+//     countEl.innertext=count
+// }
+
+// function save() {
+//     console.log(count)
+// }
+
+// let username="Peter"
+// let message = "You have three new notifications"
+
+// console.log(message+username)
