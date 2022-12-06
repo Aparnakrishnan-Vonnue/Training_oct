@@ -7,18 +7,18 @@
 
 @font-face {
     font-family: hello;
-    src: url('/Fonts/myfont.woff2') format('woff2');
+    src: url('Fonts/myfont.woff2') format('woff2');
 }
 
 @font-face {
     font-family: hello;
-    src: url('/Fonts/myfont.woff2') format('woff2');
+    src: url('Fonts/myfont.woff2') format('woff2');
     font-weight: 400;
 }
 
 @font-face {
     font-family: hello;
-    src: url('/Fonts/myfont.woff2') format('woff2');
+    src: url('Fonts/myfont.woff2') format('woff2');
     font-weight: 600;
 }
 
@@ -330,7 +330,7 @@ header .azure {
     object-fit: cover;
     width: 100%;
     position: relative;
-    background-image: url("/Assets/december-hero-mobile.png");
+    background-image: url("Assets/december-hero-mobile.png");
     background-position: 61% 55%;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -1750,7 +1750,7 @@ button.story a {
         flex-direction: column;
         width: 100%;
         position: relative;
-        background-image: url("/Assets/december-hero-mobile.png");
+        background-image: url("Assets/december-hero-mobile.png");
         background-position: 50% 50%;
         background-repeat: no-repeat;
         object-fit: cover;
@@ -1777,7 +1777,7 @@ button.story a {
         margin-top: 0, 0, 12px;
         text-align: center;
         box-sizing: border-box;
-        padding: 0 0px 0 9px;
+        padding: 0 0px 0 15px;
         text-align: center;
     }
 
@@ -1850,7 +1850,7 @@ button.story a {
 
     .tab-grid .card-1 {
         grid-row: 1/3;
-        background: url("/Assets/ez-optimize-desktop.jpg");
+        background: url("Assets/ez-optimize-desktop.jpg");
         height: 100%;
         background-repeat: no-repeat;
         max-height: 100%;
@@ -2500,7 +2500,7 @@ button.story a {
         border-radius: 6px;
         grid-column: 3/4;
         position: relative;
-        background-image: url(/Assets/scott-g.webp);
+        background-image: url(Assets/scott-g.webp);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -2520,7 +2520,7 @@ button.story a {
         grid-column: 2/3;
         grid-row: 2/3;
         position: relative;
-        background-image: url(/Assets/azure-regions-525w.webp);
+        background-image: url(Assets/azure-regions-525w.webp);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -2999,13 +2999,15 @@ button.tab-story a {
         object-fit: cover;
         width: 100%;
         position: relative;
-        background-image: url("/Assets/december-hero-desktop.webp");
+        background-image: url("Assets/december-hero-desktop.webp");
         background-position: 50% 50%;
         object-fit: cover;
         background-size: cover;
         background-repeat: no-repeat;
         gap: 20px;
         padding-bottom: 50px;
+        height: 557px;
+
     }
 
     .lt-main-banner .text p {
@@ -3034,6 +3036,7 @@ button.tab-story a {
         margin-left: 10px;
         padding-top: 36px;
         width: fit-content;
+        padding-top: 3px;
     }
 
 
@@ -3088,7 +3091,7 @@ button.tab-story a {
     .lt-grid {
         column-gap: 20px;
         row-gap: 24px;
-        padding: 0 44px 0 0;
+        padding: 0 13px 0 10px;
     }
 
     .lt-center-items {
@@ -3150,14 +3153,14 @@ button.tab-story a {
     }
 
     /* .lt-grid .card-1{
-        background-image: url(/Assets/ez-optimize-desktop.jpg);
+        background-image: url(ets/ez-optimize-desktop.jpg);
         background-repeat: no-repeat;
         background-size: cover;
 
     } */
     .lt-grid .card-1 {
         grid-row: 1/3;
-        background: url("/Assets/ez-optimize-desktop.jpg");
+        background: url("Assets/ez-optimize-desktop.jpg");
         height: 100%;
         background-repeat: no-repeat;
         max-height: 100%;
@@ -3499,6 +3502,7 @@ button.tab-story a {
         white-space: nowrap;
         align-items: flex-start;
         background-color: #f8f9fa;
+
     }
 
 
@@ -3514,6 +3518,7 @@ button.tab-story a {
 
     .lt-second-grid .popular-button button.popular p {
         font-weight: 600;
+        font-size:16px
     }
 
     .lt-container {
@@ -3533,6 +3538,46 @@ button.tab-story a {
         display: flex;
         flex-direction: column;
     }
+
+
+    }
+
+
+    .lt-second-grid button.popular {
+        display: flex;
+        align-items: center;
+        background-color: #f8f9fa;
+        border: none;
+        justify-content: space-around;
+        min-height: 60px;
+        margin-left: 2px;
+    }
+
+    .lt-second-grid .popular-button button.popular p {
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .lt-buttons button.popular p{
+        font-size: 16px;
+    }
+    .lt-container {
+        display: flex;
+    }
+
+    .lt-tablet {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lt-tablet a {
+        white-space: wrap;
+    }
+
+    .lt-case-study {
+        display: flex;
+        flex-direction: column;
+    }
+
 
     .lt-idea {
         display: flex;
@@ -3581,7 +3626,7 @@ button.tab-story a {
 
     .lt-tablet a {
         width: 25%;
-        margin-left: 125px;
+        margin-left: -1px;
     }
 
     .lt-nhs {
@@ -3886,6 +3931,7 @@ button.tab-story a {
         margin-top: 30px;
         align-items: center;
 
+
     }
 
     .lt-column-grid {
@@ -3901,6 +3947,24 @@ button.tab-story a {
         margin: 0 60px;
 
     }
+
+
+    }
+
+    .lt-column-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 27vw);
+        grid-template-rows: 1fr;
+        gap: 15px;
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #f8f9fa;
+        margin: 0 60px;
+
+    }
+
 
     .lt-column-grid .lt-column-card-one .picture-one img {
         height: 36px;
@@ -4047,6 +4111,7 @@ button.tab-story a {
 
     #footer footer .lt-footer-container .footer-nav-bar .social-icons ul li {
         list-style-type: none;
+
     }
 
     #footer footer .lt-footer-container .footer-nav-bar .social-icons ul {
@@ -4098,7 +4163,7 @@ button.tab-story a {
     }
 
     .lt-grid .card-1 {
-        background-image: url(/Assets/ez-optimize-desktop.jpg);
+        background-image: url(Assets/ez-optimize-desktop.jpg);
     }
 
     .lt-tablet a {
@@ -4124,6 +4189,141 @@ button.tab-story a {
         border: 1px solid #747479;
         background-color: #fff;
         width: 15%;
+    }
+
+}
+
+/* laptop view */
+@media screen and (min-width:1080px) {
+    .tab-nav {
+        display: none;
+    }
+
+    .tab-items {
+        display: none;
+    }
+
+    .lt-items {
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    #section {
+        background-color: #f8f9fa;
+    }
+
+    .layout {
+        background-color: #fff;
+    }
+
+    /* .lap-items{
+        display: flex;
+    } */
+    .lap-nav .azure li:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-color: black;
+    }
+
+    .lap-nav {
+        display: flex;
+        position: relative;
+        background-color: #ffff;
+        box-sizing: inherit;
+        justify-content: space-around;
+        height: 54px;
+    }
+
+    .content {
+        max-width: 1310px;
+        margin-top: auto;
+    }
+
+    .container_lap {
+        display: flex;
+    }
+
+    #footer footer .lt-footer-container .footer-nav-bar .social-icons ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 12px;
+        margin-left: 29px;
+        gap: 20px;
+    }
+
+    .lt-footer-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin-top: 36px;
+        column-gap: 24px;
+        max-width: 1310px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .lt-footer-grid .azure-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lt-footer-grid .azure-details h3 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+
+    .lt-footer-grid .azure-details .azure-details-sub {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+    }
+
+    .lt-footer-grid .azure-details .azure-details-sub span {
+        color: #1a1a1f;
+        display: block;
+        padding: 2px 0;
+        flex-shrink: 0;
+        border: 0;
+        font-size: 12px;
+    }
+
+    .lt-grid .card-1 {
+        background-image: url(Assets/ez-optimize-desktop.jpg);
+    }
+
+    .lt-tablet a {
+        text-decoration: none;
+        color: #0062ad;
+        padding: 24px 24px;
+    }
+
+    #elements .elements-list {
+        display: flex;
+    }
+
+    .lt-footer-container .footer-nav-bar {
+        padding-left: 0;
+    }
+
+    #footer .footer-final .language select {
+        box-sizing: border-box;
+        color: #1a1a1f;
+        line-height: 1.2;
+        font-size: 14px;
+        padding: 5px;
+        border: 1px solid #747479;
+        background-color: #fff;
+        width: 15%;
+    }
+    .elements .elements-list{
+        display: flex;
     }
 
 }
@@ -4319,7 +4519,7 @@ button.tab-story a {
     }
 
     .lt-grid .card-1 {
-        background-image: url("/Assets/ez-optimize-desktop.jpg");
+        background-image: url("Assets/ez-optimize-desktop.jpg");
         background-position: 0% 0%;
     }
 
@@ -4369,7 +4569,7 @@ button.tab-story a {
         object-fit: cover;
         width: 100%;
         position: relative;
-        background-image: url("/Assets/december-hero-desktop.webp");
+        background-image: url("Assets/december-hero-desktop.webp");
         background-position: 50%;
         object-fit: cover;
         background-size: cover;
@@ -4425,6 +4625,7 @@ button.tab-story a {
 
     .lt-second-grid button.popular p.popular {
         font-weight: 600;
+        font-sixe:16px
     }
 
     .dashboard {
@@ -4501,6 +4702,7 @@ button.tab-story a {
     .lt-nhs .logo-section :nth-child(1) {
         border-bottom: 4px solid #0078d4;
         padding-bottom: 15px;
+
     }
 
     .lt-nhs .logo-section .nhs-logo:hover {
@@ -4544,6 +4746,60 @@ button.tab-story a {
         text-decoration: underline;
     }
 
+
+    }
+
+    .lt-nhs .logo-section .nhs-logo:hover {
+        background-color: #e7eaefca;
+    }
+
+    .lt-nhs .logo-section .grey-logos:hover {
+        background-color: #e7eaefca;
+        filter: grayscale(0%);
+    }
+
+    .lt-playback {
+        position: absolute;
+        bottom: 59%;
+        left: 5%;
+    }
+
+    .lt-column-grid {
+        max-width: 1310px;
+        margin: 0 auto;
+        padding-right: 0;
+        padding-left: 56px;
+    }
+
+    .grid-container {
+        background-color: #f8f9fa;
+    }
+
+    .lt-footer-container .footer-nav-bar {
+        max-width: 1310px;
+        padding-left: 140px;
+    }
+
+    .container_lap .dropdown:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+
+    .access .menu span:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+
+    .lt-livebutton button.free:hover {
+        cursor: pointer;
+        background-color: black;
+        color: #ffff;
+        text-decoration: underline;
+    }
+
+    .lt-grid .card-1 .card-content-1 h2 a:hover {
     .access .menu button:hover {
         cursor: pointer;
         text-decoration: underline;
@@ -4553,6 +4809,40 @@ button.tab-story a {
         cursor: pointer;
         text-decoration: underline;
     }
+
+
+    .lt-grid .card-2 .card-content-2 h2 a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .lt-center-items button:hover {
+        cursor: pointer;
+        background-color: #0078d4;
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    .lt-center-items button a:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    .lt-buttons button.popular:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .lt-buttons .product-link a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: #000;
+    }
+
+    .lt-buttons .product-link a:hover img {
+        transform: translateX(-4px);
+    }
+
 
     .lt-livebutton button.free:hover {
         cursor: pointer;
@@ -4594,6 +4884,12 @@ button.tab-story a {
         color: #000;
     }
 
+
+    .lt-css-grid .title-2 h6:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
     .lt-buttons .product-link a:hover img {
         transform: translateX(-4px);
     }
@@ -4603,20 +4899,60 @@ button.tab-story a {
         text-decoration: underline;
     }
 
+
     .lt-css-grid .title-2 h6:hover {
         cursor: pointer;
         text-decoration: underline;
     }
+
 
     .lt-css-grid .title-3 h6:hover {
         cursor: pointer;
         text-decoration: underline;
     }
 
+
     .lt-css-grid .title-4 h6:hover {
         cursor: pointer;
         text-decoration: underline;
     }
+
+
+    .lt-tablet:hover {
+        cursor: pointer;
+        transform: translateX(-18px);
+        transition-duration: 0.4s;
+    }
+
+    .lt-casestudy-link a:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .lt-casestudy-link a:hover img {
+        transform: translateX(4px);
+        transition-duration: 0.5s;
+    }
+
+    .lt-explore .explore-flex .explore-sub button:hover {
+        background-color: #0062ad;
+    }
+
+    .lt-explore .explore-flex .explore-sub button a:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    .lt-news-container .server:hover .card-content p.description {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .lt-news-container .scott:hover .card-content p {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
 
     .lt-css-grid .title-5 h6:hover {
         cursor: pointer;
@@ -4663,6 +4999,7 @@ button.tab-story a {
         cursor: pointer;
     }
 
+
     .lt-news-container .datacentres:hover .card-content p {
         text-decoration: underline;
         cursor: pointer;
@@ -4672,6 +5009,7 @@ button.tab-story a {
         text-decoration: underline;
         cursor: pointer;
     }
+
 
     .playback-links .dev-stories span:hover {
         cursor: pointer;
