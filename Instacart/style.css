@@ -695,8 +695,7 @@ body{
 }
 .legal{
     display: flex;
-    flex-direction: column;
-}
+
 @media screen and (min-width:767px) {
     .heading-main{
         display: none;
@@ -830,7 +829,7 @@ body{
     }
     .dropdown-menu .menu {
         gap: 86px;
-    }
+
     .access{
       display: flex;
     flex-direction: row;
