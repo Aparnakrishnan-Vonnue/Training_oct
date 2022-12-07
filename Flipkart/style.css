@@ -393,13 +393,18 @@
     font-size: 14px;
     color: rgba(0,0,0,1.00);
 }
+
 .tab-view{
     display: none;
 }
+
+
+
 @media screen and (min-width:911px){
     .mobile-view{
         display: none;
     }
+
     .tab-view{
         display: block;
         overflow-x: hidden;
@@ -732,3 +737,4 @@ section.price{
     display: inline-block;
 }
 }
+

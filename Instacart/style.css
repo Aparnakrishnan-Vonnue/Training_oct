@@ -593,6 +593,7 @@ body{
 .dropdown-menu .menu .list-of-items{
     display: none;
 }
+
 .access {
     display: flex;
     flex-direction: column;
@@ -781,6 +782,7 @@ body{
 list-style-type: none;
 }
 
+
 @media screen and (min-width:767px) {
     .heading-main{
         display: none;
@@ -947,6 +949,7 @@ list-style-type: none;
     width: 20px;
     height: 20px;
    }
+
 }
 @media screen and (min-width:778px) {
     .grid-section .items-grid{
