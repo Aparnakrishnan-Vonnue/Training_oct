@@ -586,7 +586,10 @@ body{
     display: none;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f6c47ffd8b234fa40d0fb119ff52112f9202dda1
 
 .access {
     display: flex;
@@ -697,9 +700,13 @@ body{
 }
 .legal{
     display: flex;
+<<<<<<< HEAD
     flex-direction: column;
 }
 >>>>>>> b300ffac1ceead9efcfc7d44e7ebd3db5e15b216
+=======
+
+>>>>>>> f6c47ffd8b234fa40d0fb119ff52112f9202dda1
 @media screen and (min-width:767px) {
     .heading-main{
         display: none;
@@ -833,9 +840,13 @@ body{
     }
     .dropdown-menu .menu {
         gap: 86px;
+<<<<<<< HEAD
     }
 <<<<<<< HEAD
 =======
+=======
+
+>>>>>>> f6c47ffd8b234fa40d0fb119ff52112f9202dda1
     .access{
       display: flex;
     flex-direction: row;
@@ -866,7 +877,10 @@ body{
     width: 20px;
     height: 20px;
    }
+<<<<<<< HEAD
 >>>>>>> b300ffac1ceead9efcfc7d44e7ebd3db5e15b216
+=======
+>>>>>>> f6c47ffd8b234fa40d0fb119ff52112f9202dda1
   
 }
 @media screen and (min-width:778px) {
