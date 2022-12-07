@@ -393,13 +393,27 @@
     font-size: 14px;
     color: rgba(0,0,0,1.00);
 }
+<<<<<<< HEAD
 .tab-view{
     display: none;
 }
+=======
+
+.tab-view{
+    display: none;
+}
+
+
+
+>>>>>>> 310705880b3cd962157ec24d524ba0b7d8b16a33
 @media screen and (min-width:911px){
     .mobile-view{
         display: none;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 310705880b3cd962157ec24d524ba0b7d8b16a33
     .tab-view{
         display: block;
         overflow-x: hidden;
@@ -732,3 +746,7 @@ section.price{
     display: inline-block;
 }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 310705880b3cd962157ec24d524ba0b7d8b16a33
