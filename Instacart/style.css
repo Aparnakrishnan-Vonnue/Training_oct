@@ -697,6 +697,7 @@ body{
     display: flex;
     flex-direction: column;
 }
+
 @media screen and (min-width:767px) {
     .heading-main{
         display: none;
@@ -830,7 +831,37 @@ body{
     }
     .dropdown-menu .menu {
         gap: 86px;
-    }
+
+    .access{
+      display: flex;
+    flex-direction: row;
+   }
+   .access .color .false{
+    justify-content: center;
+    gap: 20px;
+   }
+   .legal-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+   }
+   .legal-text{
+    display: flex;
+    flex: 1;
+   }
+   .legal .terms-media{
+    display: flex;
+    flex: 1;
+    align-items: left;
+    justify-content: space-between;
+   }
+   
+   .legal .media ul li svg{
+
+    width: 20px;
+    height: 20px;
+   }
   
 }
 @media screen and (min-width:778px) {
