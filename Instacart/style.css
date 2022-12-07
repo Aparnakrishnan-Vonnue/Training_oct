@@ -919,8 +919,8 @@ list-style-type: none;
     .dropdown-menu .menu {
         gap: 86px;
     }
-   .access{
-    display: flex;
+    .access{
+      display: flex;
     flex-direction: row;
    }
    .access .color .false{
