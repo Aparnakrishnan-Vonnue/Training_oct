@@ -783,6 +783,7 @@ body{
     display: flex;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     flex-direction: column;
 }
 >>>>>>> b300ffac1ceead9efcfc7d44e7ebd3db5e15b216
@@ -790,6 +791,16 @@ body{
 =======
     flex-direction: column;
 }
+=======
+    flex-direction: column;
+}
+
+.terms li{
+list-style-type: none;
+}
+
+
+>>>>>>> 310705880b3cd962157ec24d524ba0b7d8b16a33
 
 .terms li{
 list-style-type: none;
@@ -936,12 +947,16 @@ list-style-type: none;
         gap: 86px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     }
 <<<<<<< HEAD
 =======
 =======
 
 >>>>>>> f6c47ffd8b234fa40d0fb119ff52112f9202dda1
+=======
+    }
+>>>>>>> 310705880b3cd962157ec24d524ba0b7d8b16a33
 =======
     }
 >>>>>>> 310705880b3cd962157ec24d524ba0b7d8b16a33
@@ -977,10 +992,14 @@ list-style-type: none;
    }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> b300ffac1ceead9efcfc7d44e7ebd3db5e15b216
 =======
 >>>>>>> f6c47ffd8b234fa40d0fb119ff52112f9202dda1
   
+=======
+
+>>>>>>> 310705880b3cd962157ec24d524ba0b7d8b16a33
 =======
 
 >>>>>>> 310705880b3cd962157ec24d524ba0b7d8b16a33
