@@ -1,0 +1,401 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: myfont;
+    src: url(assets/font/roboto-regular.woff2);
+}
+
+.container .nav-items img{
+    width: 24px;
+    height: 23px;
+    position: relative;
+    right: 4px;
+    top: 1px;
+}
+.container .nav-container{
+    height: 156px;
+   display: flex;
+   align-items: stretch;
+   border: 0 solid black;
+   flex-direction: column;
+   bottom: 4px;
+}
+.container .nav-items{
+    height: 52px;
+    opacity: 1;
+    transform: translateY(0px);
+    display: flex;
+    background-color: rgb(40, 116, 240);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px 0 12px;
+}
+
+.container .nav-items .log-in{
+    padding-left: 21px;
+}
+.container .nav-items .log-in p{
+    color: #EAEAEA;
+    margin-bottom: 2px;
+    font-family: myfont;
+}
+.container .nav-items .mi-text p{
+    color: #EAEAEA;
+    font-family: myfont;
+}
+.container .nav-items .mi-text{
+    position: relative;
+    right: 6px;
+}
+.container .nav-items svg.cart{
+    margin-right: 4px;
+}
+.sort-bar .flex{
+    display: flex;
+    justify-content: space-around;
+}
+.sort-bar .flex .sort-flex{
+    display: flex;
+    align-items: center;
+    height: 48px;
+    gap: 9px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+.sort-bar .flex .sort-flex::after{
+    content: '';
+    background-color: #ebebeb;
+    position: absolute;
+    left: 107px;
+    width: 1px;
+    height: 52px;
+}
+.sort-bar .flex .filter-flex{
+    display: flex;
+    align-items: center;
+    height: 48px;
+    gap: 9px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+.sort-bar .sort-flex .sort img{
+    width: 23px;
+    height: 23px;
+}
+.sort-bar .filter-flex .filter img{
+    width: 23px;
+    height: 23px;
+}
+.container .nav-items svg.lens{
+    position: relative;
+    right: 9px;
+}
+.sort-bar .sort-flex p{
+    font-size: 14px;
+    color: rgba(33,33,33,1.00);
+    font-weight: normal;
+    position: relative;
+    bottom: 2px;
+}
+.sort-bar .flex .filter-flex p{
+    font-size: 14px;
+    color: rgba(33,33,33,1.00);
+    font-weight: normal;
+    position: relative;
+    bottom: 2px;
+}
+.scroll-bar{
+    height: 56px;
+}
+.scroll-bar .scroll-bar-flex{
+    display: flex;
+    padding-right: 11px;
+    overflow: scroll;
+    gap: 8px;
+    padding-left: 15px;
+}
+.scroll-bar .scroll-bar-flex::-webkit-scrollbar{
+    display: none;
+}
+.scroll-bar .section-flex{
+   display: flex; 
+   padding-left: 4px;
+   margin-top: 8px;
+   height: 40px;
+   padding-right: 8px;
+   border: 1px solid rgb(219, 219, 219);
+   border-radius: 4px;
+   width: 112px;
+   gap: 7px;
+   padding-top: 2px;
+}
+.scroll-bar .section-flex .scroll-icon img{
+    width: 32px;
+    height: 32px;
+    margin-top: 1px;
+}
+.scroll-bar .section-flex .scroll-text span{
+    line-height: 16px;
+    font-size: 12px;
+    color: rgba(33,33,33,1.00);
+    font-family: myfont;
+}
+.empty{
+    display: flex;
+    height: 4px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.empty img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: fill;
+    opacity: 1;
+}
+.mi-container .shop-flex{
+    height: 2891px;
+    width: 320px;
+}
+.mi-container .shop-flex .card{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+}
+.mi-container .card .card-section{
+    width: 320px;
+    position: relative;
+    border-bottom: 1px solid rgba(234,234,234,1.00);
+}
+.mi-container .card .card-top{
+    padding-bottom: 5px;
+    min-height: 154px;
+    display: flex;
+    padding-top: 10px;
+    
+}
+.mi-container .card .card-top .mobile-image {
+    display: flex;
+    width: 96px;
+    height: 120px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.mi-container .card .card-top .mobile-image img{
+    width: 96px;
+    height: 116px;
+}
+.mi-container .card .card-top .details{
+    padding-right: 20px;
+    padding-left: 12px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+.mi-container .card .card-top .details .model{
+    margin-right: 24px;
+    margin-bottom: 6px;
+}
+.mi-container .card .card-top .details .model span{
+    font-size: 14px;
+    line-height: 16px;
+    font-family: myfont;
+    color: rgba(33,33,33,1.00);
+
+}
+.mi-container .card .rating{
+    display: flex;
+    flex-direction: column;
+}
+.mi-container .card .rating .review{
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 5px;
+}
+.mi-container .card .rating .review .star-reviewers{
+    display: flex;
+    padding-right: 1px;
+    margin-top: 2px;
+    gap: 5px;
+}
+.mi-container .card .rating .review .star-reviewers .star{
+    display: flex;
+    background-color: rgb(0, 140, 0);
+    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 4px;
+    align-items: center;
+}
+.mi-container .card .rating .review .star-reviewers .star span{
+    padding:2px 0px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255,255,255,1.00);
+}
+.mi-container .card .rating .review .star-reviewers .star span.rating-star{
+    font-size: 11px;
+    margin-left: 2px;
+    padding:2px 0px;
+    text-align: center;
+    color: rgba(255,255,255,1.00);
+}
+.mi-container .card .rating .review .star-reviewers .reviewers span{
+    color: rgba(135,135,135,1.00);
+    padding-bottom: 2px;
+    font-size: 12px;
+    font-family: myfont;
+}
+.mi-container .card .rating .review  .plus img{
+    display: flex;
+    position: relative;
+    width: 55.02px;
+    height: 14.0051px;
+}
+
+.mi-container .card .rating .price-and-delivery .offer{
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 7px;
+}
+.mi-container .card .rating .price-and-delivery .offer .price-flex{
+    display: flex;
+    align-items: center;
+}
+.mi-container .card .rating .price-and-delivery .offer .price-flex span{
+    text-decoration: line-through;
+    color: rgba(135,135,135,1.00);
+    font-size: 12px;
+    font-family: myfont;
+}
+.mi-container .card .rating .price-and-delivery .offer .price-flex p{
+    margin-left:7px;
+    font-size: 16px;
+    color: rgba(0,0,0,1.00);
+}
+.mi-container .card .rating .price-and-delivery .offer span.discount{
+    margin-left: 4px;
+    color: rgba(75,181,80,1.00);
+    font-size: 12px;
+    font-family: myfont;
+}
+.mi-container .card .rating .price-and-delivery  .free-delivery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 8px;
+}
+.mi-container .card .rating .price-and-delivery  .free-delivery .free{
+    margin-top: 4px;
+}
+.mi-container .card .rating .price-and-delivery  .free-delivery .free span{
+    color: rgba(0,0,0,1.00);
+    font-size: 12px;
+    font-family: myfont;
+    font-style: normal;
+}
+.mi-container .card .rating .bank-offer{
+    display: flex;
+    margin-top: 6px;
+    align-items: center;
+    position: relative;
+    bottom: 9px;
+}
+.mi-container .card .rating .bank-offer span{
+    color: rgb(38, 165, 65);
+    font-style: normal;
+    font-size: 12px;
+}
+.mi-container .card .card-section .heart{
+    position: absolute;
+    top: 3px;
+    right: 7px;
+    width: 37px;
+    height: 37px; 
+    background-color: rgba(255,255,255,1.00);
+    border-radius: 50%;
+    box-shadow: 0px 1px 3px rgb(0 0 0 /16%);
+}
+.mi-container .card .card-section .heart img{
+   width: 18px;
+   position: relative;
+   left: 9px;
+   top: 11px;
+}
+.mi-container .card .card-section .card-bottom{
+    max-width: 304px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+}
+.mi-container .card .card-section .card-bottom .features{
+    max-width: 304px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 24px;
+    border: 1px solid rgba(240, 240, 240,1.00);
+    border-radius: 4px;
+}
+.mi-container .card .card-section .card-bottom .features span{
+    padding-inline: 8px;
+    color: rgba(135,135,135,1.00);
+    font-size: 12px;
+    max-width: 100%;
+    white-space: nowrap;
+}
+.time-deals{
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+}
+.time-deals .time{
+    background-color: rgba(240, 240, 240,1.00);
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.time-deals .time .time-flex{
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    background-color: rgba(255,255,255,1.00);
+    align-items: center;
+    justify-content: space-between;
+}
+.time-deals .time .time-flex .clock{
+    display: flex;
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+.time-deals .clock-text{
+    padding-left: 18px;
+    padding-right: 20px;
+}
+.time-deals .chevron-arrow{
+    width: 8px;
+}
+.time-deals .clock-text p{
+    font-size: 12px;
+    color: rgba(135,135,135,1.00);
+}
+.time-deals .clock-text span{
+    font-size: 14px;
+    color: rgba(0,0,0,1.00);
+}
+
+@media screen and (min-width:911px){
+    .mobile-view{
+        display: none;
+    }
+}
