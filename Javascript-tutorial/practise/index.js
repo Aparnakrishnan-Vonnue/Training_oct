@@ -1,4 +1,4 @@
-let num1 = 5
+let num1 = 9
 let num2 =8
 document.getElementById("num1-el").textContent =num1
 document.getElementById("num2-el").textContent =num2
